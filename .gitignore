@@ -1,0 +1,23 @@
+# Python virtual environments
+venv/
+wine_quality_app/venv/
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Model files (optional, if you don't want to push them)
+*.pkl
+*.h5
+
+# Logs and temp files
+*.log
+*.tmp
