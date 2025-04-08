@@ -42,29 +42,59 @@
     <!-- Visualizations Banner -->
     <section class="visualization-card">
       <h3>Interactive Tableau Story</h3>
-      <p>Dive into our Tableau story showcasing key visual insights from our wine quality analysis 
-        Explore how variables like alcohol, volatile acidity, and sulfates impact wine quality through 
+      <p>
+        Dive into our Tableau story showcasing key visual insights from our wine quality analysis.
+        Explore how variables like alcohol, volatile acidity, and sulfates impact wine quality through
         interactive visual insights. Our Tableau story highlights key trends and model predictions from 
-        both red and white wine datasets, revealing what makes a wine truly stand out.</p>
-        <div class="chart-container">
-          <iframe 
-            src="https://public.tableau.com/views/Proj4Tableau/Story1?:showVizHome=no&:embed=true"
-            class="tableau-embed"
-            frameborder="0"
-            allowfullscreen>
-          </iframe>
+        both red and white wine datasets, revealing what makes a wine truly stand out.
+      </p>
+    
+      <div class="chart-container">
+        <div class='tableauPlaceholder' id='viz1744142697183' style='position: relative'>
+          <noscript>
+            <a href='https://public.tableau.com/views/Proj4Tableau/WineQualityPredictionExploratoryAnalysisVisualizations'>
+              <img alt='Wine Quality Prediction: Exploratory Analysis Visualizations'
+                src='https://public.tableau.com/static/images/Pr/Proj4Tableau/WineQualityPredictionExploratoryAnalysisVisualizations/1_rss.png'
+                style='border: none' />
+            </a>
+          </noscript>
+          <object class='tableauViz' style='display:none;'>
+            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+            <param name='embed_code_version' value='3' />
+            <param name='site_root' value='' />
+            <param name='name' value='Proj4Tableau/WineQualityPredictionExploratoryAnalysisVisualizations' />
+            <param name='tabs' value='no' />
+            <param name='toolbar' value='yes' />
+            <param name='static_image'
+              value='https://public.tableau.com/static/images/Pr/Proj4Tableau/WineQualityPredictionExploratoryAnalysisVisualizations/1.png' />
+            <param name='animate_transition' value='yes' />
+            <param name='display_static_image' value='yes' />
+            <param name='display_spinner' value='yes' />
+            <param name='display_overlay' value='yes' />
+            <param name='display_count' value='yes' />
+            <param name='language' value='en-US' />
+          </object>
         </div>
-    </section>    
-  </main>
+      </div>
+    </section>
+    
+    <!-- Tableau embed script -->
+    <script type='text/javascript'>
+      const divElement = document.getElementById('viz1744142697183');
+      const vizElement = divElement.getElementsByTagName('object')[0];
+      vizElement.style.width = '100%';
+      vizElement.style.height = '800px';
+    
+      const scriptElement = document.createElement('script');
+      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+      vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
+    
 
   <!-- Footer -->
   <footer class="site-footer">
     <span class="footer-line-one">© 2025 DataVine 12</span>
     <span class="footer-line-two">Blending bold flavors and bold data, responsibly.</span>
   </footer>
-  
-  <!-- JavaScript for Chart (Example: Chart.js) -->
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script src="{{ url_for('static', filename='js/visualizations.js') }}"></script>
 </body>
 </html>
