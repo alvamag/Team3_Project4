@@ -33,6 +33,10 @@ def try_the_model():
 def resources():
     return render_template('resources.html')
 
+@app.route('/explore')
+def explore():
+    return render_template('explore.html')
+
 # Route for the contact page (contact.html)
 @app.route('/contact')
 def contact():

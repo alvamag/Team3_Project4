@@ -124,6 +124,20 @@
   left: -13px;
 }
 
+.timeline-img-row {
+  display: flex;
+  justify-content: center;  /* Center the images horizontally */
+  gap: 20px;                /* Space between images */
+  margin-top: 15px;
+}
+
+.timeline-img {
+  width: 100%;
+  max-width: 45%;           /* Adjust width as needed */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
 /* Timeline content cards */
 .timeline-content {
   background-color: #A47551;

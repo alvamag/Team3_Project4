@@ -1,0 +1,1037 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2025-04-08T22:17:24Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1799575752",
+        "addr:country": "PT",
+        "addr:housenumber": "20",
+        "addr:street": "Rua dos Mercadores",
+        "craft": "winery",
+        "name": "Faros"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.6539625,
+          40.642588
+        ]
+      },
+      "id": "node/1799575752"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2596027627",
+        "addr:city": "Estremoz",
+        "addr:housename": "Quinta da Esperança",
+        "addr:postcode": "7100-145",
+        "craft": "winery",
+        "name": "Quinta da Esperança",
+        "note": "\"Encostas de Estremoz” wines are produced from the Quinta da Esperança vineyards in the Alentejo.",
+        "place": "farm",
+        "website": "https://grandesescolhas.com/pesquisa-de-vinhos/quinta-da-esperanca-4/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.6079581,
+          38.8540313
+        ]
+      },
+      "id": "node/2596027627"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2613846270",
+        "craft": "winery",
+        "name": "Quinta da Lixa"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.151344,
+          41.3274095
+        ]
+      },
+      "id": "node/2613846270"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3441562743",
+        "craft": "winery",
+        "name": "Monte da Casteleja",
+        "operator": "Guillaume Leroux"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.6847495,
+          37.1305532
+        ]
+      },
+      "id": "node/3441562743"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3760903209",
+        "craft": "winery"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.89991,
+          38.2480579
+        ]
+      },
+      "id": "node/3760903209"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3760903210",
+        "craft": "winery"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.8996901,
+          38.2481232
+        ]
+      },
+      "id": "node/3760903210"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3760903211",
+        "craft": "winery"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.8984687,
+          38.249531
+        ]
+      },
+      "id": "node/3760903211"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3781529662",
+        "craft": "winery",
+        "name": "Wine bar Casa da Viúva"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.3801642,
+          41.133825
+        ]
+      },
+      "id": "node/3781529662"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3902266594",
+        "craft": "winery",
+        "name": "SIVAC"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.9184513,
+          39.1515153
+        ]
+      },
+      "id": "node/3902266594"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4674547513",
+        "craft": "winery",
+        "name": "Adega do Cantor",
+        "operator": "Cliff Richard"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.2804543,
+          37.1232458
+        ]
+      },
+      "id": "node/4674547513"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4751054356",
+        "check_date": "2024-12-18",
+        "craft": "winery",
+        "name": "Adega do Rosca",
+        "operator": "Coimbra de Mattos, Lda."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.6875538,
+          41.1844207
+        ]
+      },
+      "id": "node/4751054356"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5041795491",
+        "craft": "winery",
+        "name": "Casal Santa Maria",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.4607455,
+          38.7936024
+        ]
+      },
+      "id": "node/5041795491"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5413549401",
+        "craft": "winery",
+        "name": "Herdade da Fonte Coberta"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.8389337,
+          38.5589553
+        ]
+      },
+      "id": "node/5413549401"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5413549402",
+        "craft": "winery",
+        "name": "Monte de Pinheiros"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.8697362,
+          38.5434077
+        ]
+      },
+      "id": "node/5413549402"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5499424124",
+        "addr:city": "Vila Nova de Gaia",
+        "addr:housenumber": "10",
+        "addr:postcode": "4400-111",
+        "addr:street": "Rua de França",
+        "craft": "winery",
+        "description": "Winecellar Portwine",
+        "name": "Augusto's",
+        "opening_hours": "Mo-Su 11:00-18:00",
+        "operator": "Augusto's",
+        "phone": "22 319 06 14",
+        "tourism": "wine_cellar",
+        "website": "http://portoaugustos.pt/site/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.6140068,
+          41.1367974
+        ]
+      },
+      "id": "node/5499424124"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5609935151",
+        "addr:street": "Rua Terceira Idade",
+        "addr:unit": "211",
+        "craft": "winery",
+        "name": "Adega Quintinha"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.4030289,
+          38.7407161
+        ]
+      },
+      "id": "node/5609935151"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5711614118",
+        "addr:city": "Vila Nova de Gaia",
+        "addr:housenumber": "314",
+        "addr:postcode": "4431-952",
+        "addr:street": "Rua Azevedo Magalhães",
+        "craft": "winery",
+        "name": "Real Companhia Velha",
+        "opening_hours": "Mo-Su 10:00-18:00",
+        "phone": "+351 22 377 5100",
+        "website": "https://www.realcompanhiavelha.pt/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.6011141,
+          41.1327122
+        ]
+      },
+      "id": "node/5711614118"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5801792676",
+        "addr:city": "São Miguel de Machede",
+        "addr:postcode": "7005-752",
+        "addr:street": "Herdade da Pimenta",
+        "craft": "winery",
+        "description": "Casa Agrícola Alexandre Relvas - Herdade de São Miguel, one of Alentejo's main wineries, exporting wines from Portugal to over 30 countries worldwide.",
+        "name": "Casa Relvas",
+        "opening_hours": "Mo-Fr 09:00-17:00",
+        "operator": "Casa Agrícola Alexandre Relvas",
+        "phone": "+351 266 988 034",
+        "tourism": "attraction",
+        "website": "http://www.herdadesaomiguel.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.7400288,
+          38.6407503
+        ]
+      },
+      "id": "node/5801792676"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5823781695",
+        "addr:street": "4960-010 Alvaredo",
+        "craft": "winery",
+        "name": "Quinta de Soalheiro",
+        "phone": "+351251416769",
+        "website": "https://www.soalheiro.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.3098803,
+          42.0977097
+        ]
+      },
+      "id": "node/5823781695"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5960996831",
+        "craft": "winery",
+        "name": "Quinta de Covela",
+        "website": "https://www.covela.pt/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.9888121,
+          41.1188645
+        ]
+      },
+      "id": "node/5960996831"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6410386495",
+        "craft": "winery"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.2938756,
+          38.6481389
+        ]
+      },
+      "id": "node/6410386495"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6441649102",
+        "addr:city": "Benavila",
+        "addr:country": "PT",
+        "addr:housenumber": "1",
+        "addr:postcode": "7480-228",
+        "addr:street": "Travessa Abreu Callado",
+        "craft": "winery",
+        "name": "Fundação Abreu Callado",
+        "office": "foundation",
+        "phone": "+351 242 430 000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.8693826,
+          39.111487
+        ]
+      },
+      "id": "node/6441649102"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6535432837",
+        "craft": "winery",
+        "description": "Vente de vins"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.8084246,
+          41.0886939
+        ]
+      },
+      "id": "node/6535432837"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6647149301",
+        "craft": "winery"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.4542145,
+          41.9226451
+        ]
+      },
+      "id": "node/6647149301"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7598114635",
+        "addr:locality": "Orada-Borba",
+        "addr:postcode": "7150-306",
+        "addr:street": "Monte Novo do Jardim",
+        "contact:fax": "+351 268 840 278",
+        "contact:mobile": "+351 965 809 009",
+        "craft": "winery",
+        "email": "info@cardeira.pt",
+        "fax": "+351 268 840 278",
+        "name": "Herdade da Cardeira",
+        "name:en": "Cardeira",
+        "phone": "+351 268 802 174",
+        "phone:mobile": "+351 965 809 009",
+        "product": "wine;olive_oil",
+        "url": "https://www.instagram.com/cardeira_pt/",
+        "website": "https://www.cardeira.pt",
+        "wikidata": "Q96109031"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.4611363,
+          38.8480979
+        ]
+      },
+      "id": "node/7598114635"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7847072590",
+        "craft": "winery"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.8682775,
+          40.3337025
+        ]
+      },
+      "id": "node/7847072590"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7909036386",
+        "contact:email": "info@quintadojalloto.pt",
+        "contact:phone": "+351 254 011 749",
+        "craft": "winery",
+        "name": "Quinta do Jalloto",
+        "place": "farm",
+        "website": "https://www.quintadojalloto.pt/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.529123,
+          41.1968448
+        ]
+      },
+      "id": "node/7909036386"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8346098924",
+        "craft": "winery"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.8993766,
+          38.2485458
+        ]
+      },
+      "id": "node/8346098924"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8409215279",
+        "addr:city": "Podentes",
+        "addr:housenumber": "80",
+        "addr:postcode": "3230-529",
+        "addr:street": "Rua do Paço",
+        "craft": "winery",
+        "name": "Adega Monte Formigão",
+        "opening_hours": "Mo-Su 09:00-19:00",
+        "opening_hours:covid19": "restricted",
+        "phone": "963 419 729"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.39285,
+          40.0600633
+        ]
+      },
+      "id": "node/8409215279"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8421198990",
+        "addr:housenumber": "66",
+        "addr:postcode": "2950-298",
+        "addr:street": "Rua Doutor Bernardo Teixeira Botelho",
+        "craft": "winery",
+        "name": "Adega Camolas",
+        "website": "https://adegacamolas.pt/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.9137691,
+          38.5689592
+        ]
+      },
+      "id": "node/8421198990"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8645434487",
+        "addr:city": "Antas e Abade de Vermoim",
+        "addr:housenumber": "710",
+        "addr:postcode": "4770-014",
+        "addr:street": "Rua 25 de Abril",
+        "craft": "winery",
+        "name": "Somidol -Sociedade Vinícola"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.4891741,
+          41.3915554
+        ]
+      },
+      "id": "node/8645434487"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8865677696",
+        "craft": "winery",
+        "name": "Herdade Fonte Paredes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.8548032,
+          39.0169997
+        ]
+      },
+      "id": "node/8865677696"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9098733524",
+        "craft": "winery",
+        "name": "Herdade Vale Barqueiros"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.8032765,
+          39.1988846
+        ]
+      },
+      "id": "node/9098733524"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9243946405",
+        "craft": "winery"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.8949794,
+          41.1558938
+        ]
+      },
+      "id": "node/9243946405"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10216889351",
+        "craft": "winery",
+        "name": "Quinta da Califórnia"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.9993416,
+          38.5160283
+        ]
+      },
+      "id": "node/10216889351"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10255234914",
+        "addr:street": "Zona Industrial De Penso, Lt. 2 Ranhó, 4960-310, Portugal",
+        "contact:phone": "+351 251 096 157",
+        "contact:website": "http://www.anselmomendes.pt/",
+        "craft": "winery",
+        "name": "Anselmo Mendes Vinhos, Lda.",
+        "opening_hours": "Mo-Fr 08:30-17:30; PH closed"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.3202259,
+          42.0910524
+        ]
+      },
+      "id": "node/10255234914"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10291183919",
+        "craft": "winery",
+        "name": "Quinta dos Álamos"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.7871222,
+          41.1455485
+        ]
+      },
+      "id": "node/10291183919"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10811719162",
+        "craft": "winery",
+        "name": "Quinta da Padrela"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.5825367,
+          41.1280957
+        ]
+      },
+      "id": "node/10811719162"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10885477045",
+        "craft": "winery",
+        "name": "Adega Cooperativa de Barcelos"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.5950874,
+          41.5221681
+        ]
+      },
+      "id": "node/10885477045"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11045455858",
+        "craft": "winery",
+        "name": "Herdade do Sobroso"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.5927549,
+          38.1825267
+        ]
+      },
+      "id": "node/11045455858"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11406499798",
+        "addr:city": "Vila Nova de Gaia",
+        "addr:housenumber": "170",
+        "addr:postcode": "4400-320",
+        "addr:street": "Rua Teixeira Lopes",
+        "contact:facebook": "https://www.facebook.com/quinta.daboeira",
+        "contact:instagram": "https://www.instagram.com/quintadaboeira/",
+        "contact:youtube": "https://www.youtube.com/channel/UCWDprkCHlb_HYHY3gn6F4qA",
+        "craft": "winery",
+        "mobile": "+351 924 246 759",
+        "name": "Quinta da Boeira",
+        "opening_hours": "Tu-Sa 10:00-18:00",
+        "phone": "+351 223 751 338",
+        "website": "https://www.quintadaboeira.pt/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.6114419,
+          41.1273232
+        ]
+      },
+      "id": "node/11406499798"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11408632563",
+        "addr:city": "Vila Nova de Gaia",
+        "addr:housenumber": "86",
+        "addr:postcode": "4431-901",
+        "addr:street": "Travessa do Barão de Forrester",
+        "contact:fax": "+351 223 776 301",
+        "contact:phone": "+351 223 776 300",
+        "contact:website": "https://www.dows-port.com/",
+        "craft": "winery",
+        "name": "Dow's Port",
+        "office": "company",
+        "operator": "Symington Family Estates Vinhos S.A."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.6164633,
+          41.1328057
+        ]
+      },
+      "id": "node/11408632563"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11431811253",
+        "craft": "winery",
+        "email": "quintadobarbusano@gmail.com",
+        "facebook": "https://www.facebook.com/quintadobarbusano/",
+        "name": "Quinta do Barbusano",
+        "opening_hours": "Tu-Sa 09:30-18:00",
+        "phone": "+351 926637730"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -17.0352048,
+          32.7995109
+        ]
+      },
+      "id": "node/11431811253"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11476164934",
+        "craft": "winery",
+        "name": "Curral das Freiras"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.4322963,
+          39.5618796
+        ]
+      },
+      "id": "node/11476164934"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11518696779",
+        "addr:street": "Rua Helena Cardoso",
+        "craft": "winery",
+        "name": "Quinta do Piloto",
+        "opening_hours": "Tu-Su 10:00-13:00,14:00-19:00",
+        "phone": "+351212333030",
+        "shop": "wine",
+        "website": "https://www.quintadopiloto.pt/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.9137523,
+          38.5671036
+        ]
+      },
+      "id": "node/11518696779"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11704376176",
+        "addr:city": "Vila Real",
+        "addr:housenumber": "35",
+        "addr:postcode": "5000-081",
+        "addr:street": "Rua da Estrada Nacional",
+        "craft": "winery",
+        "email": "enofast@email.com",
+        "level": "1",
+        "name": "Enofast Wine Lab",
+        "phone": "+351 259 336 360",
+        "start_date": "2003",
+        "website": "https://enofast.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.6967001,
+          41.2821832
+        ]
+      },
+      "id": "node/11704376176"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11772233529",
+        "addr:housenumber": "B.400 CX 404",
+        "addr:street": "Lugar de Portela",
+        "address": "Lugar de Portela, B.400 CX 404\n4970-097 Cabana Maior AVV",
+        "check_date": "2024-06-29",
+        "contact:email": "geral@virguwines.com",
+        "contact:mobile": "+351 911 000 717",
+        "craft": "winery",
+        "description": "Loja on-line especializada em vinhos portugueses com produção com recurso a técnicas amigas do ambiente, que promove provas de vinhos, entre outras atividades.",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "Virgu Wines - Cabana Maior",
+        "website": "https://virguwines.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.3450488,
+          41.8751859
+        ]
+      },
+      "id": "node/11772233529"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11799852229",
+        "craft": "winery",
+        "name": "Vinhos Barbeito",
+        "shop": "wine"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -16.9977902,
+          32.6678653
+        ]
+      },
+      "id": "node/11799852229"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11903520700",
+        "craft": "winery",
+        "name": "Quinta de Alcube",
+        "website": "https://www.quintadealcube.pt/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.9735927,
+          38.531699
+        ]
+      },
+      "id": "node/11903520700"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12138990401",
+        "craft": "winery",
+        "name": "Wine Rest",
+        "official_name": "Wine Rest, Lda."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.7227278,
+          41.2827479
+        ]
+      },
+      "id": "node/12138990401"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12319254186",
+        "craft": "winery",
+        "name": "Dois Dedos de Conserva"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1423847,
+          38.7543521
+        ]
+      },
+      "id": "node/12319254186"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12390460795",
+        "craft": "winery",
+        "name": "wine lover bairro alto"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1430543,
+          38.7117853
+        ]
+      },
+      "id": "node/12390460795"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12390484303",
+        "craft": "winery",
+        "name": "old porto"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1431786,
+          38.7122846
+        ]
+      },
+      "id": "node/12390484303"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12390484304",
+        "craft": "winery",
+        "name": "napoleão"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1432412,
+          38.7125178
+        ]
+      },
+      "id": "node/12390484304"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12529604190",
+        "craft": "winery",
+        "name": "Garrafeira"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.4281229,
+          41.5539432
+        ]
+      },
+      "id": "node/12529604190"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12529638813",
+        "craft": "winery",
+        "name": "A deliciosa do mercado"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.4281949,
+          41.5540878
+        ]
+      },
+      "id": "node/12529638813"
+    }
+  ]
+}

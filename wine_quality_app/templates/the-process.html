@@ -28,6 +28,7 @@
         <a href="{{ url_for('visualizations') }}">Visualizations</a>
         <a href="{{ url_for('try_the_model') }}">Try the Model</a>
         <a href="{{ url_for('resources') }}">Resources</a>
+        <a href="{{ url_for('explore') }}">Explore</a>
         <a href="{{ url_for('contact') }}">Contact</a>
       </div>
     </nav>
@@ -45,38 +46,56 @@
       <!-- Step 1 -->
       <div class="timeline-step left">
         <div class="timeline-content">
-          <h3>Data Preparation</h3>
-          <p>We merged red and white wine datasets, added a wine_type column, standardized the numeric features, and exported a clean version for modeling and analysis.</p>
-          <img src="{{ url_for('static', filename='images/DataPreparation.jpg') }}" alt="Cleaned Data Preview" class="timeline-img">
+          <h3>Data Cleaning & Feature Engineering</h3>
+          <p>We removed null values, merged the datasets, applied feature scaling, and saved the result as cleaned_wine_data.csv.</p>
+          <img src="{{ url_for('static', filename='images/Picture1.jpg') }}" alt="Cleaned Data Preview" class="timeline-img">
+          <img src="{{ url_for('static', filename='images/Picture2.jpg') }}" alt="Cleaned Data Preview" class="timeline-img">
         </div>
       </div>
     
       <!-- Step 2 -->
       <div class="timeline-step right">
         <div class="timeline-content">
-          <h3>Exploratory Analysis in Spark</h3>
-          <p>Using Spark SQL, we analyzed average wine quality by type, alcohol distribution, and statistical summaries — confirming alcohol’s strong correlation with higher quality.</p>
-          <img src="{{ url_for('static', filename='images/Spark.jpg') }}" alt="Cleaned Data Preview" class="timeline-img">
+          <h3>Spark SQL Analysis</h3>
+          <p>White wines scored slightly higher on average; alcohol is a strong indicator of quality, while density shows a negative correlation with quality.</p>
+          <img src="{{ url_for('static', filename='images/Picture3.jpg') }}" alt="Cleaned Data Preview" class="timeline-img">
         </div>
       </div>
     
       <!-- Step 3 -->
       <div class="timeline-step left">
         <div class="timeline-content">
-          <h3>Machine Learning Modeling</h3>
-          <p>We applied Random Forest, Logistic Regression, and SVM to classify wines by quality, achieving up to 89% accuracy without PCA, and slightly lower with PCA applied.</p>
-          <img src="{{ url_for('static', filename='images/MLM1.jpg') }}" alt="Cleaned Data Preview" class="timeline-img">
-          <img src="{{ url_for('static', filename='images/MLM2.jpg') }}" alt="Cleaned Data Preview" class="timeline-img">
-          <img src="{{ url_for('static', filename='images/MLM3.jpg') }}" alt="Cleaned Data Preview" class="timeline-img">
-          <img src="{{ url_for('static', filename='images/MLM4.jpg') }}" alt="Cleaned Data Preview" class="timeline-img">
+          <h3>Model Preparation and Model Binning</h3>
+          <p>Class encoding was defined as follows: 0 represents low quality (scores 3–5), 1 represents medium quality (score 6), and 2 represents high quality (scores 7 and above).</p>
+          <img src="{{ url_for('static', filename='images/Picture4.jpg') }}" alt="Cleaned Data Preview" class="timeline-img">
         </div>
       </div>
     
       <!-- Step 4 -->
       <div class="timeline-step right">
         <div class="timeline-content">
-          <h3>Model Insights</h3>
-          <p>Feature importance highlighted alcohol, sulphates, and volatile acidity as key predictors of wine quality, confirming our hypothesis about the predictive value of these traits.</p>
+          <h3>Initial Model Training</h3>
+          <p>We used Random Forest as our baseline model, achieving an accuracy of 88.62%, and evaluated its performance using precision, recall, and F1 score.</p>
+          <img src="{{ url_for('static', filename='images/Picture5.jpg') }}" alt="Cleaned Data Preview" class="timeline-img">
+        </div>
+      </div>
+
+      <!-- Step 5 -->
+      <div class="timeline-step left">
+        <div class="timeline-content">
+          <h3>Initial Model Optimization</h3>
+          <p>We experimented with Logistic Regression and SVM, applied PCA to reduce dimensionality, and found that Random Forest performed best overall.</p>
+            <img src="{{ url_for('static', filename='images/Picture6.jpg') }}" alt="Cleaned Data Preview" class="timeline-img">
+            <img src="{{ url_for('static', filename='images/Picture7.jpg') }}" alt="Cleaned Data Preview" class="timeline-img">
+          </div>
+      </div>
+
+      <!-- Step 6 -->
+      <div class="timeline-step right">
+        <div class="timeline-content">
+          <h3>Initial Model Evaluation</h3>
+          <p>The model achieved high precision and recall for most classes, generalized well to unseen data, and reached a final accuracy of 88.62%.</p>
+          <img src="{{ url_for('static', filename='images/Picture8.jpg') }}" alt="Cleaned Data Preview" class="timeline-img">
         </div>
       </div>
     

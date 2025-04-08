@@ -28,6 +28,7 @@
         <a href="{{ url_for('visualizations') }}">Visualizations</a>
         <a href="{{ url_for('try_the_model') }}">Try the Model</a>
         <a href="{{ url_for('resources') }}">Resources</a>
+        <a href="{{ url_for('explore') }}">Explore</a>
         <a href="{{ url_for('contact') }}">Contact</a>
       </div>
     </nav>
@@ -47,11 +48,12 @@
       <div class="accordion">
         <!-- Datasets Section -->
         <div class="accordion-item">
-          <button class="accordion-btn">Datasets</button>
+          <button class="accordion-btn">Datasets & Downloads</button>
           <div class="accordion-content" id="datasetsContent">
             <ul>
               <li><a href="{{ url_for('static', filename='data/winequality-red.csv') }}" download>Download Red Wine Dataset (CSV)</a></li>
               <li><a href="{{ url_for('static', filename='data/winequality-white.csv') }}" download>Download White Wine Dataset (CSV)</a></li>
+              <li><a href="{{ url_for('static', filename='data/SL_for_Wine_Quality_Analysis.ipynb') }}" download>Download Wine Quality Analysis Notebook</a></li>
             </ul>
           </div>
         </div>
