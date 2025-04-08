@@ -1,34 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // === Age Verification Logic ===
-    const verified = localStorage.getItem("verified");
-    const agePopup = document.getElementById("age-popup");
-    const enterBtn = document.getElementById("enter-btn");
-    const exitBtn = document.getElementById("exit-btn");
-  
-    // Debugging: Check what is in localStorage
-    console.log("Age Verified (localStorage):", localStorage.getItem('verified'));  // Log the value
-  
-    // If already verified, hide the popup
-    if (verified === "true" && agePopup) {
-      agePopup.style.display = "none";  // Hide the popup if the user is already verified
-    }
-  
-    // Handle age verification button clicks
-    if (enterBtn) {
-      enterBtn.addEventListener("click", function () {
-        localStorage.setItem("verified", "true"); // Save flag to localStorage
-        console.log("Age Verified:", localStorage.getItem('verified'));  // Log after setting
-        if (agePopup) agePopup.style.display = "none";  // Hide the popup
-      });
-    }
-  
-    // Redirect if the "No, take me back" button is clicked
-    if (exitBtn) {
-      exitBtn.addEventListener("click", function () {
-        window.location.href = "https://motts.com"; // You can change this to any URL you'd like
-      });
-    }
-  
     // === Image Gallery Slider ===
     let currentSlideIndex = 0;
     const slides = document.querySelectorAll('.gallery-slide');

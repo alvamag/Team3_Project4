@@ -101,7 +101,65 @@
   </footer>
   
   <!-- Link to JavaScript -->
-  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+  <script>
+    window.addEventListener("DOMContentLoaded", function () {
+      // === Age Verification Popup ===
+      const popup = document.getElementById("age-popup");
+      const enterBtn = document.getElementById("enter-btn");
+      const exitBtn = document.getElementById("exit-btn");
+  
+      const isVerified = localStorage.getItem("ageVerified");
+      if (!isVerified) {
+        popup.style.display = "flex";
+      }
+  
+      enterBtn.addEventListener("click", function () {
+        localStorage.setItem("ageVerified", "true");
+        popup.style.display = "none";
+      });
+  
+      exitBtn.addEventListener("click", function () {
+        window.location.href = "https://www.responsibility.org/";
+      });
+  
+      // === Image Gallery Slider ===
+      let currentSlideIndex = 0;
+      const slides = document.querySelectorAll('.gallery-slide');
+      const dots = document.querySelectorAll('.dot');
+      const totalSlides = slides.length;
+  
+      function showSlide(index) {
+        slides.forEach((slide) => slide.classList.remove('active'));
+        dots.forEach((dot) => dot.classList.remove('active'));
+  
+        slides[index].classList.add('active');
+        dots[index].classList.add('active');
+      }
+  
+      function moveSlide(step) {
+        currentSlideIndex = (currentSlideIndex + step + totalSlides) % totalSlides;
+        showSlide(currentSlideIndex);
+      }
+  
+      function currentSlide(index) {
+        currentSlideIndex = index;
+        showSlide(currentSlideIndex);
+      }
+  
+      showSlide(currentSlideIndex);
+  
+      setInterval(() => {
+        moveSlide(1);
+      }, 8000);
+  
+      dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => currentSlide(index));
+      });
+  
+      // Expose for inline HTML calls like onclick="currentSlide(0)"
+      window.currentSlide = currentSlide;
+    });
+  </script>   
 </body>
 </html>
 
