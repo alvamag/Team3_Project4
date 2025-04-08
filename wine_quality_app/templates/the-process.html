@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Process</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans&family=Satisfy&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets for The Process Page -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}"> <!-- Global Styles -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/the-process.css') }}"> <!-- The Process-specific Styles -->
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="nav-bar">
+      <div class="nav-logo">
+        <a href="{{ url_for('home') }}">
+          <img src="{{ url_for('static', filename='images/Logo.png') }}" alt="DataVine 12 Logo" class="logo-header" />
+        </a>
+      </div>
+      <div class="nav-links">
+        <a href="{{ url_for('home') }}">Home</a>
+        <a href="{{ url_for('about') }}">About</a>
+        <a href="{{ url_for('the_process') }}">The Process</a>
+        <a href="{{ url_for('visualizations') }}">Visualizations</a>
+        <a href="{{ url_for('try_the_model') }}">Try the Model</a>
+        <a href="{{ url_for('resources') }}">Resources</a>
+        <a href="{{ url_for('explore') }}">Explore</a>
+        <a href="{{ url_for('contact') }}">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Project Overview Banner (similar to Home and About pages) -->
+    <section class="label-banner">
+      <h2>The Process</h2>
+      <p>Here, we outline how our machine learning model was trained and tested to predict wine quality, including the dataset and methodologies used.</p>
+    </section>
+    <section class="timeline">
+
+      <!-- Step 1 -->
+      <div class="timeline-step left">
+        <div class="timeline-content">
+          <h3>Data Cleaning & Feature Engineering</h3>
+          <p>We removed null values, merged the datasets, applied feature scaling, and saved the result as cleaned_wine_data.csv.</p>
+          <img src="{{ url_for('static', filename='images/Picture1.jpg') }}" alt="Cleaned Data Preview" class="timeline-img">
+          <img src="{{ url_for('static', filename='images/Picture2.jpg') }}" alt="Cleaned Data Preview" class="timeline-img">
+        </div>
+      </div>
+    
+      <!-- Step 2 -->
+      <div class="timeline-step right">
+        <div class="timeline-content">
+          <h3>Spark SQL Analysis</h3>
+          <p>White wines scored slightly higher on average; alcohol is a strong indicator of quality, while density shows a negative correlation with quality.</p>
+          <img src="{{ url_for('static', filename='images/Picture3.jpg') }}" alt="Cleaned Data Preview" class="timeline-img">
+        </div>
+      </div>
+    
+      <!-- Step 3 -->
+      <div class="timeline-step left">
+        <div class="timeline-content">
+          <h3>Model Preparation and Model Binning</h3>
+          <p>Class encoding was defined as follows: 0 represents low quality (scores 3–5), 1 represents medium quality (score 6), and 2 represents high quality (scores 7 and above).</p>
+          <img src="{{ url_for('static', filename='images/Picture4.jpg') }}" alt="Cleaned Data Preview" class="timeline-img">
+        </div>
+      </div>
+    
+      <!-- Step 4 -->
+      <div class="timeline-step right">
+        <div class="timeline-content">
+          <h3>Initial Model Training</h3>
+          <p>We used Random Forest as our baseline model, achieving an accuracy of 88.62%, and evaluated its performance using precision, recall, and F1 score.</p>
+          <img src="{{ url_for('static', filename='images/Picture5.jpg') }}" alt="Cleaned Data Preview" class="timeline-img">
+        </div>
+      </div>
+
+      <!-- Step 5 -->
+      <div class="timeline-step left">
+        <div class="timeline-content">
+          <h3>Initial Model Optimization</h3>
+          <p>We experimented with Logistic Regression and SVM, applied PCA to reduce dimensionality, and found that Random Forest performed best overall.</p>
+            <img src="{{ url_for('static', filename='images/Picture6.jpg') }}" alt="Cleaned Data Preview" class="timeline-img">
+            <img src="{{ url_for('static', filename='images/Picture7.jpg') }}" alt="Cleaned Data Preview" class="timeline-img">
+          </div>
+      </div>
+
+      <!-- Step 6 -->
+      <div class="timeline-step right">
+        <div class="timeline-content">
+          <h3>Initial Model Evaluation</h3>
+          <p>The model achieved high precision and recall for most classes, generalized well to unseen data, and reached a final accuracy of 88.62%.</p>
+          <img src="{{ url_for('static', filename='images/Picture8.jpg') }}" alt="Cleaned Data Preview" class="timeline-img">
+        </div>
+      </div>
+    
+    </section>
+    
+  </main>
+
+  <footer class="site-footer">
+    <span class="footer-line-one">© 2025 DataVine 12</span>
+    <span class="footer-line-two">Blending bold flavors and bold data, responsibly.</span>
+  </footer>
+
+  <!-- Optional JavaScript (e.g., for popups or functionality) -->
+  <!-- If you have JS, link it here -->
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
