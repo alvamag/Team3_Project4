@@ -38,9 +38,8 @@
     <section class="label-banner">
       <h2>Visualizations</h2>
       <p>Explore our visualizations and data analysis on wine quality prediction.</p>
-    </section>    
-    <!-- Visualizations Banner -->
-    <section class="visualization-card">
+    </section>
+    <section class="tableau-card">
       <h3>Interactive Tableau Story</h3>
       <p>
         Dive into our Tableau story showcasing key visual insights from our wine quality analysis.
@@ -48,53 +47,49 @@
         interactive visual insights. Our Tableau story highlights key trends and model predictions from 
         both red and white wine datasets, revealing what makes a wine truly stand out.
       </p>
-    
-      <div class="chart-container">
-        <div class='tableauPlaceholder' id='viz1744142697183' style='position: relative'>
+      <section class="tableau-embed-section">
+        <div class="tableauPlaceholder" id="vizContainer" style="position: relative">
           <noscript>
-            <a href='https://public.tableau.com/views/Proj4Tableau/WineQualityPredictionExploratoryAnalysisVisualizations'>
-              <img alt='Wine Quality Prediction: Exploratory Analysis Visualizations'
-                src='https://public.tableau.com/static/images/Pr/Proj4Tableau/WineQualityPredictionExploratoryAnalysisVisualizations/1_rss.png'
-                style='border: none' />
+            <a href="https://public.tableau.com/views/Proj4Tableau/WineQualityPredictionExploratoryAnalysisVisualizations">
+              <img alt="Wine Viz"
+                   src="https://public.tableau.com/static/images/Pr/Proj4Tableau/WineQualityPredictionExploratoryAnalysisVisualizations/1_rss.png"
+                   style="border: none" />
             </a>
           </noscript>
-          <object class='tableauViz' style='display:none;'>
-            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-            <param name='embed_code_version' value='3' />
-            <param name='site_root' value='' />
-            <param name='name' value='Proj4Tableau/WineQualityPredictionExploratoryAnalysisVisualizations' />
-            <param name='tabs' value='no' />
-            <param name='toolbar' value='yes' />
-            <param name='static_image'
-              value='https://public.tableau.com/static/images/Pr/Proj4Tableau/WineQualityPredictionExploratoryAnalysisVisualizations/1.png' />
-            <param name='animate_transition' value='yes' />
-            <param name='display_static_image' value='yes' />
-            <param name='display_spinner' value='yes' />
-            <param name='display_overlay' value='yes' />
-            <param name='display_count' value='yes' />
-            <param name='language' value='en-US' />
+          <object class="tableauViz" style="display: none;">
+            <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" />
+            <param name="embed_code_version" value="3" />
+            <param name="site_root" value="" />
+            <param name="name" value="Proj4Tableau/WineQualityPredictionExploratoryAnalysisVisualizations" />
+            <param name="tabs" value="no" />
+            <param name="toolbar" value="yes" />
+            <param name="animate_transition" value="yes" />
+            <param name="display_static_image" value="yes" />
+            <param name="display_spinner" value="yes" />
+            <param name="display_overlay" value="yes" />
+            <param name="display_count" value="yes" />
+            <param name="language" value="en-US" />
           </object>
         </div>
-      </div>
-    </section>
+      </section>          
+  </main>    
     
-    <!-- Tableau embed script -->
-    <script type='text/javascript'>
-      const divElement = document.getElementById('viz1744142697183');
-      const vizElement = divElement.getElementsByTagName('object')[0];
-      vizElement.style.width = '100%';
-      vizElement.style.height = '800px';
-    
-      const scriptElement = document.createElement('script');
-      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-      vizElement.parentNode.insertBefore(scriptElement, vizElement);
-    </script>
-    
-
   <!-- Footer -->
   <footer class="site-footer">
     <span class="footer-line-one">© 2025 DataVine 12</span>
     <span class="footer-line-two">Blending bold flavors and bold data, responsibly.</span>
   </footer>
+
+  <script type="text/javascript">
+    const container = document.getElementById("vizContainer");
+    const vizObj = container.getElementsByTagName("object")[0];
+    vizObj.style.width = "100%";
+    vizObj.style.height = "1100px"; // Adjust height if your dashboard is taller
+  
+    const scriptEl = document.createElement("script");
+    scriptEl.src = "https://public.tableau.com/javascripts/api/viz_v1.js";
+    vizObj.parentNode.insertBefore(scriptEl, vizObj);
+  </script>
+  
 </body>
 </html>
