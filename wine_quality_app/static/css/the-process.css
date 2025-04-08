@@ -1,0 +1,182 @@
+/* The Process Page Styling */
+
+/* Banner Section */
+.label-banner {
+    background-color: #F8F3E3; /* Creamy background */
+    color: #4B0E15;            /* Cabernet text color */
+    padding: 60px 40px;
+    margin: 40px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border: 1px solid #E8D6CB;
+    width: 90%;
+    max-width: 1000px;
+    text-align: center;
+  }
+  
+  .label-banner h2 {
+    font-size: 2.5rem;  /* Larger font for the section heading */
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-family: 'Satisfy', cursive; /* Apply the 'Satisfy' cursive font */
+  }
+  
+  .label-banner p {
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 1rem;
+    line-height: 1.2;
+    margin: 0.75em 0;
+  }
+  
+  /* Hover effect for any additional content or cards you might want to add */
+  .card {
+    background-color: #3A0D12; /* Dark wine background */
+    color: #F8F3E3; /* Light cream text */
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 800px; /* Limit the card width */
+    margin: 20px auto;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    font-family: 'Satisfy', cursive;  /* Apply the 'Satisfy' font family */
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #4B0E15;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #4B0E15;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Hover effect for cards */
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  }
+  /* Timeline container */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 40px 0;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 4px;
+  background-color: #E8D6CB; /* Cabernet line */
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -2px;
+}
+
+/* Timeline content blocks */
+.timeline-step {
+  padding: 20px 40px;
+  position: relative;
+  width: 50%;
+}
+
+.timeline-step::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -13px;
+  background-color: #F8F3E3;
+  border: 4px solid #4B0E15;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Left side */
+.left {
+  left: 0;
+}
+
+.left::after {
+  left: auto;
+  right: -13px;
+}
+
+/* Right side */
+.right {
+  left: 50%;
+}
+
+.right::after {
+  left: -13px;
+}
+
+/* Timeline content cards */
+.timeline-content {
+  background-color: #3A0D12;
+  color: #F8F3E3;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.timeline-content h3 {
+  font-family: 'Satisfy', cursive;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #F8F3E3;
+}
+
+.timeline-content p {
+  font-family: 'Quattrocento Sans', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #F8F3E3;
+}
+
+.timeline-img {
+  width: 100%;
+  max-width: 100%;
+  margin-top: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+/* Responsive stacking on small screens */
+@media screen and (max-width: 768px) {
+  .timeline::after {
+    left: 31px;
+  }
+
+  .timeline-step {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  .left, .right {
+    left: 0;
+  }
+
+  .timeline-step::after {
+    left: 15px;
+  }
+}
+
+  /* Footer should be consistent with other pages */
+  .site-footer {
+    background-color: #3A0D12;
+    color: #F8F3E3;
+    font-family: 'Satisfy', cursive;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 60px;
+  }

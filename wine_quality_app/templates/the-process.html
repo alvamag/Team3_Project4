@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Process</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans&family=Satisfy&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets for The Process Page -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}"> <!-- Global Styles -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/the-process.css') }}"> <!-- The Process-specific Styles -->
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="nav-bar">
+      <div class="nav-logo">
+        <a href="{{ url_for('home') }}">
+          <img src="{{ url_for('static', filename='images/Logo.png') }}" alt="DataVine 12 Logo" class="logo-header" />
+        </a>
+      </div>
+      <div class="nav-links">
+        <a href="{{ url_for('home') }}">Home</a>
+        <a href="{{ url_for('about') }}">About</a>
+        <a href="{{ url_for('the_process') }}">The Process</a>
+        <a href="{{ url_for('visualizations') }}">Visualizations</a>
+        <a href="{{ url_for('try_the_model') }}">Try the Model</a>
+        <a href="{{ url_for('resources') }}">Resources</a>
+        <a href="{{ url_for('contact') }}">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Project Overview Banner (similar to Home and About pages) -->
+    <section class="label-banner">
+      <h2>The Process</h2>
+      <p>Here, we outline how our machine learning model was trained and tested to predict wine quality, including the dataset and methodologies used.</p>
+    </section>
+    <section class="timeline">
+
+      <!-- Step 1 -->
+      <div class="timeline-step left">
+        <div class="timeline-content">
+          <h3>Data Preparation</h3>
+          <p>We merged red and white wine datasets, added a wine_type column, standardized the numeric features, and exported a clean version for modeling and analysis.</p>
+          <img src="{{ url_for('static', filename='images/DataPreparation.jpg') }}" alt="Cleaned Data Preview" class="timeline-img">
+        </div>
+      </div>
+    
+      <!-- Step 2 -->
+      <div class="timeline-step right">
+        <div class="timeline-content">
+          <h3>Exploratory Analysis in Spark</h3>
+          <p>Using Spark SQL, we analyzed average wine quality by type, alcohol distribution, and statistical summaries — confirming alcohol’s strong correlation with higher quality.</p>
+          <img src="{{ url_for('static', filename='images/Spark.jpg') }}" alt="Cleaned Data Preview" class="timeline-img">
+        </div>
+      </div>
+    
+      <!-- Step 3 -->
+      <div class="timeline-step left">
+        <div class="timeline-content">
+          <h3>Machine Learning Modeling</h3>
+          <p>We applied Random Forest, Logistic Regression, and SVM to classify wines by quality, achieving up to 89% accuracy without PCA, and slightly lower with PCA applied.</p>
+          <img src="{{ url_for('static', filename='images/MLM1.jpg') }}" alt="Cleaned Data Preview" class="timeline-img">
+          <img src="{{ url_for('static', filename='images/MLM2.jpg') }}" alt="Cleaned Data Preview" class="timeline-img">
+          <img src="{{ url_for('static', filename='images/MLM3.jpg') }}" alt="Cleaned Data Preview" class="timeline-img">
+          <img src="{{ url_for('static', filename='images/MLM4.jpg') }}" alt="Cleaned Data Preview" class="timeline-img">
+        </div>
+      </div>
+    
+      <!-- Step 4 -->
+      <div class="timeline-step right">
+        <div class="timeline-content">
+          <h3>Model Insights</h3>
+          <p>Feature importance highlighted alcohol, sulphates, and volatile acidity as key predictors of wine quality, confirming our hypothesis about the predictive value of these traits.</p>
+        </div>
+      </div>
+    
+    </section>
+    
+  </main>
+
+  <footer class="site-footer">
+    <span class="footer-line-one">© 2025 DataVine 12</span>
+    <span class="footer-line-two">Blending bold flavors and bold data, responsibly.</span>
+  </footer>
+
+  <!-- Optional JavaScript (e.g., for popups or functionality) -->
+  <!-- If you have JS, link it here -->
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

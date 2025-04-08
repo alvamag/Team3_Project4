@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resources</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans&family=Satisfy&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets for Resources Page -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}"> <!-- Global Styles -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/resources.css') }}"> <!-- Resources-specific Styles -->
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="nav-bar">
+      <div class="nav-logo">
+        <a href="{{ url_for('home') }}">
+          <img src="{{ url_for('static', filename='images/Logo.png') }}" alt="DataVine 12 Logo" class="logo-header" />
+        </a>
+      </div>
+      <div class="nav-links">
+        <a href="{{ url_for('home') }}">Home</a>
+        <a href="{{ url_for('about') }}">About</a>
+        <a href="{{ url_for('the_process') }}">The Process</a>
+        <a href="{{ url_for('visualizations') }}">Visualizations</a>
+        <a href="{{ url_for('try_the_model') }}">Try the Model</a>
+        <a href="{{ url_for('resources') }}">Resources</a>
+        <a href="{{ url_for('contact') }}">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Resources Banner -->
+    <section class="label-banner">
+      <h2>Resources</h2>
+      <p>Here, you'll find datasets, research papers, and tools that can help you get a better grasp of how we use machine learning to predict wine quality. 
+        Whether you want to replicate our analysis or try something new, these resources will give you a deeper look into the data and techniques behind the 
+        model. You’ll learn about the key factors that impact wine quality, discover algorithms like Random Forest, Support Vector Machines, and Logistic 
+        Regression, and dive into research that connects data science with the world of wine.</p>
+    </section>
+    <section class="resources-content">
+      <div class="accordion">
+        <!-- Datasets Section -->
+        <div class="accordion-item">
+          <button class="accordion-btn">Datasets</button>
+          <div class="accordion-content" id="datasetsContent">
+            <ul>
+              <li><a href="{{ url_for('static', filename='data/winequality-red.csv') }}" download>Download Red Wine Dataset (CSV)</a></li>
+              <li><a href="{{ url_for('static', filename='data/winequality-white.csv') }}" download>Download White Wine Dataset (CSV)</a></li>
+            </ul>
+          </div>
+        </div>
+    
+        <!-- Studies & Research Section -->
+        <div class="accordion-item">
+          <button class="accordion-btn">Studies & Research Papers</button>
+          <div class="accordion-content" id="studiesContent">
+            <ul>
+              <li><a href="https://www.sciencedirect.com/science/article/abs/pii/S0167923609001377" target="_blank">Modeling Wine Preferences Using Data Mining</a></li>
+              <li><a href="https://archive.ics.uci.edu/dataset/186/wine+quality" class="resource-link">Wine Quality</a></li>
+            </ul>
+          </div>
+        </div>
+    
+        <!-- Additional Resources Section -->
+        <div class="accordion-item">
+          <button class="accordion-btn">Additional Resources</button>
+          <div class="accordion-content" id="resourcesContent">
+            <ul>
+              <li><a href="https://www.geeksforgeeks.org/support-vector-regression-svr-using-linear-and-non-linear-kernels-in-scikit-learn/" class="resource-link">Support Vector Regression</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>    
+  </main>
+
+  <footer class="site-footer">
+    <span class="footer-line-one">© 2025 DataVine 12</span>
+    <span class="footer-line-two">Blending bold flavors and bold data, responsibly.</span>
+  </footer>
+
+  <!-- Link to JavaScript (if needed) -->
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
+

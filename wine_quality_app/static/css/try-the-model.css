@@ -1,0 +1,234 @@
+/* Try The Model - Label Banner */
+.label-banner {
+  background-color: #F8F3E3; /* Creamy background */
+  color: #4B0E15;            /* Cabernet text color */
+  padding: 60px 40px;
+  margin: 40px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border: 1px solid #E8D6CB;
+  width: 90%;
+  max-width: 1000px;
+  text-align: center;
+}
+
+.label-banner h2 {
+  font-size: 2.5rem;  /* Larger font for the section heading */
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-family: 'Satisfy', cursive; /* Apply the 'Satisfy' cursive font */
+}
+
+.label-banner p {
+  font-family: 'Quattrocento Sans', sans-serif;
+  font-size: 1rem;
+  line-height: 1.2;
+  margin: 0.75em 0;
+}
+
+/* Property Definitions Section: 3x4 Grid Layout */
+.property-definitions {
+  margin: 20px;
+  font-family: 'Quattrocento Sans', sans-serif;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 20px;  /* Adds space between cards */
+  grid-template-rows: repeat(4, auto); /* 4 rows */
+  max-width: 1000px;  /* Optional, adjust for the width of the grid */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Styling for Each Definition Card */
+.definition-card {
+  position: relative;
+  padding: 15px;
+  background-color: #F8F3E3;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+/* Styling for the property name (which user will hover over) */
+.property-name {
+  font-weight: bold;
+  color: #4B0E15; /* Dark wine color */
+  cursor: pointer;
+  text-decoration: none; /* No underlining */
+  flex: 1;  /* Makes the property name expand to take available space */
+}
+
+/* Initially hide the definition text */
+.definition {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #4B0E15;  /* Dark wine background */
+  color: #F8F3E3;              /* Light cream text */
+  padding: 10px;
+  border-radius: 5px;
+  width: 200px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+  z-index: 1;
+  opacity: 0;                  /* Start with hidden (invisible) */
+  transition: opacity 0.3s ease; /* Smooth fade-in */
+}
+
+/* Show the definition when hovering over the property name */
+.definition-card:hover .definition {
+  display: block;
+  opacity: 1;
+  background-color: #C8A97E;
+  color: #F8F3E3;
+}
+
+.property-name:hover {
+  color: #C8A97E;  /* Change color of property name on hover */
+}
+
+/* Adjust Input Fields to be Rectangular */
+.definition-card input {
+  padding: 10px 12px;  /* Adjust padding to ensure input fields look rectangular */
+  width: 100%; /* Make input fields take up full width of the card */
+  max-width: 200px; /* Optional, control the max width of the input fields */
+  border: 2px solid #4B0E15;
+  border-radius: 5px; /* Slight rounding of corners for a cleaner look */
+  font-family: 'Quattrocento Sans', sans-serif;
+  font-size: 1rem;
+  box-sizing: border-box; /* Ensures padding doesn't add extra width/height */
+}
+
+/* Form Styling */
+form {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+button {
+  background-color: #C8A97E;
+  color: #E8D6CB;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #3A0D12;
+}
+
+/* Styling for Predict Quality Button in Grid */
+#predict-button {
+  grid-column: 1 / span 3;  /* Span across all three columns */
+  grid-row: 4;  /* Place it in the fourth (last) row */
+  background-color: #C8A97E;
+  color: #E8D6CB;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  justify-self: center;  /* Center the button horizontally */
+}
+
+#predict-button:hover {
+  background-color: #3A0D12;
+}
+
+/* Modal Background */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(0, 0, 0, 0.5); /* Black with opacity */
+  overflow: auto; /* Enable scroll if needed */
+  padding-top: 60px; /* Position the modal */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #F8F3E3;
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be adjusted */
+  max-width: 500px; /* Max width of modal */
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* Close Button (X) */
+.close-button {
+  color: #4B0E15;
+  font-size: 2rem;
+  font-weight: bold;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  cursor: pointer;
+}
+
+.close-button:hover,
+.close-button:focus {
+  color: #C8A97E;
+}
+
+/* Retry Button */
+#retry-button {
+  background-color: #C8A97E;
+  color: #E8D6CB;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+#retry-button:hover {
+  background-color: #3A0D12;
+}
+
+/* Footer */
+.site-footer {
+  background-color: #3A0D12;
+  color: #F8F3E3;
+  font-family: 'Satisfy', cursive;  /* Cursive font for footer text */
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 60px;
+}
+
+/* Add responsive support */
+@media (max-width: 768px) {
+  .property-definitions {
+    grid-template-columns: 1fr 1fr; /* 2 columns for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .property-definitions {
+    grid-template-columns: 1fr; /* 1 column for very small screens */
+  }
+}

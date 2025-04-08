@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans&family=Satisfy&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}"> <!-- Global Styles -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}"> <!-- About-specific Styles -->
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="nav-bar">
+      <div class="nav-logo">
+        <a href="{{ url_for('home') }}">
+          <img src="{{ url_for('static', filename='images/Logo.png') }}" alt="DataVine 12 Logo" class="logo-header" />
+        </a>
+      </div>
+      <div class="nav-links">
+        <a href="{{ url_for('home') }}">Home</a>
+        <a href="{{ url_for('about') }}">About</a>
+        <a href="{{ url_for('the_process') }}">The Process</a>
+        <a href="{{ url_for('visualizations') }}">Visualizations</a>
+        <a href="{{ url_for('try_the_model') }}">Try the Model</a>
+        <a href="{{ url_for('resources') }}">Resources</a>
+        <a href="{{ url_for('contact') }}">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- About Banner -->
+    <section class="label-banner">
+      <h2>About This Project</h2>
+      <p>
+        DataVine 12 is a project driven by a passion for both data science and wine! We focused on predicting wine quality using machine learning, 
+        but made sure to keep the process enjoyable and creative. After all, who doesn’t enjoy a glass of wine while learning new skills? Our goal 
+        is to help both wine enthusiasts and professionals understand what makes a high-quality wine by exploring the relationship between characteristics 
+        like acidity, alcohol content, and pH. DataVine 12 uses machine learning to predict wine quality based on various physiochemical features. 
+        This project integrates data analysis, visualization, and predictive modeling to provide insights into what makes a high-quality wine, 
+        leveraging the power of machine learning algorithms.
+      </p>
+    </section>
+
+    <section class="about-section">
+      <div class="accordion-item">
+        <button class="accordion-btn">Project Requirements</button>
+        <div class="accordion-content">
+          <!-- Content for Project Requirements -->
+          <ul>
+            <li>Use machine learning with libraries like Scikit-learn.</li>
+            <li>Implement at least two of the following:
+              <ul>
+                <li>Python Pandas for data manipulation</li>
+                <li>Matplotlib for data visualization</li>
+                <!-- other items -->
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="accordion-item">
+        <button class="accordion-btn">Technologies Used</button>
+        <div class="accordion-content">
+          <!-- Content for Technologies Used -->
+          <ul>
+            <li>Machine Learning: Scikit-learn</li>
+            <li>Data Manipulation: Pandas</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span class="footer-line-one">© 2025 DataVine 12</span>
+    <span class="footer-line-two">Blending bold flavors and bold data, responsibly.</span>
+  </footer>
+
+  <!-- Optional JavaScript (e.g., for popups or functionality) -->
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

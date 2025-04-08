@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Try The Model</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans&family=Satisfy&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}"> <!-- Global Styles -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/try-the-model.css') }}"> <!-- Try the Model-specific Styles -->
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="nav-bar">
+      <div class="nav-logo">
+        <a href="{{ url_for('home') }}">
+          <img src="{{ url_for('static', filename='images/Logo.png') }}" alt="DataVine 12 Logo" class="logo-header" />
+        </a>
+      </div>
+      <div class="nav-links">
+        <a href="{{ url_for('home') }}">Home</a>
+        <a href="{{ url_for('about') }}">About</a>
+        <a href="{{ url_for('the_process') }}">The Process</a>
+        <a href="{{ url_for('visualizations') }}">Visualizations</a>
+        <a href="{{ url_for('try_the_model') }}">Try the Model</a>
+        <a href="{{ url_for('resources') }}">Resources</a>
+        <a href="{{ url_for('contact') }}">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Label Banner for Try the Model -->
+    <section class="label-banner">
+      <h2>Try the Model</h2>
+      <p>Enter the properties of the wine to predict its quality based on the trained model.</p>
+    </section>
+
+    <!-- Model Prediction Section with Cards -->
+    <section class="model-prediction">
+      <h2>Input Property Values</h2>
+      
+      <!-- Property Definitions and Input Fields -->
+      <section class="property-definitions">
+        <!-- Define each input field for wine properties here as you already did -->
+        <div class="definition-card" id="fixed-acidity">
+          <h3><span class="property-name">Fixed Acidity</span></h3>
+          <p class="definition">Tartaric acid — most acids in wine are fixed (do not evaporate readily).</p>
+          <input type="number" step="any" id="fixed_acidity_input" placeholder="Enter value" required>
+        </div>
+
+        <!-- Repeat for all other input fields -->
+        <div class="definition-card" id="volatile-acidity">
+          <h3><span class="property-name">Volatile Acidity</span></h3>
+          <p class="definition">The amount of acetic acid in the wine, which at higher levels can lead to an unpleasant, vinegar-like taste.</p>
+          <input type="number" step="any" id="volatile_acidity_input" placeholder="Enter value" required>
+        </div>
+        <div class="definition-card" id="citric-acid">
+          <h3>
+            <span class="property-name">Citric Acid</span>
+          </h3>
+          <p class="definition">Found in small quantities; citric acid can add 'freshness' and flavor to wines.</p>
+          <input type="number" step="any" id="citric_acid_input" placeholder="Enter value" required>
+        </div>
+    
+        <div class="definition-card" id="residual-sugar">
+          <h3>
+            <span class="property-name">Residual Sugar</span>
+          </h3>
+          <p class="definition">The amount of sugar remaining after fermentation stops. Wines with greater than 45g/L are considered sweet.</p>
+          <input type="number" step="any" id="residual_sugar_input" placeholder="Enter value" required>
+        </div>
+
+        <div class="definition-card" id="chlorides">
+          <h3>
+            <span class="property-name">Chlorides</span>
+          </h3>
+          <p class="definition">Sodium chloride (g/dm3). The amount of salt in the wine.</p>
+          <input type="number" step="any" id="chlorides_input" placeholder="Enter value" required>
+        </div>
+
+        <div class="definition-card" id="free-sulfur">
+          <h3>
+            <span class="property-name">Free Sulfur</span>
+          </h3>
+          <p class="definition">The free form of SO2. It prevents microbial growth and oxidation of wine.</p>
+          <input type="number" step="any" id="free_sulfur_input" placeholder="Enter value" required>
+        </div>
+
+        <div class="definition-card" id="total-sulfur">
+          <h3>
+            <span class="property-name">Total Sulfur Dioxide</span>
+          </h3>
+          <p class="definition">Free and bound SO2. In concentrations over 50 ppm, it becomes noticeable in the aroma and taste of wine.</p>
+          <input type="number" step="any" id="total_sulfur_input" placeholder="Enter value" required>
+        </div>
+
+        <div class="definition-card" id="density">
+          <h3>
+            <span class="property-name">Density</span>
+          </h3>
+          <p class="definition">The density of wine, which depends on alcohol and sugar content, is close to that of water.</p>
+          <input type="number" step="any" id="density_input" placeholder="Enter value" required>
+        </div>
+
+        <div class="definition-card" id="ph">
+          <h3>
+            <span class="property-name">pH</span>
+          </h3>
+          <p class="definition">Describes the acidity or alkalinity of the wine. Most wines fall between 3-4 on the pH scale.</p>
+          <input type="number" step="any" id="ph_input" placeholder="Enter value" required>
+        </div>
+
+        <div class="definition-card" id="sulphates">
+          <h3>
+            <span class="property-name">Sulfates</span>
+          </h3>
+          <p class="definition">A wine additive that can contribute to sulfur dioxide (SO2) levels, acting as an antimicrobial and antioxidant.</p>
+          <input type="number" step="any" id="sulphates_input" placeholder="Enter value" required>
+        </div>
+
+        <div class="definition-card" id="alcohol">
+          <h3>
+            <span class="property-name">Alcohol</span>
+          </h3>
+          <p class="definition">The percent alcohol content in the wine.</p>
+          <input type="number" step="any" id="alcohol_input" placeholder="Enter value" required>
+        </div>
+      </section>
+      </section>
+    
+      <button type="button" id="predict-button">Predict Quality</button>
+    </section>
+    
+  </main>
+
+  <!-- Modal for Showing Prediction Results -->
+  <div id="prediction-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-button" id="close-modal">&times;</span>
+      <h2>Prediction Result</h2>
+      <p id="prediction-message">The quality prediction will be displayed here.</p>
+      <button id="retry-button">Try Again</button>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <span class="footer-line-one">© 2025 DataVine 12</span>
+    <span class="footer-line-two">Blending bold flavors and bold data, responsibly.</span>
+  </footer>
+
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script> <!-- Your custom script -->
+</body>
+</html>

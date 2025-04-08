@@ -1,0 +1,138 @@
+/* Base Layout & Theme */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;                /* Ensure body fills the viewport */
+  margin: 0;                   /* Remove default margins */
+  padding: 0;                  /* Remove default padding */
+  display: flex;               /* Use flexbox to layout the page */
+  flex-direction: column;      /* Stack the header, content, and footer */
+  font-family: 'Quattrocento Sans', sans-serif;
+  background-color: #4B0E15;   /* Dark wine background */
+  color: #F8F3E3;              /* Light cream text */
+  scroll-behavior: smooth;     /* Smooth scrolling */
+}
+
+/* Ensure content area takes up as much space as it can */
+main {
+    flex: 1;                      /* Makes sure main content takes available space */
+    padding: 50px 20px;
+    background-color: #4B0E15;    /* Light cream background */
+    color: #F8F3E3;               /* Dark red wine text */
+    text-align: center;
+  }
+
+/* Header Styling */
+header {
+  background-color: #3A0D12;    /* Dark wine color */
+  padding: 10px 30px;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;           /* Vertically centers items */
+  justify-content: space-between; /* Spreads items across the navbar */
+  padding: 10px 30px;
+}
+
+.nav-logo {
+  display: flex;
+  justify-content: flex-start;   /* Align logo to the left */
+  align-items: center;           /* Vertically center logo */
+}
+
+.nav-logo img.logo-header {
+  height: 80px;                  /* Set height of the logo */
+  width: auto;                   /* Maintain aspect ratio */
+  margin-left: 0;                /* Remove any left margin */
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  gap: 20px;                      /* Space between links */
+}
+
+.nav-links a {
+  font-family: 'Quattrocento Sans', sans-serif;
+  color: #F8F3E3;                 /* Cream color for text */
+  text-decoration: none;          /* Remove underlines */
+  font-weight: 800;               /* Bold weight for nav links */
+  font-size: 1rem;                /* Adjust font size */
+  transition: color 0.3s ease;    /* Smooth hover effect */
+}
+
+/* Hover and Focus Effects for Links */
+.nav-links a:hover,
+.nav-links a:focus {
+  color: #C8A97E;                 /* Cork color on hover/focus */
+}
+
+/* Footer styling */
+.site-footer {
+    background-color: #3A0D12;  /* Dark wine background */
+    color: #F8F3E3;  /* Light cream text */
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 60px;
+  }
+  
+  /* First line styling */
+  .footer-line-one {
+    display: block;  /* Makes it appear on its own line */
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #F8F3E3;  /* Light cream text */
+    font-family: 'Satisfy', cursive;  /* Cursive font for main footer text */
+    margin-bottom: 10px; /* Adds space between lines */
+  }
+  
+  /* Second line styling */
+  .footer-line-two {
+    display: block;  /* Makes it appear on its own line */
+    font-size: 0.8rem;
+    color: #F8F3E3;  /* Light cream text */
+    margin-top: 10px;  /* Adds space between lines */
+    font-family: 'Quattrocento Sans', sans-serif;  /* Cursive font for main footer text */
+  }
+  
+
+/* Label Banner (General Banner for the Project, etc.) */
+.label-banner {
+  background-color: #F8F3E3;    /* Creamy background */
+  color: #4B0E15;               /* Cabernet text color */
+  padding: 60px 40px;
+  margin: 40px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border: 1px solid #E8D6CB;
+  width: 90%;
+  max-width: 1000px;
+  text-align: center;
+}
+
+.label-banner h2 {
+  font-size: 2.5rem;  /* Larger font for the section heading */
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-family: 'Satisfy', cursive; /* Apply the 'Satisfy' cursive font */
+}
+
+.label-banner p {
+  font-family: 'Quattrocento Sans', sans-serif;
+  font-size: 1rem;
+  line-height: 1.2;
+  margin: 0.75em 0;
+}
+
+/* Ensure consistent spacing and layout */
+* {
+  box-sizing: border-box;
+}

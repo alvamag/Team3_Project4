@@ -1,0 +1,117 @@
+/* Resources Banner */
+.label-banner {
+  background-color: #F8F3E3; /* Creamy background */
+  color: #4B0E15;            /* Cabernet text color */
+  padding: 60px 40px;
+  margin: 40px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border: 1px solid #E8D6CB;
+  width: 90%;
+  max-width: 1000px;
+  text-align: center;
+}
+
+.label-banner h2 {
+  font-size: 2.5rem;  /* Larger font for the section heading */
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-family: 'Satisfy', cursive; /* Apply the 'Satisfy' cursive font */
+}
+
+.label-banner p {
+  font-family: 'Quattrocento Sans', sans-serif;
+  font-size: 1rem;
+  line-height: 1.2;
+  margin: 0.75em 0;
+  text-align: justify; /* Justify text for better readability */
+}
+
+/* Accordion Styles */
+.accordion-content {
+  padding: 20px 0;
+  margin-top: 10px;
+}
+
+.accordion-item {
+  display: block; /* Ensures the accordion item is block-level */
+  width: 100%; /* Full width for the accordion item */
+  margin-bottom: 10px; /* Space between accordion items */
+}
+
+.accordion-btn {
+  background-color: #C8A97E; /* Cork color */
+  color: #4B0E15; /* Cabernet text color */
+  cursor: pointer;
+  padding: 15px;
+  width: 50%; /* Button width set to 50% */
+  border: none;
+  text-align: left;
+  font-size: 1.4rem;
+  margin: 10px 0;
+  border-radius: 8px;
+  font-family: 'Satisfy', cursive; /* Apply 'Satisfy' font to the accordion button titles */
+  display: block; /* Ensure button behaves like a block element */
+  position: relative; /* Keeps content aligned directly under the button */
+  margin-left: auto; /* Center the button horizontally */
+  margin-right: auto; /* Center the button horizontally */
+}
+
+/* Accordion Button Hover */
+.accordion-btn:hover {
+  background-color: #F8F3E3; /* Lighten the background on hover */
+}
+
+/* Accordion Content */
+.accordion-section {
+  padding: 20px 15px;
+  background-color: #F8F3E3; /* Light cream background when expanded */
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  width: 50%; /* Ensure content width matches button */
+  display: none; /* Hidden by default */
+  position: relative; /* Keeps it aligned under the button */
+  margin-left: auto; /* Center content horizontally */
+  margin-right: auto; /* Center content horizontally */
+}
+
+/* When Accordion Button is Active, Show the Content */
+.accordion-btn.active + .accordion-section {
+  display: block; /* Show the content when expanded */
+  max-height: 500px; /* Adjust this as necessary to fit content */
+  visibility: visible; /* Make content visible when expanded */
+}
+
+/* Accordion Content List Styling */
+.accordion-section ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.accordion-section ul li {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.accordion-section a {
+  color: #4B0E15;
+  text-decoration: none;
+}
+
+.accordion-section a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+.site-footer {
+  background-color: #3A0D12;  /* Dark wine background */
+  color: #F8F3E3;  /* Light cream text */
+  font-family: 'Satisfy', cursive;  /* Cursive font for footer text */
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 60px;
+}

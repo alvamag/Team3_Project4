@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DataVine 12</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans&family=Satisfy&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets for index.html -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}"> <!-- Global Styles -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}"> <!-- Homepage-specific Styles -->
+</head>
+
+<body>
+  <!-- Age Verification Popup -->
+  <div id="age-popup" class="popup-overlay">
+    <div class="popup-content">
+      <h2>Welcome to DataVine 12</h2>
+      <p>Before we uncork the data, let’s make sure you’re 21 or older.</p>
+      <div class="popup-buttons">
+        <button id="enter-btn" class="button-outline">Yes, I'm 21+</button>
+        <button id="exit-btn" class="button-outline">No, take me back</button>
+      </div>
+    </div>
+  </div>
+
+ <!-- Header -->
+ <header>
+  <nav class="nav-bar">
+    <div class="nav-logo">
+      <a href="{{ url_for('home') }}">
+        <img src="{{ url_for('static', filename='images/Logo.png') }}" alt="DataVine 12 Logo" class="logo-header" />
+      </a>
+    </div>
+    <div class="nav-links">
+      <a href="{{ url_for('home') }}">Home</a>
+      <a href="{{ url_for('about') }}">About</a>
+      <a href="{{ url_for('the_process') }}">The Process</a>
+      <a href="{{ url_for('visualizations') }}">Visualizations</a>
+      <a href="{{ url_for('try_the_model') }}">Try the Model</a>
+      <a href="{{ url_for('resources') }}">Resources</a>
+      <a href="{{ url_for('contact') }}">Contact</a>
+    </div>
+  </nav>
+</header>
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- Project Overview Card -->
+    <section class="label-banner">
+      <h2>DataVine 12 Mission</h2>
+      <p>What makes a wine great? We trained a machine learning model on physiochemical wine data to predict wine quality — and maybe even discover what makes a glass of red or white so irresistible.</p>
+      <p>This project combines data visualization, model training, and a bit of vino-fueled curiosity to deliver insights into how wine is scored and why.</p>
+      <blockquote class="quote">
+        “Wine is the most healthful and hygienic of beverages. It nourishes, heals, and enlivens.” – Louis Pasteur
+      </blockquote>
+    </section>
+
+    <!-- Image Section -->
+    <section class="image-gallery">
+      <div class="gallery-container">
+        <img src="{{ url_for('static', filename='images/image1.jpg') }}" alt="Wine 1" class="gallery-slide active">
+        <img src="{{ url_for('static', filename='images/image2.jpg') }}" alt="Wine 2" class="gallery-slide">
+        <img src="{{ url_for('static', filename='images/image3.jpg') }}" alt="Wine 3" class="gallery-slide">
+      </div>
+
+      <div class="gallery-nav">
+        <span class="dot active" onclick="currentSlide(0)"></span>
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+      </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-intro">
+      <h2>Meet Our Sommeliers</h2>
+      <div class="team-grid">
+        <div class="somm-card">Alma Ontiveros</div>
+        <div class="somm-card">Charisse Robinson</div>
+        <div class="somm-card">Chorr-Kin Chin</div>
+        <div class="somm-card">Donald Sparks III</div>
+        <div class="somm-card">Erika Dorsainvil</div>
+        <div class="somm-card">Kidest Getahun</div>
+        <div class="somm-card">Magdalene Alva</div>
+        <div class="somm-card">Maya Morad</div>
+        <div class="somm-card">Mica Lenzo</div>
+        <div class="somm-card">Mita Damte</div>
+        <div class="somm-card">Patrick Feeney</div>
+        <div class="somm-card">Rob Jowaisas</div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+      <span class="footer-line-one">© 2025 DataVine 12</span>
+      <span class="footer-line-two">Blending bold flavors and bold data, responsibly.</span>
+  </footer>
+  
+  <!-- Link to JavaScript -->
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
+

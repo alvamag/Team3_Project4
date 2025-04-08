@@ -1,0 +1,111 @@
+/* Visualizations Page Styling */
+
+/* Visualizations Banner */
+.label-banner {
+  background-color: #F8F3E3;
+  color: #4B0E15;
+  padding: 60px 40px;
+  margin: 40px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border: 1px solid #E8D6CB;
+  width: 90%;
+  max-width: 1000px;
+  text-align: center;
+}
+
+.label-banner h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-family: 'Satisfy', cursive;
+}
+
+.label-banner p {
+  font-family: 'Quattrocento Sans', sans-serif;
+  font-size: 1rem;
+  line-height: 1.2;
+  margin: 0.75em 0;
+}
+
+/* Visualization Card */
+.visualization-card {
+  background-color: #3A0D12;
+  color: #F8F3E3;
+  padding: 40px 30px;
+  border-radius: 10px;
+  max-width: 1200px;
+  margin: 40px auto;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  overflow: visible;
+  height: auto;
+}
+
+.visualization-card h3 {
+  font-family: 'Satisfy', cursive;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #F8F3E3;
+  margin-bottom: 20px;
+}
+
+.visualization-card p {
+  font-family: 'Quattrocento Sans', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #F8F3E3;
+  margin-bottom: 20px;
+}
+
+/* Graph/Chart Styling */
+.chart-container {
+  background-color: #F8F3E3;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+  text-align: center;
+}
+
+.chart-container canvas {
+  max-width: 100%;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.chart-container h4 {
+  font-family: 'Satisfy', cursive;
+  font-size: 1.8rem;
+  color: #4B0E15;
+  margin-bottom: 10px;
+}
+
+.chart-container p {
+  font-family: 'Quattrocento Sans', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #4B0E15;
+  margin-bottom: 20px;
+}
+
+/* Tableau Embed */
+.tableau-embed {
+  display: block;
+  margin: 0 auto;
+  width: 1150px;
+  height: 1000px;
+  border: none;
+  border-radius: 8px;
+}
+
+/* Footer */
+.site-footer {
+  background-color: #3A0D12;
+  color: #F8F3E3;
+  font-family: 'Satisfy', cursive;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 60px;
+}

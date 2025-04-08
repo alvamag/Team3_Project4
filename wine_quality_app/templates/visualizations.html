@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Visualizations</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans&family=Satisfy&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets for Visualizations Page -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}"> <!-- Global Styles -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/visualizations.css') }}"> <!-- Visualizations-specific Styles -->
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="nav-bar">
+      <div class="nav-logo">
+        <a href="{{ url_for('home') }}">
+          <img src="{{ url_for('static', filename='images/Logo.png') }}" alt="DataVine 12 Logo" class="logo-header" />
+        </a>
+      </div>
+      <div class="nav-links">
+        <a href="{{ url_for('home') }}">Home</a>
+        <a href="{{ url_for('about') }}">About</a>
+        <a href="{{ url_for('the_process') }}">The Process</a>
+        <a href="{{ url_for('visualizations') }}">Visualizations</a>
+        <a href="{{ url_for('try_the_model') }}">Try the Model</a>
+        <a href="{{ url_for('resources') }}">Resources</a>
+        <a href="{{ url_for('contact') }}">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section class="label-banner">
+      <h2>Visualizations</h2>
+      <p>Explore our visualizations and data analysis on wine quality prediction.</p>
+    </section>    
+    <!-- Visualizations Banner -->
+    <section class="visualization-card">
+      <h3>Interactive Tableau Story</h3>
+      <p>Dive into our Tableau story showcasing key visual insights from our wine quality analysis 
+        Explore how variables like alcohol, volatile acidity, and sulfates impact wine quality through 
+        interactive visual insights. Our Tableau story highlights key trends and model predictions from 
+        both red and white wine datasets, revealing what makes a wine truly stand out.</p>
+        <div class="chart-container">
+          <iframe 
+            src="https://public.tableau.com/views/Proj4Tableau/Story1?:showVizHome=no&:embed=true"
+            class="tableau-embed"
+            frameborder="0"
+            allowfullscreen>
+          </iframe>
+        </div>
+    </section>    
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <span class="footer-line-one">© 2025 DataVine 12</span>
+    <span class="footer-line-two">Blending bold flavors and bold data, responsibly.</span>
+  </footer>
+  
+  <!-- JavaScript for Chart (Example: Chart.js) -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="{{ url_for('static', filename='js/visualizations.js') }}"></script>
+</body>
+</html>

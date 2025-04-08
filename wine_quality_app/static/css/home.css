@@ -1,0 +1,213 @@
+/* Label Banner */
+.label-banner {
+  background-color: #F8F3E3; /* Creamy background */
+  color: #4B0E15;            /* Cabernet text color */
+  padding: 60px 40px;
+  margin: 40px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border: 1px solid #E8D6CB;
+  width: 90%;
+  max-width: 1000px;
+  text-align: center;
+}
+
+.label-banner h2 {
+  font-size: 2.5rem;  /* Larger font for the section heading */
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-family: 'Satisfy', cursive;
+}
+
+.label-banner p {
+  font-family: 'Quattrocento Sans', sans-serif;
+  font-size: 1rem;
+  line-height: 1.2;
+  margin: 0.75em 0;
+}
+
+.label-banner blockquote {
+  font-size: 1.2rem;
+  font-style: italic;
+  margin-top: 20px;
+}
+
+/* Quote Section */
+.quote-section {
+  margin-top: 40px;
+}
+
+.quote {
+  font-style: italic;
+  font-size: 1.2rem;
+  color: #4B0E15;
+  font-family: 'Satisfy', cursive;
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* Meet the Sommeliers */
+.team-intro {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.team-intro h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  font-family: 'Satisfy', cursive;
+  color: #F8F3E3;
+}
+
+.team-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.somm-card {
+  background-color: #F8F3E3;
+  color: #4B0E15;
+  font-family: 'Quattrocento Sans', sans-serif;
+  padding: 20px;
+  width: 200px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  font-weight: 600;
+  transition: transform 0.3s ease;
+}
+
+.somm-card:hover {
+  transform: scale(1.05);  /* Slightly enlarges on hover */
+}
+
+.somm-card h3 {
+  font-family: 'Quattrocento Sans', sans-serif; /* Revert to the original font */
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #4B0E15;
+  text-align: center;
+  margin-bottom: 10px;
+  }
+
+/* Gallery Section */
+.image-gallery {
+  text-align: center;
+  margin: 40px 0;
+  position: relative;
+}
+
+/* Container for the gallery images */
+.gallery-container {
+  display: block;  /* Ensure container is not affected by flexbox */
+  overflow: hidden;  /* Hide images that are out of view */
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Individual Gallery Image */
+.gallery-slide {
+  width: 100%;
+  height: auto;
+  display: none; /* Hide all images by default */
+  transition: opacity 1s ease-in-out;
+  object-fit: cover; /* Ensure images fill the container without distortion */
+}
+
+/* Show the active image */
+.gallery-slide.active {
+  display: block; /* Only the active image is shown */
+}
+
+/* Navigation Dots */
+.gallery-nav {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #717171;
+}
+
+/* Popup Overlay */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);  /* Dark background */
+  display: none;  /* Hidden by default */
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;  /* Make sure it's on top */
+}
+
+/* Popup Content */
+.popup-content {
+  background-color: #F8F3E3;  /* Light cream background */
+  color: #4B0E15;  /* Dark wine color */
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 400px;
+  gap: 20px;
+}
+
+/* Adding space between the text and buttons */
+.popup-buttons{
+  margin-top: 20px;  /* Space above the buttons */
+}
+
+/* Popup Heading */
+.popup-content h2 {
+  font-family: 'Satisfy', cursive;  /* Cursive font */
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Outline Button Style */
+.button-outline {
+  background-color: transparent;  /* Transparent background */
+  color: #4B0E15;                 /* Dark wine color */
+  padding: 12px 24px;
+  border: 2px solid #4B0E15;       /* Dark wine border */
+  border-radius: 5px;
+  font-family: 'Quattrocento Sans', sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s ease;        /* Smooth transition */
+}
+
+/* Outline Button Hover Effect */
+.button-outline:hover {
+  background-color: #4B0E15;      /* Dark wine background on hover */
+  color: #F8F3E3;                 /* Light cream text color */
+}
+
+/* Outline Button Focus Effect */
+.button-outline:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(200, 169, 126, 0.5);
+}
+
