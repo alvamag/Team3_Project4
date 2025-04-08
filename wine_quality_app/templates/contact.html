@@ -98,18 +98,29 @@
 
   <!-- JavaScript to handle form submission and show popup -->
   <script>
-    // Function to handle form submission
-    document.getElementById('contact-form').addEventListener('submit', function(event) {
-      event.preventDefault(); // Prevent the default form submission
-
-      // Show the popup overlay
-      document.getElementById('confirmation-popup').style.display = 'flex';
+    document.addEventListener("DOMContentLoaded", function () {
+      // === Contact Form Confirmation ===
+      const contactForm = document.getElementById("contact-form");
+      const confirmationPopup = document.getElementById("confirmation-popup");
+      const closePopup = document.getElementById("close-popup");
+  
+      if (contactForm && confirmationPopup && closePopup) {
+        contactForm.addEventListener("submit", function (e) {
+          e.preventDefault(); // Prevent actual submission
+  
+          // Show confirmation popup
+          confirmationPopup.style.display = "flex";
+  
+          // Reset form after submission
+          contactForm.reset();
+        });
+  
+        // Close popup on click
+        closePopup.addEventListener("click", function () {
+          confirmationPopup.style.display = "none";
+        });
+      }
     });
-
-    // Function to close the popup
-    document.getElementById('close-popup').addEventListener('click', function() {
-      document.getElementById('confirmation-popup').style.display = 'none';
-    });
-  </script>
+  </script>  
 </body>
 </html>

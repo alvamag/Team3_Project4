@@ -92,6 +92,8 @@
   .submit-btn {
     background-color: #C8A97E;
     color: #4B0E15;
+    font-family: 'Satisfy', cursive;
+    font-size: 1rem;
     padding: 12px 20px;
     border: none;
     border-radius: 5px;
@@ -152,6 +154,7 @@
   .popup-content button {
     background-color: #C8A97E;
     color: #4B0E15;
+    font-family: 'Satisfy', cursive;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;

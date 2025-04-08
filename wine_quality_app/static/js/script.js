@@ -1,70 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // === Image Gallery Slider ===
-    let currentSlideIndex = 0;
-    const slides = document.querySelectorAll('.gallery-slide');
-    const dots = document.querySelectorAll('.dot');
-    const totalSlides = slides.length;
-  
-    // Function to show the current slide
-    function showSlide(index) {
-      // Hide all slides
-      slides.forEach((slide) => slide.classList.remove('active'));
-      dots.forEach((dot) => dot.classList.remove('active'));
-  
-      // Show the current slide and its dot
-      slides[index].classList.add('active');
-      dots[index].classList.add('active');
-    }
-  
-    // Show the first slide by default
-    showSlide(currentSlideIndex);
-  
-    // Next slide function (move forward)
-    function moveSlide(step) {
-      currentSlideIndex = (currentSlideIndex + step + totalSlides) % totalSlides;  // Loop back at the ends
-      showSlide(currentSlideIndex);
-    }
-  
-    // Function to jump to a specific slide when a dot is clicked
-    function currentSlide(index) {
-      currentSlideIndex = index;
-      showSlide(currentSlideIndex);
-    }
-  
-    // Automatically move to the next slide every 8 seconds
-    setInterval(() => {
-      moveSlide(1);  // Move to the next slide
-    }, 8000);
-  
-    // Event listeners for the dots
-    dots.forEach((dot, index) => {
-      dot.addEventListener('click', () => currentSlide(index));  // Jump to specific slide
-    });
-  
-    // === Contact Form Confirmation ===
-    const contactForm = document.getElementById("contact-form");
-    const confirmationPopup = document.getElementById("confirmation-popup");
-    const closePopup = document.getElementById("close-popup");
-  
-    // Contact form submission event
-    if (contactForm && confirmationPopup && closePopup) {
-      contactForm.addEventListener("submit", function (e) {
-        e.preventDefault(); // Prevent form submission
-  
-        // Show confirmation popup
-        confirmationPopup.style.display = "flex";
-  
-        // Optionally reset the form
-        contactForm.reset();
-      });
-  
-      // Close confirmation popup when the close button is clicked
-      closePopup.addEventListener("click", function () {
-        confirmationPopup.style.display = "none";
-      });
-    }
-  
-    // === Handle Form Submission for "Try the Model" ===
+  // === Handle Form Submission for "Try the Model" ===
     document.getElementById("predict-button").addEventListener("click", function () {
       // Collect input values from the form
       const wineData = {
@@ -119,27 +54,6 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("retry-button").addEventListener("click", function () {
       document.getElementById("contact-form").reset(); // Reset form fields
       document.getElementById("prediction-modal").style.display = "none"; // Hide modal
-    });
-  
-    // === Accordion Logic for Resources and About ===
-    const accordionBtns = document.querySelectorAll('.accordion-btn');
-  
-    // Add event listeners to toggle the accordion content
-    accordionBtns.forEach(button => {
-      button.addEventListener('click', function () {
-        // Toggle the active class to show/hide the content
-        this.classList.toggle('active');
-  
-        const accordionContent = this.nextElementSibling;
-  
-        if (accordionContent.style.maxHeight) {
-          // If content is open, close it
-          accordionContent.style.maxHeight = null;
-        } else {
-          // If content is closed, open it
-          accordionContent.style.maxHeight = accordionContent.scrollHeight + "px";
-        }
-      });
     });
   });
   
