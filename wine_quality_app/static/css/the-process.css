@@ -98,7 +98,7 @@
   width: 25px;
   height: 25px;
   right: -13px;
-  background-color: #F8F3E3;
+  background-color: #A47551;
   border: 4px solid #4B0E15;
   top: 15px;
   border-radius: 50%;
@@ -126,7 +126,7 @@
 
 /* Timeline content cards */
 .timeline-content {
-  background-color: #3A0D12;
+  background-color: #A47551;
   color: #F8F3E3;
   padding: 20px;
   border-radius: 10px;
