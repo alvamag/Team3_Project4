@@ -28,7 +28,6 @@ def try_the_model():
     return render_template('try-the-model.html')
 
 # Route for the resources page (resources.html)source venv/bin/activate
-
 @app.route('/resources')
 def resources():
     return render_template('resources.html')
