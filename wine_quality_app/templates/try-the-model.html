@@ -130,29 +130,31 @@
           <p class="definition">The percent alcohol content in the wine.</p>
           <input type="number" step="any" id="alcohol_input" placeholder="Enter value" required>
         </div>
+
+        <div class="definition-card" id="prediction-output-card">
+          <h3><span class="property-name">Predicted Quality</span></h3>
+          <p id="prediction-output" class="prediction-display">Awaiting prediction...</p>
+        </div>
       </section>
-      </section>
-    
+
+      <!-- Button (remains outside grid) -->
       <button type="button" id="predict-button">Predict Quality</button>
     </section>
-    
-  </main>
-
-  <!-- Modal for Showing Prediction Results -->
-  <div id="prediction-modal" class="modal">
-    <div class="modal-content">
-      <span class="close-button" id="close-modal">&times;</span>
-      <h2>Prediction Result</h2>
-      <p id="prediction-message">The quality prediction will be displayed here.</p>
-      <button id="retry-button">Try Again</button>
-    </div>
-  </div>
+  </main> 
 
   <footer class="site-footer">
     <span class="footer-line-one">© 2025 DataVine 12</span>
     <span class="footer-line-two">Blending bold flavors and bold data, responsibly.</span>
   </footer>
 
-  <script src="{{ url_for('static', filename='js/script.js') }}"></script> <!-- Your custom script -->
+  <!-- Scripts -->
+  <script>
+    document.getElementById("predict-button").addEventListener("click", function () {
+      // Replace with actual model prediction logic
+      const randomPrediction = (Math.random() * 4 + 6).toFixed(1); // Simulate 6.0–10.0
+      const output = document.getElementById("prediction-output");
+      output.textContent = `Quality Score: ${randomPrediction}/10`;
+    });
+  </script>
 </body>
 </html>

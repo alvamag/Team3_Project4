@@ -60,12 +60,16 @@
 }
 
 .team-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, auto);
   gap: 20px;
-  padding: 0 20px;
+  width: fit-content;         /* 👈 Only as wide as the content */
+  margin: 0 auto;             /* 👈 Center the grid horizontally */
+  padding: 20px 0;
+  justify-items: center;
 }
+
 
 .somm-card {
   background-color: #F8F3E3;

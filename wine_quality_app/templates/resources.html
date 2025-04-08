@@ -86,7 +86,22 @@
   </footer>
 
   <!-- Link to JavaScript (if needed) -->
-  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+  <script>
+    const accordionButtons = document.querySelectorAll('.accordion-btn');
+  
+    accordionButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        button.classList.toggle('active');
+  
+        const content = button.nextElementSibling;
+        if (content.style.maxHeight) {
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      });
+    });
+  </script>  
 </body>
 </html>
 

@@ -65,26 +65,27 @@
   background-color: #F8F3E3; /* Lighten the background on hover */
 }
 
-/* Accordion Content */
-.accordion-section {
-  padding: 20px 15px;
-  background-color: #F8F3E3; /* Light cream background when expanded */
+.accordion-content {
+  background-color: #F8F3E3;
+  color: #4B0E15; /* Cabernet text color */
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease-out;
+  transition: max-height 0.4s ease;
   border-radius: 8px;
-  margin-bottom: 20px;
-  width: 50%; /* Ensure content width matches button */
-  display: none; /* Hidden by default */
-  position: relative; /* Keeps it aligned under the button */
-  margin-left: auto; /* Center content horizontally */
-  margin-right: auto; /* Center content horizontally */
+  width: 50%;
+  margin: 0 auto 20px auto;
+  padding: 0 20px;
 }
 
-/* When Accordion Button is Active, Show the Content */
-.accordion-btn.active + .accordion-section {
-  max-height: 500px; /* Adjust this as necessary to fit content */
-  visibility: visible; /* Make content visible when expanded */
+.accordion-content ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+.accordion-content li {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
 }
 
 /* Accordion Content List Styling */
