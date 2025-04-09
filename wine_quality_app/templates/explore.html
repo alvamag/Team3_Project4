@@ -40,14 +40,15 @@
       <h2>Explore</h2>
       <p>Discover the landscape of winemaking in Portugal with this interactive map of wineries sourced from open data.</p>
     </section>
-
-    <section class="map-section">
-      <h3>Find Wineries in Portugal</h3>
-      <p>Click the markers to learn more about wineries across Portugal, sourced from OpenStreetMap.</p>
-
-      <!-- Folium Map Embed -->
-      <div class="map-container" style="width: 100%; height: 600px;">
-        {% include 'partials/embedded_map.html' %}
+    
+    <!-- Folium Map Embed -->
+    <section class="map-card">
+      <div class="map-header">
+        <h3>Find Wineries in Portugal</h3>
+        <p>Click the wine glasses to explore wineries sourced from open data.</p>
+      </div>
+      <div class="map-body">
+        {{ map_html|safe }}
       </div>
     </section>
   </main>

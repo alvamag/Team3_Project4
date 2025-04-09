@@ -26,41 +26,55 @@
     margin: 0.75em 0;
   }
 
-  .map-placeholder {
-    background-color: #F8F3E3;         /* Cream background */
-    padding: 30px;
-    border-radius: 10px;
-    max-width: 1000px;
-    margin: 30px auto;
-    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
-  }
-  
-  /* Map itself */
-  #winery-map {
-    height: 600px;
-    width: 100%;
-    border-radius: 8px;
-  }
-  
-  .map-section {
-    text-align: center;
-    padding: 40px 20px;
-  }
-  
-  .map-section h3 {
-    font-family: 'Satisfy', cursive;
-    font-size: 2rem;
-    color: #E8D6CB;
-    margin-bottom: 10px;
-  }
-  
-  .map-section p {
-    font-family: 'Quattrocento Sans', sans-serif;
-    font-size: 1rem;
-    color: #E8D6CB;
-    margin-bottom: 20px;
-    text-align: center;
-  }    
+  /* Wrapper for the entire map section */
+.map-card {
+  background-color: #fdf6ee; /* Creamy background */
+  border-radius: 16px;
+  padding: 2rem;
+  margin: 3rem auto;
+  max-width: 900px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+/* Header text inside the map card */
+.map-header {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.map-header h3 {
+  margin: 0;
+  font-family: 'Satisfy', cursive;
+  font-size: 2rem;
+  color: #4B0E15; /* Optional: deep red wine tone */
+}
+
+.map-header p {
+  font-family: 'Quattrocento Sans', sans-serif;
+  color: #333;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+/* The map body that contains the Folium map */
+.map-body {
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  border-radius: 12px;
+  position: relative;
+}
+
+/* Target the embedded Folium iframe */
+.map-body iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+  border-radius: 12px;
+}
+
   
   /* Footer */
   .site-footer {

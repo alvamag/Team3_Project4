@@ -38,16 +38,11 @@ def resources():
 # Route for the explore page with map
 @app.route('/explore')
 def explore():
-    import os
     wine_map = folium.Map(location=[39.3999, -8.2245], zoom_start=7)
 
-    # Load GeoJSON
     with open("portugal_wineries.geojson") as f:
         data = json.load(f)
 
-    print("✅ Loaded features:", len(data["features"]))
-
-    # Add all winery markers
     for feature in data["features"]:
         coords = feature["geometry"]["coordinates"]
         lat, lon = coords[1], coords[0]
@@ -68,14 +63,10 @@ def explore():
             """)
         ).add_to(wine_map)
 
-    # Make sure the folder exists
-    os.makedirs("templates/partials", exist_ok=True)
+    # Instead of saving to file, return the HTML representation
+    map_html = wine_map._repr_html_()
 
-    # Save map
-    wine_map.save("templates/partials/embedded_map.html")
-
-    return render_template("explore.html")
-
+    return render_template("explore.html", map_html=map_html)
 
 # Route for the contact page
 @app.route('/contact')
