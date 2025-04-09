@@ -1,8 +1,12 @@
 from flask import Flask, render_template, request, jsonify
 import folium
 import json
+import joblib   # Assuming you have a model saved as 'model.pkl'
 
 app = Flask(__name__)
+# Load the trained Random Forest model
+model = joblib.load("models/random_forest_model.pkl")
+
 
 # Route for the homepage
 @app.route('/')
@@ -68,17 +72,41 @@ def explore():
 
     return render_template("explore.html", map_html=map_html)
 
-# Route for the contact page
+    @app.route('/predict', methods=['POST'])
+    def predict():
+        data = request.get_json()
+
+        features = [
+            data['fixed_acidity'],
+            data['volatile_acidity'],
+            data['citric_acid'],
+            data['residual_sugar'],
+            data['chlorides'],
+            data['free_sulfur_dioxide'],
+            data['total_sulfur_dioxide'],
+            data['density'],
+            data['pH'],
+            data['sulphates'],
+            data['alcohol'],
+            data['type_white'],
+            data['type_red']
+        ]
+
+        prediction = model.predict([features])[0]  # "Low", "Medium", or "High"
+
+        reverse_map = {"Low": 0, "Medium": 1, "High": 2}
+        numeric_class = reverse_map.get(prediction, -1)
+
+        return jsonify({
+            'numeric_prediction': numeric_class,
+            'label_prediction': prediction
+        })
+    
 @app.route('/contact')
 def contact():
     return render_template('contact.html')
 
-# Prediction route for the "Try the Model" form (mocked)
-@app.route('/predict', methods=['POST'])
-def predict():
-    data = request.get_json()
-    prediction = "Good Quality Wine"  # Replace with actual model later
-    return jsonify({'prediction': prediction})
+
 
 if __name__ == '__main__':
     app.run(debug=True)

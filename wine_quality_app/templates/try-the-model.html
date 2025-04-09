@@ -9,8 +9,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans&family=Satisfy&display=swap" rel="stylesheet">
   
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}"> <!-- Global Styles -->
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/try-the-model.css') }}"> <!-- Try the Model-specific Styles -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/try-the-model.css') }}">
 </head>
 <body>
   <!-- Header -->
@@ -35,126 +35,119 @@
   </header>
 
   <main>
-    <!-- Label Banner for Try the Model -->
     <section class="label-banner">
       <h2>Try the Model</h2>
       <p>Enter the properties of the wine to predict its quality based on the trained model.</p>
     </section>
 
-    <!-- Model Prediction Section with Cards -->
     <section class="model-prediction">
       <h2>Input Property Values</h2>
-      
-      <!-- Property Definitions and Input Fields -->
+
       <section class="property-definitions">
-        <!-- Define each input field for wine properties here as you already did -->
-        <div class="definition-card" id="fixed-acidity">
-          <h3><span class="property-name">Fixed Acidity</span></h3>
-          <p class="definition">Tartaric acid — most acids in wine are fixed (do not evaporate readily).</p>
-          <input type="number" step="any" id="fixed_acidity_input" placeholder="Enter value" required>
+
+        <!-- All 11 property input cards -->
+        <div class="definition-card"><h3>Fixed Acidity</h3><input type="number" step="any" id="fixed_acidity_input" placeholder="e.g. 7.4" required></div>
+        <div class="definition-card"><h3>Volatile Acidity</h3><input type="number" step="any" id="volatile_acidity_input" placeholder="e.g. 0.7" required></div>
+        <div class="definition-card"><h3>Citric Acid</h3><input type="number" step="any" id="citric_acid_input" placeholder="e.g. 0.0" required></div>
+        <div class="definition-card"><h3>Residual Sugar</h3><input type="number" step="any" id="residual_sugar_input" placeholder="e.g. 1.9" required></div>
+        <div class="definition-card"><h3>Chlorides</h3><input type="number" step="any" id="chlorides_input" placeholder="e.g. 0.076" required></div>
+        <div class="definition-card"><h3>Free Sulfur Dioxide</h3><input type="number" step="any" id="free_sulfur_input" placeholder="e.g. 11.0" required></div>
+        <div class="definition-card"><h3>Total Sulfur Dioxide</h3><input type="number" step="any" id="total_sulfur_input" placeholder="e.g. 34.0" required></div>
+        <div class="definition-card"><h3>Density</h3><input type="number" step="any" id="density_input" placeholder="e.g. 0.9978" required></div>
+        <div class="definition-card"><h3>pH</h3><input type="number" step="any" id="ph_input" placeholder="e.g. 3.51" required></div>
+        <div class="definition-card"><h3>Sulphates</h3><input type="number" step="any" id="sulphates_input" placeholder="e.g. 0.56" required></div>
+        <div class="definition-card"><h3>Alcohol</h3><input type="number" step="any" id="alcohol_input" placeholder="e.g. 9.4" required></div>
+
+        <!-- Wine Type Dropdown -->
+        <div class="definition-card" id="wine-type">
+          <h3><span class="property-name">Wine Type</span></h3>
+          <p class="definition">Select whether the wine is red or white.</p>
+          <select id="wine_type_input" required>
+            <option value="" disabled selected>Select type</option>
+            <option value="red">Red</option>
+            <option value="white">White</option>
+          </select>
         </div>
 
-        <!-- Repeat for all other input fields -->
-        <div class="definition-card" id="volatile-acidity">
-          <h3><span class="property-name">Volatile Acidity</span></h3>
-          <p class="definition">The amount of acetic acid in the wine, which at higher levels can lead to an unpleasant, vinegar-like taste.</p>
-          <input type="number" step="any" id="volatile_acidity_input" placeholder="Enter value" required>
-        </div>
-        <div class="definition-card" id="citric-acid">
-          <h3>
-            <span class="property-name">Citric Acid</span>
-          </h3>
-          <p class="definition">Found in small quantities; citric acid can add 'freshness' and flavor to wines.</p>
-          <input type="number" step="any" id="citric_acid_input" placeholder="Enter value" required>
-        </div>
-    
-        <div class="definition-card" id="residual-sugar">
-          <h3>
-            <span class="property-name">Residual Sugar</span>
-          </h3>
-          <p class="definition">The amount of sugar remaining after fermentation stops. Wines with greater than 45g/L are considered sweet.</p>
-          <input type="number" step="any" id="residual_sugar_input" placeholder="Enter value" required>
-        </div>
-
-        <div class="definition-card" id="chlorides">
-          <h3>
-            <span class="property-name">Chlorides</span>
-          </h3>
-          <p class="definition">Sodium chloride (g/dm3). The amount of salt in the wine.</p>
-          <input type="number" step="any" id="chlorides_input" placeholder="Enter value" required>
-        </div>
-
-        <div class="definition-card" id="free-sulfur">
-          <h3>
-            <span class="property-name">Free Sulfur</span>
-          </h3>
-          <p class="definition">The free form of SO2. It prevents microbial growth and oxidation of wine.</p>
-          <input type="number" step="any" id="free_sulfur_input" placeholder="Enter value" required>
-        </div>
-
-        <div class="definition-card" id="total-sulfur">
-          <h3>
-            <span class="property-name">Total Sulfur Dioxide</span>
-          </h3>
-          <p class="definition">Free and bound SO2. In concentrations over 50 ppm, it becomes noticeable in the aroma and taste of wine.</p>
-          <input type="number" step="any" id="total_sulfur_input" placeholder="Enter value" required>
-        </div>
-
-        <div class="definition-card" id="density">
-          <h3>
-            <span class="property-name">Density</span>
-          </h3>
-          <p class="definition">The density of wine, which depends on alcohol and sugar content, is close to that of water.</p>
-          <input type="number" step="any" id="density_input" placeholder="Enter value" required>
-        </div>
-
-        <div class="definition-card" id="ph">
-          <h3>
-            <span class="property-name">pH</span>
-          </h3>
-          <p class="definition">Describes the acidity or alkalinity of the wine. Most wines fall between 3-4 on the pH scale.</p>
-          <input type="number" step="any" id="ph_input" placeholder="Enter value" required>
-        </div>
-
-        <div class="definition-card" id="sulphates">
-          <h3>
-            <span class="property-name">Sulfates</span>
-          </h3>
-          <p class="definition">A wine additive that can contribute to sulfur dioxide (SO2) levels, acting as an antimicrobial and antioxidant.</p>
-          <input type="number" step="any" id="sulphates_input" placeholder="Enter value" required>
-        </div>
-
-        <div class="definition-card" id="alcohol">
-          <h3>
-            <span class="property-name">Alcohol</span>
-          </h3>
-          <p class="definition">The percent alcohol content in the wine.</p>
-          <input type="number" step="any" id="alcohol_input" placeholder="Enter value" required>
-        </div>
-
+        <!-- Prediction Output -->
         <div class="definition-card" id="prediction-output-card">
           <h3><span class="property-name">Predicted Quality</span></h3>
-          <p id="prediction-output" class="prediction-display">Awaiting prediction...</p>
+          <div class="prediction-pair">
+            <p id="label-output" class="prediction-display">Label: —</p>
+            <p id="class-output" class="prediction-display">Class: —</p>
+          </div>
         </div>
+
       </section>
 
-      <!-- Button (remains outside grid) -->
+      <!-- Predict Button -->
       <button type="button" id="predict-button">Predict Quality</button>
     </section>
-  </main> 
+
+    <section class="legend-card">
+      <div class="definition-card">
+        <h3>What Do the Labels Mean?</h3>
+        <ul>
+          <li><strong>Low</strong> = Original quality score 3–5</li>
+          <li><strong>Medium</strong> = Score 6</li>
+          <li><strong>High</strong> = Score 7–10</li>
+        </ul>
+      </div>
+    </section>
+    
+    
+  </main>
 
   <footer class="site-footer">
     <span class="footer-line-one">© 2025 DataVine 12</span>
     <span class="footer-line-two">Blending bold flavors and bold data, responsibly.</span>
   </footer>
 
-  <!-- Scripts -->
+  <!-- Prediction Script -->
   <script>
-    document.getElementById("predict-button").addEventListener("click", function () {
-      // Replace with actual model prediction logic
-      const randomPrediction = (Math.random() * 4 + 6).toFixed(1); // Simulate 6.0–10.0
-      const output = document.getElementById("prediction-output");
-      output.textContent = `Quality Score: ${randomPrediction}/10`;
+    document.getElementById("predict-button").addEventListener("click", async function () {
+      const data = {
+        fixed_acidity: parseFloat(document.getElementById("fixed_acidity_input").value),
+        volatile_acidity: parseFloat(document.getElementById("volatile_acidity_input").value),
+        citric_acid: parseFloat(document.getElementById("citric_acid_input").value),
+        residual_sugar: parseFloat(document.getElementById("residual_sugar_input").value),
+        chlorides: parseFloat(document.getElementById("chlorides_input").value),
+        free_sulfur_dioxide: parseFloat(document.getElementById("free_sulfur_input").value),
+        total_sulfur_dioxide: parseFloat(document.getElementById("total_sulfur_input").value),
+        density: parseFloat(document.getElementById("density_input").value),
+        pH: parseFloat(document.getElementById("ph_input").value),
+        sulphates: parseFloat(document.getElementById("sulphates_input").value),
+        alcohol: parseFloat(document.getElementById("alcohol_input").value),
+      };
+
+      const wineType = document.getElementById("wine_type_input").value;
+      data.type_red = wineType === "red" ? 1 : 0;
+      data.type_white = wineType === "white" ? 1 : 0;
+
+      // Basic validation
+      if (Object.values(data).some(val => isNaN(val))) {
+        alert("Please fill in all fields with valid numeric values and select a wine type.");
+        return;
+      }
+
+      try {
+        const response = await fetch("/predict", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(data)
+        });
+
+        const result = await response.json();
+
+        document.getElementById("label-output").textContent = `Label: ${result.label_prediction}`;
+        document.getElementById("class-output").textContent = `Class: ${result.numeric_prediction}`;
+      } catch (error) {
+        document.getElementById("label-output").textContent = "Prediction failed.";
+        document.getElementById("class-output").textContent = "";
+        console.error("Prediction error:", error);
+      }
     });
   </script>
 </body>
