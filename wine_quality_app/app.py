@@ -113,12 +113,43 @@ def predict():
         print("🚨 Flask error in /predict:", str(e))
         return jsonify({'error': str(e)}), 500
 
+@app.route('/random-sample', methods=['GET'])
+def random_sample():
+    try:
+        print("📊 Loading CSV...")
+        df = pd.read_csv('static/data/cleaned_wine_data.csv')
+        print("✅ CSV loaded")
+
+        sample = df.sample(1).iloc[0]
+        print("🔁 Sample row:", sample)
+
+        wine_type = "red" if sample["type"] == 1 else "white"
+
+        result = {
+            "fixed_acidity": sample["fixed acidity"],
+            "volatile_acidity": sample["volatile acidity"],
+            "citric_acid": sample["citric acid"],
+            "residual_sugar": sample["residual sugar"],
+            "chlorides": sample["chlorides"],
+            "free_sulfur_dioxide": sample["free sulfur dioxide"],
+            "total_sulfur_dioxide": sample["total sulfur dioxide"],
+            "density": sample["density"],
+            "ph": sample["pH"],
+            "sulphates": sample["sulphates"],
+            "alcohol": sample["alcohol"],
+            "wine_type": wine_type
+        }
+
+        return jsonify(result)
+    except Exception as e:
+        print("🚨 Error in /random-sample:", str(e))
+        return jsonify({"error": str(e)}), 500
+
+
     
 @app.route('/contact')
 def contact():
     return render_template('contact.html')
-
-
 
 if __name__ == '__main__':
     from os import environ
