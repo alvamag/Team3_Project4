@@ -2,7 +2,8 @@ from flask import Flask, render_template, request, jsonify
 import folium
 import json
 import joblib
-import os  
+import os
+import pandas as pd 
 
 app = Flask(__name__)
 
@@ -44,7 +45,6 @@ def try_the_model():
 def resources():
     return render_template('resources.html')
 
-# Route for the explore page with map
 # Route for the explore page with map
 @app.route('/explore')
 def explore():
@@ -99,6 +99,8 @@ def predict():
             data['type_red']
         ]
 
+        print("📥 Features received:", features)  # <- Add this line here
+
         prediction = model.predict([features])[0]
 
         reverse_map = {"Low": 0, "Medium": 1, "High": 2}
@@ -118,33 +120,32 @@ def random_sample():
     try:
         print("📊 Loading CSV...")
         df = pd.read_csv('static/data/cleaned_wine_data.csv')
-        print("✅ CSV loaded")
+        print("✅ CSV loaded. Columns:", df.columns)
 
         sample = df.sample(1).iloc[0]
         print("🔁 Sample row:", sample)
 
-        wine_type = "red" if sample["type"] == 1 else "white"
+        wine_type = "red" if sample["wine_type"] == 1 else "white"
 
         result = {
-            "fixed_acidity": sample["fixed acidity"],
-            "volatile_acidity": sample["volatile acidity"],
-            "citric_acid": sample["citric acid"],
-            "residual_sugar": sample["residual sugar"],
-            "chlorides": sample["chlorides"],
-            "free_sulfur_dioxide": sample["free sulfur dioxide"],
-            "total_sulfur_dioxide": sample["total sulfur dioxide"],
-            "density": sample["density"],
-            "ph": sample["pH"],
-            "sulphates": sample["sulphates"],
-            "alcohol": sample["alcohol"],
-            "wine_type": wine_type
+            "fixed_acidity_input": sample["fixed acidity"],
+            "volatile_acidity_input": sample["volatile acidity"],
+            "citric_acid_input": sample["citric acid"],
+            "residual_sugar_input": sample["residual sugar"],
+            "chlorides_input": sample["chlorides"],
+            "free_sulfur_dioxide_input": sample["free sulfur dioxide"],
+            "total_sulfur_dioxide_input": sample["total sulfur dioxide"],
+            "density_input": sample["density"],
+            "ph_input": sample["pH"],
+            "sulphates_input": sample["sulphates"],
+            "alcohol_input": sample["alcohol"],
+            "wine_type_input": wine_type
         }
 
         return jsonify(result)
     except Exception as e:
-        print("🚨 Error in /random-sample:", str(e))
+        print("🚨 ERROR in /random-sample:", str(e))
         return jsonify({"error": str(e)}), 500
-
 
     
 @app.route('/contact')

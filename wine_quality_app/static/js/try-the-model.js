@@ -14,8 +14,8 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("citric_acid_input").value = data.citric_acid;
         document.getElementById("residual_sugar_input").value = data.residual_sugar;
         document.getElementById("chlorides_input").value = data.chlorides;
-        document.getElementById("free_sulfur_input").value = data.free_sulfur_dioxide;
-        document.getElementById("total_sulfur_input").value = data.total_sulfur_dioxide;
+        document.getElementById("free_sulfur_dioxide_input").value = data.free_sulfur_dioxide;
+        document.getElementById("total_sulfur_dioxide_input").value = data.total_sulfur_dioxide;
         document.getElementById("density_input").value = data.density;
         document.getElementById("ph_input").value = data.ph;
         document.getElementById("sulphates_input").value = data.sulphates;
@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
   
       const wineType = document.getElementById("wine_type_input").value;
       data.type_red = wineType === "red" ? 0 : 1;
-      data.type_white = wineType === "red" ? 1 : 0;
+      data.type_white = wineType === "white" ? 1 : 0;
   
       if (Object.values(data).some(val => isNaN(val))) {
         alert("Please fill in all fields with valid numbers and select a wine type.");
