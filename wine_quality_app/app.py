@@ -1,11 +1,17 @@
 from flask import Flask, render_template, request, jsonify
 import folium
 import json
-import joblib   # Assuming you have a model saved as 'model.pkl'
+import joblib
+import os  
 
 app = Flask(__name__)
-# Load the trained Random Forest model
-model = joblib.load("models/random_forest_model.pkl")
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+model_path = os.path.join(BASE_DIR, "models", "random_forest_model.pkl")
+
+# Load the model
+model = joblib.load(model_path)
+
 
 
 # Route for the homepage
