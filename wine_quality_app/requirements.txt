@@ -1,0 +1,6 @@
+Flask
+flask-cors
+folium
+scikit-learn
+pandas
+joblib
