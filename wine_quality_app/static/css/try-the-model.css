@@ -142,13 +142,13 @@
 
 /* Sample Button */
 #sample-button {
-  background-color: #4B0E15;
-  color: #fff;
+  background-color: #C8A97E;
+  color: #3A0D12;
 }
 
 #sample-button:hover {
-  background-color: #C8A97E;
-  color: #3A0D12;
+  background-color: #F8F3E3;
+  color: #4B0E15;
 }
 
 /* Legend Section */
