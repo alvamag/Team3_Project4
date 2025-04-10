@@ -109,11 +109,10 @@ def predict():
         print("🚨 Flask error in /predict:", str(e))
         return jsonify({'error': str(e)}), 500
 
-# ✅ NEW: Random sample endpoint for sample values
 @app.route('/random-sample', methods=['GET'])
 def random_sample():
     try:
-        df = pd.read_csv(csv_path)
+        df = pd.read_csv('static/data/cleaned_wine_data.csv')
         sample = df.sample(1).iloc[0]
         wine_type = "red" if sample["type"] == 1 else "white"
 
@@ -134,8 +133,8 @@ def random_sample():
 
         return jsonify(result)
     except Exception as e:
-        print("🚨 Error in /random-sample:", str(e))
         return jsonify({"error": str(e)}), 500
+
 
 if __name__ == '__main__':
     from os import environ
