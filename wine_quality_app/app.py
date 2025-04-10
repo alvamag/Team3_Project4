@@ -24,7 +24,7 @@ def about():
     return render_template('about.html')
 
 @app.route('/decanting-the-data')
-def the_process():
+def decanting_the_data():
     return render_template('decanting-the-data.html')
 
 @app.route('/visualizations')
