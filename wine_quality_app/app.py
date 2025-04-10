@@ -23,9 +23,9 @@ def home():
 def about():
     return render_template('about.html')
 
-@app.route('/the-process')
+@app.route('/decanting-the-data')
 def the_process():
-    return render_template('the-process.html')
+    return render_template('decanting-the-data.html')
 
 @app.route('/visualizations')
 def visualizations():
