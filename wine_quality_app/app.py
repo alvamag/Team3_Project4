@@ -14,8 +14,7 @@ csv_path = os.path.join(BASE_DIR, "static", "data", "cleaned_wine_data.csv")
 # Load the model
 model = joblib.load(model_path)
 
-# ================= Routes =================
-
+# Routes
 @app.route('/')
 def home():
     return render_template('index.html')
@@ -39,10 +38,6 @@ def try_the_model():
 @app.route('/resources')
 def resources():
     return render_template('resources.html')
-
-@app.route('/contact')
-def contact():
-    return render_template('contact.html')
 
 @app.route('/explore')
 def explore():
@@ -95,6 +90,8 @@ def predict():
             data['type_red']
         ]
 
+        print("📥 Features received:", features)
+
         prediction = model.predict([features])[0]
 
         reverse_map = {"Low": 0, "Medium": 1, "High": 2}
@@ -112,28 +109,38 @@ def predict():
 @app.route('/random-sample', methods=['GET'])
 def random_sample():
     try:
+        print("📊 Loading CSV...")
         df = pd.read_csv('static/data/cleaned_wine_data.csv')
+        print("✅ CSV loaded. Columns:", df.columns)
+
         sample = df.sample(1).iloc[0]
-        wine_type = "red" if sample["type"] == 1 else "white"
+        print("🔁 Sample row:", sample)
+
+        wine_type = "red" if sample["wine_type"] == 1 else "white"
 
         result = {
-            "fixed_acidity": sample["fixed acidity"],
-            "volatile_acidity": sample["volatile acidity"],
-            "citric_acid": sample["citric acid"],
-            "residual_sugar": sample["residual sugar"],
-            "chlorides": sample["chlorides"],
-            "free_sulfur_dioxide": sample["free sulfur dioxide"],
-            "total_sulfur_dioxide": sample["total sulfur dioxide"],
-            "density": sample["density"],
-            "ph": sample["pH"],
-            "sulphates": sample["sulphates"],
-            "alcohol": sample["alcohol"],
-            "wine_type": wine_type
+            "fixed_acidity_input": sample["fixed acidity"],
+            "volatile_acidity_input": sample["volatile acidity"],
+            "citric_acid_input": sample["citric acid"],
+            "residual_sugar_input": sample["residual sugar"],
+            "chlorides_input": sample["chlorides"],
+            "free_sulfur_dioxide_input": sample["free sulfur dioxide"],
+            "total_sulfur_dioxide_input": sample["total sulfur dioxide"],
+            "density_input": sample["density"],
+            "ph_input": sample["pH"],
+            "sulphates_input": sample["sulphates"],
+            "alcohol_input": sample["alcohol"],
+            "wine_type_input": wine_type
         }
 
         return jsonify(result)
     except Exception as e:
+        print("🚨 ERROR in /random-sample:", str(e))
         return jsonify({"error": str(e)}), 500
+
+@app.route('/contact')
+def contact():
+    return render_template('contact.html')
 
 if __name__ == '__main__':
     from os import environ
