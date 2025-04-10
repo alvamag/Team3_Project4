@@ -95,9 +95,6 @@ https://wine-quality-app.onrender.com
 1:14
 You should be able to copy and paste! I just don't want to mess up any branches but will check formatting before we submit!
 
-
-Maya Morad
-  1:22 PM
 ## GeoJSON Mapping with OpenStreetMap
 To visualize winery locations across Portugal, we integrated **GeoJSON data** retrieved from [OpenStreetMap](https://www.openstreetmap.org/) using [Overpass Turbo](https://overpass-turbo.eu/). This allowed us to filter all locations tagged with `craft=winery` within the boundaries of Portugal.
 The resulting dataset was exported as a structured `.geojson` file (`portugal_wineries.geojson`) containing:
@@ -111,7 +108,3 @@ openstreetmap.orgopenstreetmap.org
 OpenStreetMap
 OpenStreetMap is a map of the world, created by people like you and free to use under an open license. (71 kB)
 https://www.openstreetmap.org/
-
-overpass-turbo.euoverpass-turbo.eu
-overpass turbo
-A web based data mining tool for OpenStreetMap which runs any kind of Overpass API query and shows the results on an interactive map.
