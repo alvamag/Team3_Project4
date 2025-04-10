@@ -1,6 +1,7 @@
-# Try the Model #
-The **Try the Model** page allows users to input physicochemical properties of a wine sample and predict its quality using our trained **Random Forest Classifier**.
-This section is interactive and built to showcase the power of machine learning applied to wine chemistry!
+# Try the Model
+
+*The **Try the Model** page allows users to input physicochemical properties of a wine sample and predict its quality using our trained **Random Forest Classifier**.
+This section is interactive and built to showcase the power of machine learning applied to wine chemistry!*
 ---
 ## How It Works 
 - Users input **11 chemical properties** of a wine sample (e.g., acidity, alcohol, pH)
