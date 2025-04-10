@@ -72,8 +72,9 @@ def explore():
 
     return render_template("explore.html", map_html=map_html)
 
-    @app.route('/predict', methods=['POST'])
-    def predict():
+@app.route('/predict', methods=['POST'])
+def predict():
+    try:
         data = request.get_json()
 
         features = [
@@ -92,7 +93,7 @@ def explore():
             data['type_red']
         ]
 
-        prediction = model.predict([features])[0]  # "Low", "Medium", or "High"
+        prediction = model.predict([features])[0]
 
         reverse_map = {"Low": 0, "Medium": 1, "High": 2}
         numeric_class = reverse_map.get(prediction, -1)
@@ -101,6 +102,11 @@ def explore():
             'numeric_prediction': numeric_class,
             'label_prediction': prediction
         })
+
+    except Exception as e:
+        print("🚨 Flask error in /predict:", str(e))
+        return jsonify({'error': str(e)}), 500
+
     
 @app.route('/contact')
 def contact():

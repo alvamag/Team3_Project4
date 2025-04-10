@@ -1,11 +1,8 @@
-/* About Page Styling */
-
-/* Main Section */
 /* About Banner */
 .label-banner {
-  background-color: #F8F3E3; /* Creamy background */
-  color: #4B0E15;            /* Cabernet text color */
-  padding: 60px 40px;
+  background-color: #F8F3E3;
+  color: #4B0E15;           
+  padding: 40px 40px;
   margin: 40px auto;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -16,10 +13,10 @@
 }
 
 .label-banner h2 {
-  font-size: 2.5rem;  /* Larger font for the section heading */
+  font-size: 2.5rem;
   font-weight: 600;
   margin-bottom: 20px;
-  font-family: 'Satisfy', cursive; /* Apply the 'Satisfy' cursive font */
+  font-family: 'Satisfy', cursive;
 }
 
 .label-banner p {
@@ -27,37 +24,31 @@
   font-size: 1rem;
   line-height: 1.2;
   margin: 0.75em 0;
-  text-align: justify; /* Justify text for better readability */
 }
 
 /* Accordion Styles */
-.accordion-content {
-  padding: 20px 0;
-  margin-top: 10px;
-}
-
 .accordion-item {
-  display: block; /* Ensures the accordion item is block-level */
-  width: 100%; /* Full width for the accordion item */
-  margin-bottom: 10px; /* Space between accordion items */
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
 }
 
 .accordion-btn {
-  background-color: #C8A97E; /* Cork color */
-  color: #4B0E15; /* Cabernet text color */
+  background-color: #C8A97E; 
+  color: #4B0E15;
   cursor: pointer;
   padding: 15px;
-  width: 50%; /* Button width set to 50% */
+  width: 50%;
   border: none;
   text-align: left;
   font-size: 1.4rem;
   margin: 10px 0;
   border-radius: 8px;
-  font-family: 'Satisfy', cursive; /* Apply 'Satisfy' font to the accordion button titles */
-  display: block; /* Ensure button behaves like a block element */
-  position: relative; /* Keeps content aligned directly under the button */
-  margin-left: auto; /* Center the button horizontally */
-  margin-right: auto; /* Center the button horizontally */
+  font-family: 'Satisfy', cursive;
+  display: block;
+  position: relative;
+  margin-left: auto; 
+  margin-right: auto;
 }
 
 /* Accordion Button Hover */
@@ -75,28 +66,39 @@
   width: 50%;
   margin: 0 auto 20px auto;
   padding: 0 20px;
+  line-height: 1.2;
+  font-size: 1rem;
+}
+
+.accordion-content.open {
+  padding: 20px;
+}
+
+.accordion-contet p {
+  margin-bottom: 1rem;
 }
 
 .accordion-content ul {
-  list-style-type: none;
-  padding-left: 0;
+  list-style-type: disc;
+  padding-left: 20px;
   margin-top: 10px;
 }
 
 .accordion-content li {
-  font-size: 1.1rem;
-  margin-bottom: 10px;
+  font-size: 1rem;
+  margin-bottom: 1.6;
+  color: #4B0E15;
+}
+
+.accordion-content ul,
+.accordion-content li {
+  text-align: left;
 }
 
 /* Accordion Content List Styling */
 .accordion-section ul {
   list-style-type: none;
   padding-left: 0;
-}
-
-.accordion-section ul li {
-  font-size: 1.1rem;
-  margin-bottom: 10px;
 }
 
 .accordion-section a {
@@ -108,7 +110,6 @@
   text-decoration: underline;
 }
 
-
 /* Footer */
 .site-footer {
   background-color: #3A0D12;  /* Dark wine background */
@@ -119,4 +120,3 @@
   padding: 30px 20px;
   margin-top: 60px;
 }
-

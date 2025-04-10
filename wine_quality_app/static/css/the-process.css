@@ -1,12 +1,8 @@
-/* ------------------------------
-   The Process Page Styling
------------------------------- */
-
 /* Banner Section */
 .label-banner {
   background-color: #F8F3E3;
   color: #4B0E15;
-  padding: 60px 40px;
+  padding: 40px 40px;
   margin: 40px auto;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -36,15 +32,30 @@
 }
 
 /* Slide-style carousel cards */
-.slide-card {
-  background-color: #fdf6ee;
+
+.carousel-wine-wrapper {
+  background-color: #3A0D12;
   padding: 2rem;
   border-radius: 16px;
-  max-width: 900px;
-  margin: 2rem auto;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  text-align: center;
+  max-width: 1000px;      /* ⬅️ limit the full width of the wine wrapper */
+  margin: 60px auto;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  box-sizing: border-box;
 }
+
+
+.slide-card {
+  background-color: #F8F3E3;
+  padding: 2rem 1rem; /* Tighten horizontal padding inside the card */
+  border-radius: 16px;
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  box-sizing: border-box;
+}
+
 
 .slide-card h3 {
   font-family: 'Satisfy', cursive;
@@ -54,24 +65,39 @@
 }
 
 .slide-card p {
-  font-family: 'Quattrocento Sans', sans-serif;
+  font-family: 'Satisfy', cursive;
   font-size: 1rem;
-  color: #333;
+  color: #4B0E15;
   margin-bottom: 1.5rem;
+}
+
+.slide-card ul {
+  text-align: left;
+  margin: 1rem auto;
+  padding-left: 1.5rem;
+  font-family: 'Quattrocento Sans', sans-serif;
+  color: #4B0E15;
+}
+
+.slide-card li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
 }
 
 .slide-card img {
   width: 100%;
-  max-width: 800px;
+  height: auto;
+  max-height: 300px;
+  object-fit: contain;
   border-radius: 12px;
   margin-top: 1rem;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  /*box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);*/
 }
 
 /* Carousel arrows */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  background-color: #4B0E15;
+  color: #F8F3E3;
   border-radius: 50%;
   padding: 10px;
 }

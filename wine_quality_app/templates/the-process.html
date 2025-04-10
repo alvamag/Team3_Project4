@@ -51,57 +51,111 @@
 
         <!-- Slide 1 -->
         <div class="carousel-item active">
-          <div class="slide-card">
-            <h3>Data Cleaning & Feature Engineering</h3>
-            <p>We removed null values, merged the datasets, applied feature scaling, and saved the result as cleaned_wine_data.csv.</p>
-            <img src="{{ url_for('static', filename='images/Picture1.jpg') }}" alt="Cleaned Data Preview">
-            <img src="{{ url_for('static', filename='images/Picture2.jpg') }}" alt="Cleaned Data Preview">
+          <div class="carousel-wine-wrapper">
+            <div class="slide-card">
+              <h3>Wine Quality Prediction Using Supervised Learning</h3>
+              <ul>
+                <li>Standard vs. Premium</li>
+                <li>Dataset: Merged Red and White Wines</li>
+                <li>Tools: Python, Spark SQL, Scikit-learn</li>
+              </ul>
           </div>
         </div>
+      </div>
 
         <!-- Slide 2 -->
         <div class="carousel-item">
-          <div class="slide-card">
-            <h3>Spark SQL Analysis</h3>
-            <p>White wines scored slightly higher on average; alcohol is a strong indicator of quality, while density shows a negative correlation with quality.</p>
-            <img src="{{ url_for('static', filename='images/Picture3.jpg') }}" alt="Spark SQL Analysis">
+          <div class="carousel-wine-wrapper">
+            <div class="slide-card">
+              <h3>Data Cleaning & Feature Engineering</h3>
+              <ul>
+                <li>Merged two datasets (Red & White)</li>
+                <li>Removed nulls and standardized feature types</li>
+                <li>Applied feature scaling (standardization + normalization)</li>
+                <li>Saved cleaned data as <strong>cleaned_wine_data_with_scaling.csv</strong></li>
+              </ul>
+              <img src="{{ url_for('static', filename='images/Picture1.jpg') }}" alt="Cleaned Data Preview">
+              <img src="{{ url_for('static', filename='images/Picture2.jpg') }}" alt="Cleaned Data Preview">
+            </div>
           </div>
         </div>
 
-        <!-- Slide 3 -->
+        <!-- Slide 3-->
         <div class="carousel-item">
-          <div class="slide-card">
-            <h3>Model Preparation and Binning</h3>
-            <p>Class encoding was defined as follows: 0 = low quality (scores 3–5), 1 = medium quality (score 6), 2 = high quality (scores 7+).</p>
-            <img src="{{ url_for('static', filename='images/Picture4.jpg') }}" alt="Model Binning">
+          <div class="carousel-wine-wrapper">
+            <div class="slide-card">
+              <h3>Spark SQL Analysis</h3>
+              <ul>
+                <li>White wines scored slightly higher on average</li>
+                <li>Premium wines had higher alcohol and lower density</li>
+                <li>Spark SQL confirmed strong feature patters before modeling</li>
+              </ul>
+              <img src="{{ url_for('static', filename='images/Picture3.jpg') }}" alt="Cleaned Data Preview">
+            </div>
+          </div>
+        </div>
+        
+        <!-- Slide 4-->
+        <div class="carousel-item">
+          <div class="carousel-wine-wrapper">
+            <div class="slide-card">
+              <h3>Model Preparation & Lable Binning</h3>
+              <ul>
+                <li>Quality scores converted to two labels: Standard (≤ 6), Premium (> 6)</li>
+                <li>Target labels created using a custom function</li>
+                <li>Categorical features (like wine type) one-hot encoded</li>
+                <li>Scaled features used as input for ML models</li>
+              </ul>
+              <img src="{{ url_for('static', filename='images/Picture4.jpg') }}" alt="Cleaned Data Preview">
+            </div>
           </div>
         </div>
 
-        <!-- Slide 4 -->
+        <!-- Slide 5-->
         <div class="carousel-item">
-          <div class="slide-card">
-            <h3>Initial Model Training</h3>
-            <p>We used Random Forest as our baseline model, achieving 88.62% accuracy. Performance was evaluated using precision, recall, and F1 score.</p>
-            <img src="{{ url_for('static', filename='images/Picture5.jpg') }}" alt="Model Training">
+          <div class="carousel-wine-wrapper">
+            <div class="slide-card">
+              <h3>Initial Model Training</h3>
+              <ul>
+                <li>Used Random Forest Classifier as the baseline model</li>
+                <li>Train/test split: 80% training, 20% testing</li>
+                <li>Target: Predict Standard vs. Premium wines</li>
+                <li>Initial accuracy: 89.92% (pre-optimization)</li>
+              </ul>
+              <img src="{{ url_for('static', filename='images/Picture5.jpg') }}" alt="Cleaned Data Preview">
+            </div>
           </div>
         </div>
 
-        <!-- Slide 5 -->
+        <!-- Slide 6-->
         <div class="carousel-item">
-          <div class="slide-card">
-            <h3>Model Optimization</h3>
-            <p>We experimented with Logistic Regression, SVM, and PCA. Random Forest consistently performed best with minimal dimensionality reduction.</p>
-            <img src="{{ url_for('static', filename='images/Picture6.jpg') }}" alt="Model Optimization">
-            <img src="{{ url_for('static', filename='images/Picture7.jpg') }}" alt="Model Optimization">
+          <div class="carousel-wine-wrapper">
+            <div class="slide-card">
+              <h3>Model Optimization</h3>
+              <ul>
+                <li>Models: Random Forest, Logistic Regression, SVM</li>
+                <li>Trained with full features and PCA-reduced features</li>
+                <li>PCA used to reduce dimensionality and simplify inut</li>
+                <li>Compared results with and without PCA</li>
+              </ul>
+              <img src="{{ url_for('static', filename='images/Picture6.jpg') }}" alt="Cleaned Data Preview">
+            </div>
           </div>
-        </div>
+          </div>
 
-        <!-- Slide 6 -->
+        <!-- Slide 7-->
         <div class="carousel-item">
-          <div class="slide-card">
-            <h3>Final Model Evaluation</h3>
-            <p>The final model maintained strong performance across all metrics and generalized well, with a final accuracy of 88.62% on test data.</p>
-            <img src="{{ url_for('static', filename='images/Picture8.jpg') }}" alt="Final Evaluation">
+          <div class="carousel-wine-wrapper">
+            <div class="slide-card">
+              <h3>Model Evaluation</h3>
+              <ul>
+                <li>Best Model: Random Forest (Accuracy: 89.46%)</li>
+                <li>Premium wines harder to predict due to class imbalance</li>
+                <li>PCA models performed slightly worse</li>
+                <li>Metrics Used: Accuracy, Precision, Recall, F1-Score</li>
+              </ul>
+              <img src="{{ url_for('static', filename='images/Picture7.jpg') }}" alt="Cleaned Data Preview">
+            </div>
           </div>
         </div>
 

@@ -45,39 +45,41 @@
         but made sure to keep the process enjoyable and creative. After all, who doesn’t enjoy a glass of wine while learning new skills? Our goal 
         is to help both wine enthusiasts and professionals understand what makes a high-quality wine by exploring the relationship between characteristics 
         like acidity, alcohol content, and pH. DataVine 12 uses machine learning to predict wine quality based on various physiochemical features. 
-        This project integrates data analysis, visualization, and predictive modeling to provide insights into what makes a high-quality wine, 
+        This project integrates data analysis, predictive modeling, and visualization, to provide insights into what makes a high-quality wine, 
         leveraging the power of machine learning algorithms.
       </p>
     </section>
 
     <section class="about-section">
       <div class="accordion-item">
-        <button class="accordion-btn">Project Requirements</button>
+        <button class="accordion-btn">Our Approach</button>
         <div class="accordion-content">
-          <!-- Content for Project Requirements -->
-          <ul>
-            <li>Use machine learning with libraries like Scikit-learn.</li>
-            <li>Implement at least two of the following:
-              <ul>
-                <li>Python Pandas for data manipulation</li>
-                <li>Matplotlib for data visualization</li>
-                <!-- other items -->
-              </ul>
-            </li>
-          </ul>
+          <p>This project followed a full machine learning pipeline, from data retrieval and preprocessing to model development and evaluation. 
+            Using Spark SQL, we gathered and prepared the wine quality dataset, applying standardization and normalization techniques. We trained 
+            a supervised learning model using Scikit-learn, achieving over 75% classification accuracy. The modeling process included iterative optimization 
+            and performance tracking, all documented within the codebase. The final solution was designed to go beyond analysis — offering a more dynamic way 
+            to apply the model’s insights.
+          </p>
         </div>
       </div>
       
       <div class="accordion-item">
         <button class="accordion-btn">Technologies Used</button>
         <div class="accordion-content">
-          <!-- Content for Technologies Used -->
           <ul>
-            <li>Machine Learning: Scikit-learn</li>
-            <li>Data Manipulation: Pandas</li>
+            <li><strong>Python:</strong> For data analysis, modeling, and scripting</li>
+            <li><strong>Pandas:</strong> For data cleaning and manipulation</li>
+            <li><strong>Scikit-learn:</strong> For building and evaluating the machine learning model</li>
+            <li><strong>Spark SQL:</strong> For querying and aggregating the dataset</li>
+            <li><strong>Flask:</strong> For serving the model through a prediction API</li>
+            <li><strong>HTML, CSS, Bootstrap:</strong>  For front-end layout and styling</li>
+            <li><strong>JavaScript:</strong>  For form handling and dynamic UI behavior</li>
+            <li><strong>Plotly & Leaflet:</strong> For interactive data visualizations</li>
+            <li><strong>Tableau:</strong>For data exploration and visual storytelling</li>
           </ul>
         </div>
       </div>
+      
     </section>
   </main>
 
@@ -97,8 +99,10 @@
         const content = btn.nextElementSibling;
         if (content.style.maxHeight) {
           content.style.maxHeight = null;
+          content.classList.remove('open');
         } else {
-          content.style.maxHeight = content.scrollHeight + 'px';
+          content.style.maxHeight = content.scrollHeight + 50 + 'px';
+          content.classList.add('open');
         }
       });
     });

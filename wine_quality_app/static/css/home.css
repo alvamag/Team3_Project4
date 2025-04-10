@@ -1,8 +1,8 @@
 /* Label Banner */
 .label-banner {
-  background-color: #F8F3E3; /* Creamy background */
-  color: #4B0E15;            /* Cabernet text color */
-  padding: 60px 40px;
+  background-color: #F8F3E3;
+  color: #4B0E15;            
+  padding: 40px 40px;
   margin: 40px auto;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -13,7 +13,7 @@
 }
 
 .label-banner h2 {
-  font-size: 2.5rem;  /* Larger font for the section heading */
+  font-size: 2.5rem;
   font-weight: 600;
   margin-bottom: 20px;
   font-family: 'Satisfy', cursive;
@@ -70,7 +70,6 @@
   justify-items: center;
 }
 
-
 .somm-card {
   background-color: #F8F3E3;
   color: #4B0E15;
@@ -117,14 +116,14 @@
 .gallery-slide {
   width: 100%;
   height: auto;
-  display: none; /* Hide all images by default */
+  display: none;
   transition: opacity 1s ease-in-out;
-  object-fit: cover; /* Ensure images fill the container without distortion */
+  object-fit: cover;
 }
 
 /* Show the active image */
 .gallery-slide.active {
-  display: block; /* Only the active image is shown */
+  display: block;
 }
 
 /* Navigation Dots */
@@ -184,29 +183,29 @@
 
 /* Popup Heading */
 .popup-content h2 {
-  font-family: 'Satisfy', cursive;  /* Cursive font */
+  font-family: 'Satisfy', cursive;
   font-size: 2rem;
   margin-bottom: 20px;
 }
 
 /* Outline Button Style */
 .button-outline {
-  background-color: transparent;  /* Transparent background */
-  color: #4B0E15;                 /* Dark wine color */
+  background-color: transparent;
+  color: #4B0E15;                
   padding: 12px 24px;
-  border: 2px solid #4B0E15;       /* Dark wine border */
+  border: 2px solid #4B0E15;      
   border-radius: 5px;
   font-family: 'Quattrocento Sans', sans-serif;
   font-size: 1rem;
   cursor: pointer;
   text-align: center;
-  transition: all 0.3s ease;        /* Smooth transition */
+  transition: all 0.3s ease;
 }
 
 /* Outline Button Hover Effect */
 .button-outline:hover {
-  background-color: #4B0E15;      /* Dark wine background on hover */
-  color: #F8F3E3;                 /* Light cream text color */
+  background-color: #4B0E15;
+  color: #F8F3E3;
 }
 
 /* Outline Button Focus Effect */
