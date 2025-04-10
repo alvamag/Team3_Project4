@@ -13,39 +13,31 @@ model_path = os.path.join(BASE_DIR, "models", "random_forest_model.pkl")
 # Load the model
 model = joblib.load(model_path)
 
-
-
-# Route for the homepage
+# Routes
 @app.route('/')
 def home():
     return render_template('index.html')
 
-# Route for the about page
 @app.route('/about')
 def about():
     return render_template('about.html')
 
-# Route for the "The Process" page
 @app.route('/the-process')
 def the_process():
     return render_template('the-process.html')
 
-# Route for the visualizations page
 @app.route('/visualizations')
 def visualizations():
     return render_template('visualizations.html')
 
-# Route for the "Try the Model" page
 @app.route('/try-the-model')
 def try_the_model():
     return render_template('try-the-model.html')
 
-# Route for the resources page
 @app.route('/resources')
 def resources():
     return render_template('resources.html')
 
-# Route for the explore page with map
 @app.route('/explore')
 def explore():
     wine_map = folium.Map(location=[39.3999, -8.2245], zoom_start=7)
@@ -73,9 +65,7 @@ def explore():
             """)
         ).add_to(wine_map)
 
-    # Instead of saving to file, return the HTML representation
     map_html = wine_map._repr_html_()
-
     return render_template("explore.html", map_html=map_html)
 
 @app.route('/predict', methods=['POST'])
@@ -99,7 +89,7 @@ def predict():
             data['type_red']
         ]
 
-        print("📥 Features received:", features)  # <- Add this line here
+        print("📥 Features received:", features)
 
         prediction = model.predict([features])[0]
 
@@ -115,7 +105,6 @@ def predict():
         print("🚨 Flask error in /predict:", str(e))
         return jsonify({'error': str(e)}), 500
 
-print("🚀 USING UPDATED random-sample ROUTE!")
 @app.route('/random-sample', methods=['GET'])
 def random_sample():
     try:
@@ -148,7 +137,6 @@ def random_sample():
         print("🚨 ERROR in /random-sample:", str(e))
         return jsonify({"error": str(e)}), 500
 
-    
 @app.route('/contact')
 def contact():
     return render_template('contact.html')
