@@ -1,7 +1,0 @@
-services:
-  - type: web
-    name: wine-quality-app
-    env: python
-    buildCommand: pip install -r wine_quality_app/requirements.txt
-    startCommand: python wine_quality_app/app.py
-    plan: free
