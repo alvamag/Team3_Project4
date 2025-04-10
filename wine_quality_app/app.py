@@ -2,50 +2,48 @@ from flask import Flask, render_template, request, jsonify
 import folium
 import json
 import joblib
-import os  
+import os
+import pandas as pd
 
 app = Flask(__name__)
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 model_path = os.path.join(BASE_DIR, "models", "random_forest_model.pkl")
+csv_path = os.path.join(BASE_DIR, "static", "data", "cleaned_wine_data.csv")
 
 # Load the model
 model = joblib.load(model_path)
 
+# ================= Routes =================
 
-
-# Route for the homepage
 @app.route('/')
 def home():
     return render_template('index.html')
 
-# Route for the about page
 @app.route('/about')
 def about():
     return render_template('about.html')
 
-# Route for the "The Process" page
 @app.route('/the-process')
 def the_process():
     return render_template('the-process.html')
 
-# Route for the visualizations page
 @app.route('/visualizations')
 def visualizations():
     return render_template('visualizations.html')
 
-# Route for the "Try the Model" page
 @app.route('/try-the-model')
 def try_the_model():
     return render_template('try-the-model.html')
 
-# Route for the resources page
 @app.route('/resources')
 def resources():
     return render_template('resources.html')
 
-# Route for the explore page with map
-# Route for the explore page with map
+@app.route('/contact')
+def contact():
+    return render_template('contact.html')
+
 @app.route('/explore')
 def explore():
     wine_map = folium.Map(location=[39.3999, -8.2245], zoom_start=7)
@@ -73,9 +71,7 @@ def explore():
             """)
         ).add_to(wine_map)
 
-    # Instead of saving to file, return the HTML representation
     map_html = wine_map._repr_html_()
-
     return render_template("explore.html", map_html=map_html)
 
 @app.route('/predict', methods=['POST'])
@@ -113,12 +109,33 @@ def predict():
         print("🚨 Flask error in /predict:", str(e))
         return jsonify({'error': str(e)}), 500
 
-    
-@app.route('/contact')
-def contact():
-    return render_template('contact.html')
+# ✅ NEW: Random sample endpoint for sample values
+@app.route('/random-sample', methods=['GET'])
+def random_sample():
+    try:
+        df = pd.read_csv(csv_path)
+        sample = df.sample(1).iloc[0]
+        wine_type = "red" if sample["type"] == 1 else "white"
 
+        result = {
+            "fixed_acidity": sample["fixed acidity"],
+            "volatile_acidity": sample["volatile acidity"],
+            "citric_acid": sample["citric acid"],
+            "residual_sugar": sample["residual sugar"],
+            "chlorides": sample["chlorides"],
+            "free_sulfur_dioxide": sample["free sulfur dioxide"],
+            "total_sulfur_dioxide": sample["total sulfur dioxide"],
+            "density": sample["density"],
+            "ph": sample["pH"],
+            "sulphates": sample["sulphates"],
+            "alcohol": sample["alcohol"],
+            "wine_type": wine_type
+        }
 
+        return jsonify(result)
+    except Exception as e:
+        print("🚨 Error in /random-sample:", str(e))
+        return jsonify({"error": str(e)}), 500
 
 if __name__ == '__main__':
     from os import environ
