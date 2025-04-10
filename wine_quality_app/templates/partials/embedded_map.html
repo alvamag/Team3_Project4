@@ -1,0 +1,1990 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a1495389abdef002913ef16e49048155 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a1495389abdef002913ef16e49048155" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a1495389abdef002913ef16e49048155 = L.map(
+                "map_a1495389abdef002913ef16e49048155",
+                {
+                    center: [39.3999, -8.2245],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 7,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9e9af8f3b149840ea96837be0947ca73 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_9e9af8f3b149840ea96837be0947ca73.addTo(map_a1495389abdef002913ef16e49048155);
+        
+    
+            var marker_0eb9b1359fd3c53378fb0f1bf6d09681 = L.marker(
+                [40.642588, -8.6539625],
+                {
+}
+            ).addTo(map_a1495389abdef002913ef16e49048155);
+        
+    
+            var div_icon_4decd49a6189d90744ccbb5b59403845 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"font-size: 24px; line-height: 24px;\"\u003e\ud83c\udf77\u003c/div\u003e\n            ",
+  "className": "empty",
+});
+            marker_0eb9b1359fd3c53378fb0f1bf6d09681.setIcon(div_icon_4decd49a6189d90744ccbb5b59403845);
+        
+    
+        var popup_eaead75d163f8e2bf617911e68d3b359 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_447182dcc1aeda7bdb40e2d28ad5be37 = $(`<div id="html_447182dcc1aeda7bdb40e2d28ad5be37" style="width: 100.0%; height: 100.0%;">             <div style='font-size: 14px;'>                 <b>Faros</b><br>                 🍇 Portuguese Winery             </div>         </div>`)[0];
+                popup_eaead75d163f8e2bf617911e68d3b359.setContent(html_447182dcc1aeda7bdb40e2d28ad5be37);
+            
+        
+
+        marker_0eb9b1359fd3c53378fb0f1bf6d09681.bindPopup(popup_eaead75d163f8e2bf617911e68d3b359)
+        ;
+
+        
+    
+    
+                marker_0eb9b1359fd3c53378fb0f1bf6d09681.setIcon(div_icon_4decd49a6189d90744ccbb5b59403845);
+            
+    
+            var marker_6e1810b2c54bbcdc92e79d86419b154d = L.marker(
+                [38.8540313, -7.6079581],
+                {
+}
+            ).addTo(map_a1495389abdef002913ef16e49048155);
+        
+    
+            var div_icon_ca2dd5821289b3f5964d4940547ce07f = L.divIcon({
+  "html": "\n                \u003cdiv style=\"font-size: 24px; line-height: 24px;\"\u003e\ud83c\udf77\u003c/div\u003e\n            ",
+  "className": "empty",
+});
+            marker_6e1810b2c54bbcdc92e79d86419b154d.setIcon(div_icon_ca2dd5821289b3f5964d4940547ce07f);
+        
+    
+        var popup_81ed3ddf3b583216c2f6487b47537120 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_aa9c563a295f4416cc86ecf17f5c665f = $(`<div id="html_aa9c563a295f4416cc86ecf17f5c665f" style="width: 100.0%; height: 100.0%;">             <div style='font-size: 14px;'>                 <b>Quinta da Esperança</b><br>                 🍇 Portuguese Winery             </div>         </div>`)[0];
+                popup_81ed3ddf3b583216c2f6487b47537120.setContent(html_aa9c563a295f4416cc86ecf17f5c665f);
+            
+        
+
+        marker_6e1810b2c54bbcdc92e79d86419b154d.bindPopup(popup_81ed3ddf3b583216c2f6487b47537120)
+        ;
+
+        
+    
+    
+                marker_6e1810b2c54bbcdc92e79d86419b154d.setIcon(div_icon_ca2dd5821289b3f5964d4940547ce07f);
+            
+    
+            var marker_8c022ee87eb4973d251844e65720bffb = L.marker(
+                [41.3274095, -8.151344],
+                {
+}
+            ).addTo(map_a1495389abdef002913ef16e49048155);
+        
+    
+            var div_icon_40e075d2bd2d4a235e53f542f35c8444 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"font-size: 24px; line-height: 24px;\"\u003e\ud83c\udf77\u003c/div\u003e\n            ",
+  "className": "empty",
+});
+            marker_8c022ee87eb4973d251844e65720bffb.setIcon(div_icon_40e075d2bd2d4a235e53f542f35c8444);
+        
+    
+        var popup_76f525e5d5be0a4447da5306acbcc47a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ff81b3207a44de9114229e51c731d78d = $(`<div id="html_ff81b3207a44de9114229e51c731d78d" style="width: 100.0%; height: 100.0%;">             <div style='font-size: 14px;'>                 <b>Quinta da Lixa</b><br>                 🍇 Portuguese Winery             </div>         </div>`)[0];
+                popup_76f525e5d5be0a4447da5306acbcc47a.setContent(html_ff81b3207a44de9114229e51c731d78d);
+            
+        
+
+        marker_8c022ee87eb4973d251844e65720bffb.bindPopup(popup_76f525e5d5be0a4447da5306acbcc47a)
+        ;
+
+        
+    
+    
+                marker_8c022ee87eb4973d251844e65720bffb.setIcon(div_icon_40e075d2bd2d4a235e53f542f35c8444);
+            
+    
+            var marker_e18e552f5a6a1c9eb76bb36460185a7b = L.marker(
+                [37.1305532, -8.6847495],
+                {
+}
+            ).addTo(map_a1495389abdef002913ef16e49048155);
+        
+    
+            var div_icon_043a4731765d52104066b168e4cb79ab = L.divIcon({
+  "html": "\n                \u003cdiv style=\"font-size: 24px; line-height: 24px;\"\u003e\ud83c\udf77\u003c/div\u003e\n            ",
+  "className": "empty",
+});
+            marker_e18e552f5a6a1c9eb76bb36460185a7b.setIcon(div_icon_043a4731765d52104066b168e4cb79ab);
+        
+    
+        var popup_28a5774a8ae7b0f8e62af16dc74fd6c3 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_5f4f2678f661b250c9e90f9744be7ead = $(`<div id="html_5f4f2678f661b250c9e90f9744be7ead" style="width: 100.0%; height: 100.0%;">             <div style='font-size: 14px;'>                 <b>Monte da Casteleja</b><br>                 🍇 Portuguese Winery             </div>         </div>`)[0];
+                popup_28a5774a8ae7b0f8e62af16dc74fd6c3.setContent(html_5f4f2678f661b250c9e90f9744be7ead);
+            
+        
+
+        marker_e18e552f5a6a1c9eb76bb36460185a7b.bindPopup(popup_28a5774a8ae7b0f8e62af16dc74fd6c3)
+        ;
+
+        
+    
+    
+                marker_e18e552f5a6a1c9eb76bb36460185a7b.setIcon(div_icon_043a4731765d52104066b168e4cb79ab);
+            
+    
+            var marker_3cde0180ba8c73fa7aca2f5f3c8d36e7 = L.marker(
+                [38.2480579, -7.89991],
+                {
+}
+            ).addTo(map_a1495389abdef002913ef16e49048155);
+        
+    
+            var div_icon_caaec2d43640a532c166a284371ef3c3 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"font-size: 24px; line-height: 24px;\"\u003e\ud83c\udf77\u003c/div\u003e\n            ",
+  "className": "empty",
+});
+            marker_3cde0180ba8c73fa7aca2f5f3c8d36e7.setIcon(div_icon_caaec2d43640a532c166a284371ef3c3);
+        
+    
+        var popup_a19848f9784aee5e10eb321849c30945 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c037e301b6bff77c365e528c261eed98 = $(`<div id="html_c037e301b6bff77c365e528c261eed98" style="width: 100.0%; height: 100.0%;">             <div style='font-size: 14px;'>                 <b>Winery</b><br>                 🍇 Portuguese Winery             </div>         </div>`)[0];
+                popup_a19848f9784aee5e10eb321849c30945.setContent(html_c037e301b6bff77c365e528c261eed98);
+            
+        
+
+        marker_3cde0180ba8c73fa7aca2f5f3c8d36e7.bindPopup(popup_a19848f9784aee5e10eb321849c30945)
+        ;
+
+        
+    
+    
+                marker_3cde0180ba8c73fa7aca2f5f3c8d36e7.setIcon(div_icon_caaec2d43640a532c166a284371ef3c3);
+            
+    
+            var marker_e10afb3226a70bbd84c6860428dc60b8 = L.marker(
+                [38.2481232, -7.8996901],
+                {
+}
+            ).addTo(map_a1495389abdef002913ef16e49048155);
+        
+    
+            var div_icon_a489e292b6014577c55b7bb7c49f837a = L.divIcon({
+  "html": "\n                \u003cdiv style=\"font-size: 24px; line-height: 24px;\"\u003e\ud83c\udf77\u003c/div\u003e\n            ",
+  "className": "empty",
+});
+            marker_e10afb3226a70bbd84c6860428dc60b8.setIcon(div_icon_a489e292b6014577c55b7bb7c49f837a);
+        
+    
+        var popup_bb2ada9de10da199989cd7213a7c38b1 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_686f619a5d8160c72780dd62db8487cc = $(`<div id="html_686f619a5d8160c72780dd62db8487cc" style="width: 100.0%; height: 100.0%;">             <div style='font-size: 14px;'>                 <b>Winery</b><br>                 🍇 Portuguese Winery             </div>         </div>`)[0];
+                popup_bb2ada9de10da199989cd7213a7c38b1.setContent(html_686f619a5d8160c72780dd62db8487cc);
+            
+        
+
+        marker_e10afb3226a70bbd84c6860428dc60b8.bindPopup(popup_bb2ada9de10da199989cd7213a7c38b1)
+        ;
+
+        
+    
+    
+                marker_e10afb3226a70bbd84c6860428dc60b8.setIcon(div_icon_a489e292b6014577c55b7bb7c49f837a);
+            
+    
+            var marker_97ea33be876013a2fda929722798cc29 = L.marker(
+                [38.249531, -7.8984687],
+                {
+}
+            ).addTo(map_a1495389abdef002913ef16e49048155);
+        
+    
+            var div_icon_df76c3cc7f4f28691b1c439e34a4d03e = L.divIcon({
+  "html": "\n                \u003cdiv style=\"font-size: 24px; line-height: 24px;\"\u003e\ud83c\udf77\u003c/div\u003e\n            ",
+  "className": "empty",
+});
+            marker_97ea33be876013a2fda929722798cc29.setIcon(div_icon_df76c3cc7f4f28691b1c439e34a4d03e);
+        
+    
+        var popup_9101de7c702559e445b00c3916fdbb5a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ef404e8976f00bd5a4adf19969307530 = $(`<div id="html_ef404e8976f00bd5a4adf19969307530" style="width: 100.0%; height: 100.0%;">             <div style='font-size: 14px;'>                 <b>Winery</b><br>                 🍇 Portuguese Winery             </div>         </div>`)[0];
+                popup_9101de7c702559e445b00c3916fdbb5a.setContent(html_ef404e8976f00bd5a4adf19969307530);
+            
+        
+
+        marker_97ea33be876013a2fda929722798cc29.bindPopup(popup_9101de7c702559e445b00c3916fdbb5a)
+        ;
+
+        
+    
+    
+                marker_97ea33be876013a2fda929722798cc29.setIcon(div_icon_df76c3cc7f4f28691b1c439e34a4d03e);
+            
+    
+            var marker_ab92c5661101b4b492431bab99efd456 = L.marker(
+                [41.133825, -8.3801642],
+                {
+}
+            ).addTo(map_a1495389abdef002913ef16e49048155);
+        
+    
+            var div_icon_8323f0cd300f9d356fbf388f514a6ae4 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"font-size: 24px; line-height: 24px;\"\u003e\ud83c\udf77\u003c/div\u003e\n            ",
+  "className": "empty",
+});
+            marker_ab92c5661101b4b492431bab99efd456.setIcon(div_icon_8323f0cd300f9d356fbf388f514a6ae4);
+        
+    
+        var popup_17e11f6ded90bfd280433e1e64b29cb8 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e4180a4d9468525b77d104ba14df346f = $(`<div id="html_e4180a4d9468525b77d104ba14df346f" style="width: 100.0%; height: 100.0%;">             <div style='font-size: 14px;'>                 <b>Wine bar Casa da Viúva</b><br>                 🍇 Portuguese Winery             </div>         </div>`)[0];
+                popup_17e11f6ded90bfd280433e1e64b29cb8.setContent(html_e4180a4d9468525b77d104ba14df346f);
+            
+        
+
+        marker_ab92c5661101b4b492431bab99efd456.bindPopup(popup_17e11f6ded90bfd280433e1e64b29cb8)
+        ;
+
+        
+    
+    
+                marker_ab92c5661101b4b492431bab99efd456.setIcon(div_icon_8323f0cd300f9d356fbf388f514a6ae4);
+            
+    
+            var marker_f4475289faf1c96115d10824523a1df7 = L.marker(
+                [39.1515153, -8.9184513],
+                {
+}
+            ).addTo(map_a1495389abdef002913ef16e49048155);
+        
+    
+            var div_icon_c05d21b24db793870d2c56c32e977cab = L.divIcon({
+  "html": "\n                \u003cdiv style=\"font-size: 24px; line-height: 24px;\"\u003e\ud83c\udf77\u003c/div\u003e\n            ",
+  "className": "empty",
+});
+            marker_f4475289faf1c96115d10824523a1df7.setIcon(div_icon_c05d21b24db793870d2c56c32e977cab);
+        
+    
+        var popup_05ae483bcb72e9f976fd42b5864e4a66 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d63a9767efb5959880524797619b5e08 = $(`<div id="html_d63a9767efb5959880524797619b5e08" style="width: 100.0%; height: 100.0%;">             <div style='font-size: 14px;'>                 <b>SIVAC</b><br>                 🍇 Portuguese Winery             </div>         </div>`)[0];
+                popup_05ae483bcb72e9f976fd42b5864e4a66.setContent(html_d63a9767efb5959880524797619b5e08);
+            
+        
+
+        marker_f4475289faf1c96115d10824523a1df7.bindPopup(popup_05ae483bcb72e9f976fd42b5864e4a66)
+        ;
+
+        
+    
+    
+                marker_f4475289faf1c96115d10824523a1df7.setIcon(div_icon_c05d21b24db793870d2c56c32e977cab);
+            
+    
+            var marker_1fc0b56b031eb5108022529dd3520681 = L.marker(
+                [37.1232458, -8.2804543],
+                {
+}
+            ).addTo(map_a1495389abdef002913ef16e49048155);
+        
+    
+            var div_icon_f29cec4f305a3a6f31c154aa37463c8e = L.divIcon({
+  "html": "\n                \u003cdiv style=\"font-size: 24px; line-height: 24px;\"\u003e\ud83c\udf77\u003c/div\u003e\n            ",
+  "className": "empty",
+});
+            marker_1fc0b56b031eb5108022529dd3520681.setIcon(div_icon_f29cec4f305a3a6f31c154aa37463c8e);
+        
+    
+        var popup_ece5933db91c55ff061f2c6027e8813b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b2be02ba62387ffa45615565c3f01f43 = $(`<div id="html_b2be02ba62387ffa45615565c3f01f43" style="width: 100.0%; height: 100.0%;">             <div style='font-size: 14px;'>                 <b>Adega do Cantor</b><br>                 🍇 Portuguese Winery             </div>         </div>`)[0];
+                popup_ece5933db91c55ff061f2c6027e8813b.setContent(html_b2be02ba62387ffa45615565c3f01f43);
+            
+        
+
+        marker_1fc0b56b031eb5108022529dd3520681.bindPopup(popup_ece5933db91c55ff061f2c6027e8813b)
+        ;
+
+        
+    
+    
+                marker_1fc0b56b031eb5108022529dd3520681.setIcon(div_icon_f29cec4f305a3a6f31c154aa37463c8e);
+            
+    
+            var marker_cffc6f5efb9ee0252b2504eefc0aeff3 = L.marker(
+                [41.1844207, -7.6875538],
+                {
+}
+            ).addTo(map_a1495389abdef002913ef16e49048155);
+        
+    
+            var div_icon_47be184929f531aeeba603afb55cb963 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"font-size: 24px; line-height: 24px;\"\u003e\ud83c\udf77\u003c/div\u003e\n            ",
+  "className": "empty",
+});
+            marker_cffc6f5efb9ee0252b2504eefc0aeff3.setIcon(div_icon_47be184929f531aeeba603afb55cb963);
+        
+    
+        var popup_c0641cb0ba91f1ebbdad2bf51c9751a8 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_55325300d5344b98f64ffd87838c056a = $(`<div id="html_55325300d5344b98f64ffd87838c056a" style="width: 100.0%; height: 100.0%;">             <div style='font-size: 14px;'>                 <b>Adega do Rosca</b><br>                 🍇 Portuguese Winery             </div>         </div>`)[0];
+                popup_c0641cb0ba91f1ebbdad2bf51c9751a8.setContent(html_55325300d5344b98f64ffd87838c056a);
+            
+        
+
+        marker_cffc6f5efb9ee0252b2504eefc0aeff3.bindPopup(popup_c0641cb0ba91f1ebbdad2bf51c9751a8)
+        ;
+
+        
+    
+    
+                marker_cffc6f5efb9ee0252b2504eefc0aeff3.setIcon(div_icon_47be184929f531aeeba603afb55cb963);
+            
+    
+            var marker_41775c846e3964e67ed4125117809e56 = L.marker(
+                [38.7936024, -9.4607455],
+                {
+}
+            ).addTo(map_a1495389abdef002913ef16e49048155);
+        
+    
+            var div_icon_95a71b146bc6ddc5ef93b460be7e9242 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"font-size: 24px; line-height: 24px;\"\u003e\ud83c\udf77\u003c/div\u003e\n            ",
+  "className": "empty",
+});
+            marker_41775c846e3964e67ed4125117809e56.setIcon(div_icon_95a71b146bc6ddc5ef93b460be7e9242);
+        
+    
+        var popup_2431dccc4df773e364ff13039a8d8bda = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_db9f1ba9f7793a6de84aa7d2d8f0328e = $(`<div id="html_db9f1ba9f7793a6de84aa7d2d8f0328e" style="width: 100.0%; height: 100.0%;">             <div style='font-size: 14px;'>                 <b>Casal Santa Maria</b><br>                 🍇 Portuguese Winery             </div>         </div>`)[0];
+                popup_2431dccc4df773e364ff13039a8d8bda.setContent(html_db9f1ba9f7793a6de84aa7d2d8f0328e);
+            
+        
+
+        marker_41775c846e3964e67ed4125117809e56.bindPopup(popup_2431dccc4df773e364ff13039a8d8bda)
+        ;
+
+        
+    
+    
+                marker_41775c846e3964e67ed4125117809e56.setIcon(div_icon_95a71b146bc6ddc5ef93b460be7e9242);
+            
+    
+            var marker_c63a52ff760844c9e476b15c6eeca2d0 = L.marker(
+                [38.5589553, -7.8389337],
+                {
+}
+            ).addTo(map_a1495389abdef002913ef16e49048155);
+        
+    
+            var div_icon_493d7408df57a49dfcba6922acb8111d = L.divIcon({
+  "html": "\n                \u003cdiv style=\"font-size: 24px; line-height: 24px;\"\u003e\ud83c\udf77\u003c/div\u003e\n            ",
+  "className": "empty",
+});
+            marker_c63a52ff760844c9e476b15c6eeca2d0.setIcon(div_icon_493d7408df57a49dfcba6922acb8111d);
+        
+    
+        var popup_007d45f117cbdd5eac75bb3dcc182534 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2729dcadaf8eb213d0a6439c1fec8232 = $(`<div id="html_2729dcadaf8eb213d0a6439c1fec8232" style="width: 100.0%; height: 100.0%;">             <div style='font-size: 14px;'>                 <b>Herdade da Fonte Coberta</b><br>                 🍇 Portuguese Winery             </div>         </div>`)[0];
+                popup_007d45f117cbdd5eac75bb3dcc182534.setContent(html_2729dcadaf8eb213d0a6439c1fec8232);
+            
+        
+
+        marker_c63a52ff760844c9e476b15c6eeca2d0.bindPopup(popup_007d45f117cbdd5eac75bb3dcc182534)
+        ;
+
+        
+    
+    
+                marker_c63a52ff760844c9e476b15c6eeca2d0.setIcon(div_icon_493d7408df57a49dfcba6922acb8111d);
+            
+    
+            var marker_9f28e3666dce8cd7ac6f392adb03bc53 = L.marker(
+                [38.5434077, -7.8697362],
+                {
+}
+            ).addTo(map_a1495389abdef002913ef16e49048155);
+        
+    
+            var div_icon_69a975863ee70493d4ab57cdbfe38d77 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"font-size: 24px; line-height: 24px;\"\u003e\ud83c\udf77\u003c/div\u003e\n            ",
+  "className": "empty",
+});
+            marker_9f28e3666dce8cd7ac6f392adb03bc53.setIcon(div_icon_69a975863ee70493d4ab57cdbfe38d77);
+        
+    
+        var popup_40fca842801bdf538829235ee3230e44 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_fb74ae4e2b5ddb6c50e2463b68ce6a2f = $(`<div id="html_fb74ae4e2b5ddb6c50e2463b68ce6a2f" style="width: 100.0%; height: 100.0%;">             <div style='font-size: 14px;'>                 <b>Monte de Pinheiros</b><br>                 🍇 Portuguese Winery             </div>         </div>`)[0];
+                popup_40fca842801bdf538829235ee3230e44.setContent(html_fb74ae4e2b5ddb6c50e2463b68ce6a2f);
+            
+        
+
+        marker_9f28e3666dce8cd7ac6f392adb03bc53.bindPopup(popup_40fca842801bdf538829235ee3230e44)
+        ;
+
+        
+    
+    
+                marker_9f28e3666dce8cd7ac6f392adb03bc53.setIcon(div_icon_69a975863ee70493d4ab57cdbfe38d77);
+            
+    
+            var marker_8c4fef8412def682f8b915793de43132 = L.marker(
+                [41.1367974, -8.6140068],
+                {
+}
+            ).addTo(map_a1495389abdef002913ef16e49048155);
+        
+    
+            var div_icon_84f9978aa121195401712e01384fece1 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"font-size: 24px; line-height: 24px;\"\u003e\ud83c\udf77\u003c/div\u003e\n            ",
+  "className": "empty",
+});
+            marker_8c4fef8412def682f8b915793de43132.setIcon(div_icon_84f9978aa121195401712e01384fece1);
+        
+    
+        var popup_1dc52d90317c7211e86eeaf70656789d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_9df01d1f4e537428afed1ff368c1f16c = $(`<div id="html_9df01d1f4e537428afed1ff368c1f16c" style="width: 100.0%; height: 100.0%;">             <div style='font-size: 14px;'>                 <b>Augusto's</b><br>                 🍇 Portuguese Winery             </div>         </div>`)[0];
+                popup_1dc52d90317c7211e86eeaf70656789d.setContent(html_9df01d1f4e537428afed1ff368c1f16c);
+            
+        
+
+        marker_8c4fef8412def682f8b915793de43132.bindPopup(popup_1dc52d90317c7211e86eeaf70656789d)
+        ;
+
+        
+    
+    
+                marker_8c4fef8412def682f8b915793de43132.setIcon(div_icon_84f9978aa121195401712e01384fece1);
+            
+    
+            var marker_505e4526232a8d031bdd918acc3a8816 = L.marker(
+                [38.7407161, -9.4030289],
+                {
+}
+            ).addTo(map_a1495389abdef002913ef16e49048155);
+        
+    
+            var div_icon_37558fcdaaed556741f5602b361a238e = L.divIcon({
+  "html": "\n                \u003cdiv style=\"font-size: 24px; line-height: 24px;\"\u003e\ud83c\udf77\u003c/div\u003e\n            ",
+  "className": "empty",
+});
+            marker_505e4526232a8d031bdd918acc3a8816.setIcon(div_icon_37558fcdaaed556741f5602b361a238e);
+        
+    
+        var popup_67760ad1e99b64ccb85ae620168bdbcd = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_8fcf1336aa7345da4ecd2bb5ece0a9a6 = $(`<div id="html_8fcf1336aa7345da4ecd2bb5ece0a9a6" style="width: 100.0%; height: 100.0%;">             <div style='font-size: 14px;'>                 <b>Adega Quintinha</b><br>                 🍇 Portuguese Winery             </div>         </div>`)[0];
+                popup_67760ad1e99b64ccb85ae620168bdbcd.setContent(html_8fcf1336aa7345da4ecd2bb5ece0a9a6);
+            
+        
+
+        marker_505e4526232a8d031bdd918acc3a8816.bindPopup(popup_67760ad1e99b64ccb85ae620168bdbcd)
+        ;
+
+        
+    
+    
+                marker_505e4526232a8d031bdd918acc3a8816.setIcon(div_icon_37558fcdaaed556741f5602b361a238e);
+            
+    
+            var marker_26ea20a1e4dd29f2c417e4f88b34dd7c = L.marker(
+                [41.1327122, -8.6011141],
+                {
+}
+            ).addTo(map_a1495389abdef002913ef16e49048155);
+        
+    
+            var div_icon_d65dea48169a0cb7156563149dde8ac7 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"font-size: 24px; line-height: 24px;\"\u003e\ud83c\udf77\u003c/div\u003e\n            ",
+  "className": "empty",
+});
+            marker_26ea20a1e4dd29f2c417e4f88b34dd7c.setIcon(div_icon_d65dea48169a0cb7156563149dde8ac7);
+        
+    
+        var popup_2127dfb92c25bfbeeb58c95c34acfd0a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_7eb39e5136c5efafd3e34bcd6e7f2316 = $(`<div id="html_7eb39e5136c5efafd3e34bcd6e7f2316" style="width: 100.0%; height: 100.0%;">             <div style='font-size: 14px;'>                 <b>Real Companhia Velha</b><br>                 🍇 Portuguese Winery             </div>         </div>`)[0];
+                popup_2127dfb92c25bfbeeb58c95c34acfd0a.setContent(html_7eb39e5136c5efafd3e34bcd6e7f2316);
+            
+        
+
+        marker_26ea20a1e4dd29f2c417e4f88b34dd7c.bindPopup(popup_2127dfb92c25bfbeeb58c95c34acfd0a)
+        ;
+
+        
+    
+    
+                marker_26ea20a1e4dd29f2c417e4f88b34dd7c.setIcon(div_icon_d65dea48169a0cb7156563149dde8ac7);
+            
+    
+            var marker_cd1bae89893a73312ba8e8d2ae713ba0 = L.marker(
+                [38.6407503, -7.7400288],
+                {
+}
+            ).addTo(map_a1495389abdef002913ef16e49048155);
+        
+    
+            var div_icon_77d8c3a19559ebb9b727a10e0cbf996d = L.divIcon({
+  "html": "\n                \u003cdiv style=\"font-size: 24px; line-height: 24px;\"\u003e\ud83c\udf77\u003c/div\u003e\n            ",
+  "className": "empty",
+});
+            marker_cd1bae89893a73312ba8e8d2ae713ba0.setIcon(div_icon_77d8c3a19559ebb9b727a10e0cbf996d);
+        
+    
+        var popup_c251de4b18eeff8251dbe5b9381cfed8 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_589371447581a582412b874e2fd1dc6c = $(`<div id="html_589371447581a582412b874e2fd1dc6c" style="width: 100.0%; height: 100.0%;">             <div style='font-size: 14px;'>                 <b>Casa Relvas</b><br>                 🍇 Portuguese Winery             </div>         </div>`)[0];
+                popup_c251de4b18eeff8251dbe5b9381cfed8.setContent(html_589371447581a582412b874e2fd1dc6c);
+            
+        
+
+        marker_cd1bae89893a73312ba8e8d2ae713ba0.bindPopup(popup_c251de4b18eeff8251dbe5b9381cfed8)
+        ;
+
+        
+    
+    
+                marker_cd1bae89893a73312ba8e8d2ae713ba0.setIcon(div_icon_77d8c3a19559ebb9b727a10e0cbf996d);
+            
+    
+            var marker_bb131989c52d49d8d2c8a77d369e1ebf = L.marker(
+                [42.0977097, -8.3098803],
+                {
+}
+            ).addTo(map_a1495389abdef002913ef16e49048155);
+        
+    
+            var div_icon_63f964e61214720af4c8372a433017c1 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"font-size: 24px; line-height: 24px;\"\u003e\ud83c\udf77\u003c/div\u003e\n            ",
+  "className": "empty",
+});
+            marker_bb131989c52d49d8d2c8a77d369e1ebf.setIcon(div_icon_63f964e61214720af4c8372a433017c1);
+        
+    
+        var popup_a6d9f96af57b2ad886576f106a0cd554 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_770065e9626570d10cf2874b4b1d21be = $(`<div id="html_770065e9626570d10cf2874b4b1d21be" style="width: 100.0%; height: 100.0%;">             <div style='font-size: 14px;'>                 <b>Quinta de Soalheiro</b><br>                 🍇 Portuguese Winery             </div>         </div>`)[0];
+                popup_a6d9f96af57b2ad886576f106a0cd554.setContent(html_770065e9626570d10cf2874b4b1d21be);
+            
+        
+
+        marker_bb131989c52d49d8d2c8a77d369e1ebf.bindPopup(popup_a6d9f96af57b2ad886576f106a0cd554)
+        ;
+
+        
+    
+    
+                marker_bb131989c52d49d8d2c8a77d369e1ebf.setIcon(div_icon_63f964e61214720af4c8372a433017c1);
+            
+    
+            var marker_c4968d4a8dfb86448bcfd6a4796a7ba3 = L.marker(
+                [41.1188645, -7.9888121],
+                {
+}
+            ).addTo(map_a1495389abdef002913ef16e49048155);
+        
+    
+            var div_icon_7733f5b0fb27a497f67e9a98ca3d92d6 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"font-size: 24px; line-height: 24px;\"\u003e\ud83c\udf77\u003c/div\u003e\n            ",
+  "className": "empty",
+});
+            marker_c4968d4a8dfb86448bcfd6a4796a7ba3.setIcon(div_icon_7733f5b0fb27a497f67e9a98ca3d92d6);
+        
+    
+        var popup_f2d53415cd91c227ce12edda197f8c9a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_45629d9e5302a8a275c84436dead4e27 = $(`<div id="html_45629d9e5302a8a275c84436dead4e27" style="width: 100.0%; height: 100.0%;">             <div style='font-size: 14px;'>                 <b>Quinta de Covela</b><br>                 🍇 Portuguese Winery             </div>         </div>`)[0];
+                popup_f2d53415cd91c227ce12edda197f8c9a.setContent(html_45629d9e5302a8a275c84436dead4e27);
+            
+        
+
+        marker_c4968d4a8dfb86448bcfd6a4796a7ba3.bindPopup(popup_f2d53415cd91c227ce12edda197f8c9a)
+        ;
+
+        
+    
+    
+                marker_c4968d4a8dfb86448bcfd6a4796a7ba3.setIcon(div_icon_7733f5b0fb27a497f67e9a98ca3d92d6);
+            
+    
+            var marker_fff2ce3c6c4066c333089773aa4ce198 = L.marker(
+                [38.6481389, -8.2938756],
+                {
+}
+            ).addTo(map_a1495389abdef002913ef16e49048155);
+        
+    
+            var div_icon_835e7c3cf7efd3229a8ca467c2c09b0e = L.divIcon({
+  "html": "\n                \u003cdiv style=\"font-size: 24px; line-height: 24px;\"\u003e\ud83c\udf77\u003c/div\u003e\n            ",
+  "className": "empty",
+});
+            marker_fff2ce3c6c4066c333089773aa4ce198.setIcon(div_icon_835e7c3cf7efd3229a8ca467c2c09b0e);
+        
+    
+        var popup_85f645d210be4d5a7ab16e8322560270 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2561dfd0a5efecd9e870d4f4a52841cc = $(`<div id="html_2561dfd0a5efecd9e870d4f4a52841cc" style="width: 100.0%; height: 100.0%;">             <div style='font-size: 14px;'>                 <b>Winery</b><br>                 🍇 Portuguese Winery             </div>         </div>`)[0];
+                popup_85f645d210be4d5a7ab16e8322560270.setContent(html_2561dfd0a5efecd9e870d4f4a52841cc);
+            
+        
+
+        marker_fff2ce3c6c4066c333089773aa4ce198.bindPopup(popup_85f645d210be4d5a7ab16e8322560270)
+        ;
+
+        
+    
+    
+                marker_fff2ce3c6c4066c333089773aa4ce198.setIcon(div_icon_835e7c3cf7efd3229a8ca467c2c09b0e);
+            
+    
+            var marker_aa4d8b222be1a3a75d7a208f5688448f = L.marker(
+                [39.111487, -7.8693826],
+                {
+}
+            ).addTo(map_a1495389abdef002913ef16e49048155);
+        
+    
+            var div_icon_ea33cc2d534e1cc1bb9dc1bea9c1c55f = L.divIcon({
+  "html": "\n                \u003cdiv style=\"font-size: 24px; line-height: 24px;\"\u003e\ud83c\udf77\u003c/div\u003e\n            ",
+  "className": "empty",
+});
+            marker_aa4d8b222be1a3a75d7a208f5688448f.setIcon(div_icon_ea33cc2d534e1cc1bb9dc1bea9c1c55f);
+        
+    
+        var popup_ac2756a77b9226d8883d08fcf2ed3e0b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d1bd11e195fa7f3a2ab8753d9d69204a = $(`<div id="html_d1bd11e195fa7f3a2ab8753d9d69204a" style="width: 100.0%; height: 100.0%;">             <div style='font-size: 14px;'>                 <b>Fundação Abreu Callado</b><br>                 🍇 Portuguese Winery             </div>         </div>`)[0];
+                popup_ac2756a77b9226d8883d08fcf2ed3e0b.setContent(html_d1bd11e195fa7f3a2ab8753d9d69204a);
+            
+        
+
+        marker_aa4d8b222be1a3a75d7a208f5688448f.bindPopup(popup_ac2756a77b9226d8883d08fcf2ed3e0b)
+        ;
+
+        
+    
+    
+                marker_aa4d8b222be1a3a75d7a208f5688448f.setIcon(div_icon_ea33cc2d534e1cc1bb9dc1bea9c1c55f);
+            
+    
+            var marker_a510d5b2799243ed94541f5743a9771e = L.marker(
+                [41.0886939, -6.8084246],
+                {
+}
+            ).addTo(map_a1495389abdef002913ef16e49048155);
+        
+    
+            var div_icon_7abd44e7dbc4e4e1012dc8c4b2be9b67 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"font-size: 24px; line-height: 24px;\"\u003e\ud83c\udf77\u003c/div\u003e\n            ",
+  "className": "empty",
+});
+            marker_a510d5b2799243ed94541f5743a9771e.setIcon(div_icon_7abd44e7dbc4e4e1012dc8c4b2be9b67);
+        
+    
+        var popup_f29df2e878a2df68abc4aacc8a0d7cd3 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_89daeebad8544d57badfbf70b5cddfe4 = $(`<div id="html_89daeebad8544d57badfbf70b5cddfe4" style="width: 100.0%; height: 100.0%;">             <div style='font-size: 14px;'>                 <b>Winery</b><br>                 🍇 Portuguese Winery             </div>         </div>`)[0];
+                popup_f29df2e878a2df68abc4aacc8a0d7cd3.setContent(html_89daeebad8544d57badfbf70b5cddfe4);
+            
+        
+
+        marker_a510d5b2799243ed94541f5743a9771e.bindPopup(popup_f29df2e878a2df68abc4aacc8a0d7cd3)
+        ;
+
+        
+    
+    
+                marker_a510d5b2799243ed94541f5743a9771e.setIcon(div_icon_7abd44e7dbc4e4e1012dc8c4b2be9b67);
+            
+    
+            var marker_e80e3ba41e696361788660fed9d9472e = L.marker(
+                [41.9226451, -8.4542145],
+                {
+}
+            ).addTo(map_a1495389abdef002913ef16e49048155);
+        
+    
+            var div_icon_e181ecc699556940a1cf5b7df4d326f9 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"font-size: 24px; line-height: 24px;\"\u003e\ud83c\udf77\u003c/div\u003e\n            ",
+  "className": "empty",
+});
+            marker_e80e3ba41e696361788660fed9d9472e.setIcon(div_icon_e181ecc699556940a1cf5b7df4d326f9);
+        
+    
+        var popup_b69eebaa05eb1cea8770f739a41b8bf0 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_71613a581b66e13c68b3e3dff3eb8b28 = $(`<div id="html_71613a581b66e13c68b3e3dff3eb8b28" style="width: 100.0%; height: 100.0%;">             <div style='font-size: 14px;'>                 <b>Winery</b><br>                 🍇 Portuguese Winery             </div>         </div>`)[0];
+                popup_b69eebaa05eb1cea8770f739a41b8bf0.setContent(html_71613a581b66e13c68b3e3dff3eb8b28);
+            
+        
+
+        marker_e80e3ba41e696361788660fed9d9472e.bindPopup(popup_b69eebaa05eb1cea8770f739a41b8bf0)
+        ;
+
+        
+    
+    
+                marker_e80e3ba41e696361788660fed9d9472e.setIcon(div_icon_e181ecc699556940a1cf5b7df4d326f9);
+            
+    
+            var marker_cf3c27d14d5acfae8d215d52db7a6204 = L.marker(
+                [38.8480979, -7.4611363],
+                {
+}
+            ).addTo(map_a1495389abdef002913ef16e49048155);
+        
+    
+            var div_icon_0a2c56b8b6cc8d18ad970288e5c25804 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"font-size: 24px; line-height: 24px;\"\u003e\ud83c\udf77\u003c/div\u003e\n            ",
+  "className": "empty",
+});
+            marker_cf3c27d14d5acfae8d215d52db7a6204.setIcon(div_icon_0a2c56b8b6cc8d18ad970288e5c25804);
+        
+    
+        var popup_7afaf638a4d2f36632f468ba397c382c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c7e18b50408f68a5236a3b53e52ab767 = $(`<div id="html_c7e18b50408f68a5236a3b53e52ab767" style="width: 100.0%; height: 100.0%;">             <div style='font-size: 14px;'>                 <b>Herdade da Cardeira</b><br>                 🍇 Portuguese Winery             </div>         </div>`)[0];
+                popup_7afaf638a4d2f36632f468ba397c382c.setContent(html_c7e18b50408f68a5236a3b53e52ab767);
+            
+        
+
+        marker_cf3c27d14d5acfae8d215d52db7a6204.bindPopup(popup_7afaf638a4d2f36632f468ba397c382c)
+        ;
+
+        
+    
+    
+                marker_cf3c27d14d5acfae8d215d52db7a6204.setIcon(div_icon_0a2c56b8b6cc8d18ad970288e5c25804);
+            
+    
+            var marker_f54133194847aaae44d87c649ec0c3c9 = L.marker(
+                [40.3337025, -7.8682775],
+                {
+}
+            ).addTo(map_a1495389abdef002913ef16e49048155);
+        
+    
+            var div_icon_319058180b2c4536a0eeb5d4dca85267 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"font-size: 24px; line-height: 24px;\"\u003e\ud83c\udf77\u003c/div\u003e\n            ",
+  "className": "empty",
+});
+            marker_f54133194847aaae44d87c649ec0c3c9.setIcon(div_icon_319058180b2c4536a0eeb5d4dca85267);
+        
+    
+        var popup_2d3affa7a761f77487115bcaebb133bf = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_180bb1f9277149c3d902c9d764825840 = $(`<div id="html_180bb1f9277149c3d902c9d764825840" style="width: 100.0%; height: 100.0%;">             <div style='font-size: 14px;'>                 <b>Winery</b><br>                 🍇 Portuguese Winery             </div>         </div>`)[0];
+                popup_2d3affa7a761f77487115bcaebb133bf.setContent(html_180bb1f9277149c3d902c9d764825840);
+            
+        
+
+        marker_f54133194847aaae44d87c649ec0c3c9.bindPopup(popup_2d3affa7a761f77487115bcaebb133bf)
+        ;
+
+        
+    
+    
+                marker_f54133194847aaae44d87c649ec0c3c9.setIcon(div_icon_319058180b2c4536a0eeb5d4dca85267);
+            
+    
+            var marker_3ea0bf76ec53a688d095a35882f57943 = L.marker(
+                [41.1968448, -7.529123],
+                {
+}
+            ).addTo(map_a1495389abdef002913ef16e49048155);
+        
+    
+            var div_icon_c0577841265a75780f6f2bbc6fa57db3 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"font-size: 24px; line-height: 24px;\"\u003e\ud83c\udf77\u003c/div\u003e\n            ",
+  "className": "empty",
+});
+            marker_3ea0bf76ec53a688d095a35882f57943.setIcon(div_icon_c0577841265a75780f6f2bbc6fa57db3);
+        
+    
+        var popup_d9f2c99cbebad7842db31012de8995df = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0a428d51e704195a0f3d060d4ad69fc3 = $(`<div id="html_0a428d51e704195a0f3d060d4ad69fc3" style="width: 100.0%; height: 100.0%;">             <div style='font-size: 14px;'>                 <b>Quinta do Jalloto</b><br>                 🍇 Portuguese Winery             </div>         </div>`)[0];
+                popup_d9f2c99cbebad7842db31012de8995df.setContent(html_0a428d51e704195a0f3d060d4ad69fc3);
+            
+        
+
+        marker_3ea0bf76ec53a688d095a35882f57943.bindPopup(popup_d9f2c99cbebad7842db31012de8995df)
+        ;
+
+        
+    
+    
+                marker_3ea0bf76ec53a688d095a35882f57943.setIcon(div_icon_c0577841265a75780f6f2bbc6fa57db3);
+            
+    
+            var marker_74ba669a98ce68c65ec5bf71575f9d6d = L.marker(
+                [38.2485458, -7.8993766],
+                {
+}
+            ).addTo(map_a1495389abdef002913ef16e49048155);
+        
+    
+            var div_icon_08b73b70a59fc2055d9f432c31a86831 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"font-size: 24px; line-height: 24px;\"\u003e\ud83c\udf77\u003c/div\u003e\n            ",
+  "className": "empty",
+});
+            marker_74ba669a98ce68c65ec5bf71575f9d6d.setIcon(div_icon_08b73b70a59fc2055d9f432c31a86831);
+        
+    
+        var popup_7946deb03bd6d00a519080e0a4c5245a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_5f37c56889e307f49a12717819090d56 = $(`<div id="html_5f37c56889e307f49a12717819090d56" style="width: 100.0%; height: 100.0%;">             <div style='font-size: 14px;'>                 <b>Winery</b><br>                 🍇 Portuguese Winery             </div>         </div>`)[0];
+                popup_7946deb03bd6d00a519080e0a4c5245a.setContent(html_5f37c56889e307f49a12717819090d56);
+            
+        
+
+        marker_74ba669a98ce68c65ec5bf71575f9d6d.bindPopup(popup_7946deb03bd6d00a519080e0a4c5245a)
+        ;
+
+        
+    
+    
+                marker_74ba669a98ce68c65ec5bf71575f9d6d.setIcon(div_icon_08b73b70a59fc2055d9f432c31a86831);
+            
+    
+            var marker_c9458351a31b8ae547d9d149e4e67636 = L.marker(
+                [40.0600633, -8.39285],
+                {
+}
+            ).addTo(map_a1495389abdef002913ef16e49048155);
+        
+    
+            var div_icon_5e14cebd46d6b10aa2a824910af7d512 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"font-size: 24px; line-height: 24px;\"\u003e\ud83c\udf77\u003c/div\u003e\n            ",
+  "className": "empty",
+});
+            marker_c9458351a31b8ae547d9d149e4e67636.setIcon(div_icon_5e14cebd46d6b10aa2a824910af7d512);
+        
+    
+        var popup_61478ddc7da4eb9c20c15459c5873293 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_5d0a559e89f6a5c2eb2facdb6d3fc948 = $(`<div id="html_5d0a559e89f6a5c2eb2facdb6d3fc948" style="width: 100.0%; height: 100.0%;">             <div style='font-size: 14px;'>                 <b>Adega Monte Formigão</b><br>                 🍇 Portuguese Winery             </div>         </div>`)[0];
+                popup_61478ddc7da4eb9c20c15459c5873293.setContent(html_5d0a559e89f6a5c2eb2facdb6d3fc948);
+            
+        
+
+        marker_c9458351a31b8ae547d9d149e4e67636.bindPopup(popup_61478ddc7da4eb9c20c15459c5873293)
+        ;
+
+        
+    
+    
+                marker_c9458351a31b8ae547d9d149e4e67636.setIcon(div_icon_5e14cebd46d6b10aa2a824910af7d512);
+            
+    
+            var marker_ccc52892525988368043402b5c7e2a8a = L.marker(
+                [38.5689592, -8.9137691],
+                {
+}
+            ).addTo(map_a1495389abdef002913ef16e49048155);
+        
+    
+            var div_icon_3ff481aa0f8237feac517a826a346fd9 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"font-size: 24px; line-height: 24px;\"\u003e\ud83c\udf77\u003c/div\u003e\n            ",
+  "className": "empty",
+});
+            marker_ccc52892525988368043402b5c7e2a8a.setIcon(div_icon_3ff481aa0f8237feac517a826a346fd9);
+        
+    
+        var popup_6b84e67e9edaf03482e84057e3698a78 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a641921b62054754e27e681e30fc0122 = $(`<div id="html_a641921b62054754e27e681e30fc0122" style="width: 100.0%; height: 100.0%;">             <div style='font-size: 14px;'>                 <b>Adega Camolas</b><br>                 🍇 Portuguese Winery             </div>         </div>`)[0];
+                popup_6b84e67e9edaf03482e84057e3698a78.setContent(html_a641921b62054754e27e681e30fc0122);
+            
+        
+
+        marker_ccc52892525988368043402b5c7e2a8a.bindPopup(popup_6b84e67e9edaf03482e84057e3698a78)
+        ;
+
+        
+    
+    
+                marker_ccc52892525988368043402b5c7e2a8a.setIcon(div_icon_3ff481aa0f8237feac517a826a346fd9);
+            
+    
+            var marker_ab0f5bfc2651de2917986ed63a5be124 = L.marker(
+                [41.3915554, -8.4891741],
+                {
+}
+            ).addTo(map_a1495389abdef002913ef16e49048155);
+        
+    
+            var div_icon_fe9b4e96da523e9dc1740b7032c510b5 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"font-size: 24px; line-height: 24px;\"\u003e\ud83c\udf77\u003c/div\u003e\n            ",
+  "className": "empty",
+});
+            marker_ab0f5bfc2651de2917986ed63a5be124.setIcon(div_icon_fe9b4e96da523e9dc1740b7032c510b5);
+        
+    
+        var popup_449aa854da962f943cea741323e3ffe8 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3aba4b16797b4216dd4ae27ad2ddf035 = $(`<div id="html_3aba4b16797b4216dd4ae27ad2ddf035" style="width: 100.0%; height: 100.0%;">             <div style='font-size: 14px;'>                 <b>Somidol -Sociedade Vinícola</b><br>                 🍇 Portuguese Winery             </div>         </div>`)[0];
+                popup_449aa854da962f943cea741323e3ffe8.setContent(html_3aba4b16797b4216dd4ae27ad2ddf035);
+            
+        
+
+        marker_ab0f5bfc2651de2917986ed63a5be124.bindPopup(popup_449aa854da962f943cea741323e3ffe8)
+        ;
+
+        
+    
+    
+                marker_ab0f5bfc2651de2917986ed63a5be124.setIcon(div_icon_fe9b4e96da523e9dc1740b7032c510b5);
+            
+    
+            var marker_6e6de0c7d4540879a170335005502536 = L.marker(
+                [39.0169997, -7.8548032],
+                {
+}
+            ).addTo(map_a1495389abdef002913ef16e49048155);
+        
+    
+            var div_icon_807a3f73138cc45ad9c75177801ab706 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"font-size: 24px; line-height: 24px;\"\u003e\ud83c\udf77\u003c/div\u003e\n            ",
+  "className": "empty",
+});
+            marker_6e6de0c7d4540879a170335005502536.setIcon(div_icon_807a3f73138cc45ad9c75177801ab706);
+        
+    
+        var popup_fb83a4282336bed6f41866eae598fc0e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1df3cb5d29b8c87b401fa7267215db85 = $(`<div id="html_1df3cb5d29b8c87b401fa7267215db85" style="width: 100.0%; height: 100.0%;">             <div style='font-size: 14px;'>                 <b>Herdade Fonte Paredes</b><br>                 🍇 Portuguese Winery             </div>         </div>`)[0];
+                popup_fb83a4282336bed6f41866eae598fc0e.setContent(html_1df3cb5d29b8c87b401fa7267215db85);
+            
+        
+
+        marker_6e6de0c7d4540879a170335005502536.bindPopup(popup_fb83a4282336bed6f41866eae598fc0e)
+        ;
+
+        
+    
+    
+                marker_6e6de0c7d4540879a170335005502536.setIcon(div_icon_807a3f73138cc45ad9c75177801ab706);
+            
+    
+            var marker_412ad8632bc3b7e8a9ba25c4af7ab755 = L.marker(
+                [39.1988846, -7.8032765],
+                {
+}
+            ).addTo(map_a1495389abdef002913ef16e49048155);
+        
+    
+            var div_icon_9b484f7d3363d0f64f9a35a92997b204 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"font-size: 24px; line-height: 24px;\"\u003e\ud83c\udf77\u003c/div\u003e\n            ",
+  "className": "empty",
+});
+            marker_412ad8632bc3b7e8a9ba25c4af7ab755.setIcon(div_icon_9b484f7d3363d0f64f9a35a92997b204);
+        
+    
+        var popup_bcd0ebc7412c3fd3635b754cbac18ab1 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0250c56d3246f29c87691a25019982e1 = $(`<div id="html_0250c56d3246f29c87691a25019982e1" style="width: 100.0%; height: 100.0%;">             <div style='font-size: 14px;'>                 <b>Herdade Vale Barqueiros</b><br>                 🍇 Portuguese Winery             </div>         </div>`)[0];
+                popup_bcd0ebc7412c3fd3635b754cbac18ab1.setContent(html_0250c56d3246f29c87691a25019982e1);
+            
+        
+
+        marker_412ad8632bc3b7e8a9ba25c4af7ab755.bindPopup(popup_bcd0ebc7412c3fd3635b754cbac18ab1)
+        ;
+
+        
+    
+    
+                marker_412ad8632bc3b7e8a9ba25c4af7ab755.setIcon(div_icon_9b484f7d3363d0f64f9a35a92997b204);
+            
+    
+            var marker_0cd755cd786cecb0e13863a41dba5695 = L.marker(
+                [41.1558938, -7.8949794],
+                {
+}
+            ).addTo(map_a1495389abdef002913ef16e49048155);
+        
+    
+            var div_icon_1f76fac205eb9edcd36b43634c362a52 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"font-size: 24px; line-height: 24px;\"\u003e\ud83c\udf77\u003c/div\u003e\n            ",
+  "className": "empty",
+});
+            marker_0cd755cd786cecb0e13863a41dba5695.setIcon(div_icon_1f76fac205eb9edcd36b43634c362a52);
+        
+    
+        var popup_ebfc691215eb961a467afa36a272d260 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ebe3811ccc97ea363c42cede45046dd3 = $(`<div id="html_ebe3811ccc97ea363c42cede45046dd3" style="width: 100.0%; height: 100.0%;">             <div style='font-size: 14px;'>                 <b>Winery</b><br>                 🍇 Portuguese Winery             </div>         </div>`)[0];
+                popup_ebfc691215eb961a467afa36a272d260.setContent(html_ebe3811ccc97ea363c42cede45046dd3);
+            
+        
+
+        marker_0cd755cd786cecb0e13863a41dba5695.bindPopup(popup_ebfc691215eb961a467afa36a272d260)
+        ;
+
+        
+    
+    
+                marker_0cd755cd786cecb0e13863a41dba5695.setIcon(div_icon_1f76fac205eb9edcd36b43634c362a52);
+            
+    
+            var marker_db10feccbc314a6ffdf1f02b34b0f801 = L.marker(
+                [38.5160283, -8.9993416],
+                {
+}
+            ).addTo(map_a1495389abdef002913ef16e49048155);
+        
+    
+            var div_icon_994f5cdc0df6497a3cb065bf4f06d314 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"font-size: 24px; line-height: 24px;\"\u003e\ud83c\udf77\u003c/div\u003e\n            ",
+  "className": "empty",
+});
+            marker_db10feccbc314a6ffdf1f02b34b0f801.setIcon(div_icon_994f5cdc0df6497a3cb065bf4f06d314);
+        
+    
+        var popup_80ed9de46af61a24d316b78bbd81fd88 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_65f84178255b42cc1dc46e3dbf82e47d = $(`<div id="html_65f84178255b42cc1dc46e3dbf82e47d" style="width: 100.0%; height: 100.0%;">             <div style='font-size: 14px;'>                 <b>Quinta da Califórnia</b><br>                 🍇 Portuguese Winery             </div>         </div>`)[0];
+                popup_80ed9de46af61a24d316b78bbd81fd88.setContent(html_65f84178255b42cc1dc46e3dbf82e47d);
+            
+        
+
+        marker_db10feccbc314a6ffdf1f02b34b0f801.bindPopup(popup_80ed9de46af61a24d316b78bbd81fd88)
+        ;
+
+        
+    
+    
+                marker_db10feccbc314a6ffdf1f02b34b0f801.setIcon(div_icon_994f5cdc0df6497a3cb065bf4f06d314);
+            
+    
+            var marker_d79a1aedb6db53e862cfea59a427075a = L.marker(
+                [42.0910524, -8.3202259],
+                {
+}
+            ).addTo(map_a1495389abdef002913ef16e49048155);
+        
+    
+            var div_icon_252eecda48b75144a3fa7d1ab9348d5c = L.divIcon({
+  "html": "\n                \u003cdiv style=\"font-size: 24px; line-height: 24px;\"\u003e\ud83c\udf77\u003c/div\u003e\n            ",
+  "className": "empty",
+});
+            marker_d79a1aedb6db53e862cfea59a427075a.setIcon(div_icon_252eecda48b75144a3fa7d1ab9348d5c);
+        
+    
+        var popup_81bb68ef8e77fff672b5eff3b8d1d476 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b6e351bad03df7af3abc32d139536ed8 = $(`<div id="html_b6e351bad03df7af3abc32d139536ed8" style="width: 100.0%; height: 100.0%;">             <div style='font-size: 14px;'>                 <b>Anselmo Mendes Vinhos, Lda.</b><br>                 🍇 Portuguese Winery             </div>         </div>`)[0];
+                popup_81bb68ef8e77fff672b5eff3b8d1d476.setContent(html_b6e351bad03df7af3abc32d139536ed8);
+            
+        
+
+        marker_d79a1aedb6db53e862cfea59a427075a.bindPopup(popup_81bb68ef8e77fff672b5eff3b8d1d476)
+        ;
+
+        
+    
+    
+                marker_d79a1aedb6db53e862cfea59a427075a.setIcon(div_icon_252eecda48b75144a3fa7d1ab9348d5c);
+            
+    
+            var marker_bc5967e5d27724067c5202ad94290f58 = L.marker(
+                [41.1455485, -7.7871222],
+                {
+}
+            ).addTo(map_a1495389abdef002913ef16e49048155);
+        
+    
+            var div_icon_1db75ddc238d4852c07d5d4fdff2488e = L.divIcon({
+  "html": "\n                \u003cdiv style=\"font-size: 24px; line-height: 24px;\"\u003e\ud83c\udf77\u003c/div\u003e\n            ",
+  "className": "empty",
+});
+            marker_bc5967e5d27724067c5202ad94290f58.setIcon(div_icon_1db75ddc238d4852c07d5d4fdff2488e);
+        
+    
+        var popup_444c9e01cc5fe231496d974a44ce5bce = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_10a525b5d3cd007beea26bb58dce114e = $(`<div id="html_10a525b5d3cd007beea26bb58dce114e" style="width: 100.0%; height: 100.0%;">             <div style='font-size: 14px;'>                 <b>Quinta dos Álamos</b><br>                 🍇 Portuguese Winery             </div>         </div>`)[0];
+                popup_444c9e01cc5fe231496d974a44ce5bce.setContent(html_10a525b5d3cd007beea26bb58dce114e);
+            
+        
+
+        marker_bc5967e5d27724067c5202ad94290f58.bindPopup(popup_444c9e01cc5fe231496d974a44ce5bce)
+        ;
+
+        
+    
+    
+                marker_bc5967e5d27724067c5202ad94290f58.setIcon(div_icon_1db75ddc238d4852c07d5d4fdff2488e);
+            
+    
+            var marker_75ae1bc81b0cacae25de54be10fa56cc = L.marker(
+                [41.1280957, -7.5825367],
+                {
+}
+            ).addTo(map_a1495389abdef002913ef16e49048155);
+        
+    
+            var div_icon_ca073b032fdc71c19523e2f0b6c702eb = L.divIcon({
+  "html": "\n                \u003cdiv style=\"font-size: 24px; line-height: 24px;\"\u003e\ud83c\udf77\u003c/div\u003e\n            ",
+  "className": "empty",
+});
+            marker_75ae1bc81b0cacae25de54be10fa56cc.setIcon(div_icon_ca073b032fdc71c19523e2f0b6c702eb);
+        
+    
+        var popup_9ad7fb5c6aae656639cac1c0c71c0ba1 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2f652fada42940667a1bd54045711e40 = $(`<div id="html_2f652fada42940667a1bd54045711e40" style="width: 100.0%; height: 100.0%;">             <div style='font-size: 14px;'>                 <b>Quinta da Padrela</b><br>                 🍇 Portuguese Winery             </div>         </div>`)[0];
+                popup_9ad7fb5c6aae656639cac1c0c71c0ba1.setContent(html_2f652fada42940667a1bd54045711e40);
+            
+        
+
+        marker_75ae1bc81b0cacae25de54be10fa56cc.bindPopup(popup_9ad7fb5c6aae656639cac1c0c71c0ba1)
+        ;
+
+        
+    
+    
+                marker_75ae1bc81b0cacae25de54be10fa56cc.setIcon(div_icon_ca073b032fdc71c19523e2f0b6c702eb);
+            
+    
+            var marker_82d361d99bf51eb5debe2c40972baf30 = L.marker(
+                [41.5221681, -8.5950874],
+                {
+}
+            ).addTo(map_a1495389abdef002913ef16e49048155);
+        
+    
+            var div_icon_fb06762ca5c44ddec0382fabd20755aa = L.divIcon({
+  "html": "\n                \u003cdiv style=\"font-size: 24px; line-height: 24px;\"\u003e\ud83c\udf77\u003c/div\u003e\n            ",
+  "className": "empty",
+});
+            marker_82d361d99bf51eb5debe2c40972baf30.setIcon(div_icon_fb06762ca5c44ddec0382fabd20755aa);
+        
+    
+        var popup_c61f1ab387ecb2ef35f0529baae6b089 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_4259a5b6c2ac6f3aceafb4fafdf177c7 = $(`<div id="html_4259a5b6c2ac6f3aceafb4fafdf177c7" style="width: 100.0%; height: 100.0%;">             <div style='font-size: 14px;'>                 <b>Adega Cooperativa de Barcelos</b><br>                 🍇 Portuguese Winery             </div>         </div>`)[0];
+                popup_c61f1ab387ecb2ef35f0529baae6b089.setContent(html_4259a5b6c2ac6f3aceafb4fafdf177c7);
+            
+        
+
+        marker_82d361d99bf51eb5debe2c40972baf30.bindPopup(popup_c61f1ab387ecb2ef35f0529baae6b089)
+        ;
+
+        
+    
+    
+                marker_82d361d99bf51eb5debe2c40972baf30.setIcon(div_icon_fb06762ca5c44ddec0382fabd20755aa);
+            
+    
+            var marker_9d1cbd83f47503698352f4962d2d9eee = L.marker(
+                [38.1825267, -7.5927549],
+                {
+}
+            ).addTo(map_a1495389abdef002913ef16e49048155);
+        
+    
+            var div_icon_7d35124af2fc0bb25990565b27769cdd = L.divIcon({
+  "html": "\n                \u003cdiv style=\"font-size: 24px; line-height: 24px;\"\u003e\ud83c\udf77\u003c/div\u003e\n            ",
+  "className": "empty",
+});
+            marker_9d1cbd83f47503698352f4962d2d9eee.setIcon(div_icon_7d35124af2fc0bb25990565b27769cdd);
+        
+    
+        var popup_a734001a2aa96c925be0e7cc12b90b5e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_48fee4601f1b42bca8647881cf89e9b4 = $(`<div id="html_48fee4601f1b42bca8647881cf89e9b4" style="width: 100.0%; height: 100.0%;">             <div style='font-size: 14px;'>                 <b>Herdade do Sobroso</b><br>                 🍇 Portuguese Winery             </div>         </div>`)[0];
+                popup_a734001a2aa96c925be0e7cc12b90b5e.setContent(html_48fee4601f1b42bca8647881cf89e9b4);
+            
+        
+
+        marker_9d1cbd83f47503698352f4962d2d9eee.bindPopup(popup_a734001a2aa96c925be0e7cc12b90b5e)
+        ;
+
+        
+    
+    
+                marker_9d1cbd83f47503698352f4962d2d9eee.setIcon(div_icon_7d35124af2fc0bb25990565b27769cdd);
+            
+    
+            var marker_264aebfa1cee6d6fa48702838212169c = L.marker(
+                [41.1273232, -8.6114419],
+                {
+}
+            ).addTo(map_a1495389abdef002913ef16e49048155);
+        
+    
+            var div_icon_7b16db6071025a3a3f42b99604e8adfe = L.divIcon({
+  "html": "\n                \u003cdiv style=\"font-size: 24px; line-height: 24px;\"\u003e\ud83c\udf77\u003c/div\u003e\n            ",
+  "className": "empty",
+});
+            marker_264aebfa1cee6d6fa48702838212169c.setIcon(div_icon_7b16db6071025a3a3f42b99604e8adfe);
+        
+    
+        var popup_902b38658bfcdaa4998d219fe25f3517 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0c7da175e4a00959306c75355e698c73 = $(`<div id="html_0c7da175e4a00959306c75355e698c73" style="width: 100.0%; height: 100.0%;">             <div style='font-size: 14px;'>                 <b>Quinta da Boeira</b><br>                 🍇 Portuguese Winery             </div>         </div>`)[0];
+                popup_902b38658bfcdaa4998d219fe25f3517.setContent(html_0c7da175e4a00959306c75355e698c73);
+            
+        
+
+        marker_264aebfa1cee6d6fa48702838212169c.bindPopup(popup_902b38658bfcdaa4998d219fe25f3517)
+        ;
+
+        
+    
+    
+                marker_264aebfa1cee6d6fa48702838212169c.setIcon(div_icon_7b16db6071025a3a3f42b99604e8adfe);
+            
+    
+            var marker_bde747f48529ce0d2a51be2219ae814e = L.marker(
+                [41.1328057, -8.6164633],
+                {
+}
+            ).addTo(map_a1495389abdef002913ef16e49048155);
+        
+    
+            var div_icon_b035934f8451f0ed85f0054a77fce218 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"font-size: 24px; line-height: 24px;\"\u003e\ud83c\udf77\u003c/div\u003e\n            ",
+  "className": "empty",
+});
+            marker_bde747f48529ce0d2a51be2219ae814e.setIcon(div_icon_b035934f8451f0ed85f0054a77fce218);
+        
+    
+        var popup_005cbc49a7ab33ecc0c908f9693844fe = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_053fa44fe036009e09905d3b6a459c6d = $(`<div id="html_053fa44fe036009e09905d3b6a459c6d" style="width: 100.0%; height: 100.0%;">             <div style='font-size: 14px;'>                 <b>Dow's Port</b><br>                 🍇 Portuguese Winery             </div>         </div>`)[0];
+                popup_005cbc49a7ab33ecc0c908f9693844fe.setContent(html_053fa44fe036009e09905d3b6a459c6d);
+            
+        
+
+        marker_bde747f48529ce0d2a51be2219ae814e.bindPopup(popup_005cbc49a7ab33ecc0c908f9693844fe)
+        ;
+
+        
+    
+    
+                marker_bde747f48529ce0d2a51be2219ae814e.setIcon(div_icon_b035934f8451f0ed85f0054a77fce218);
+            
+    
+            var marker_c28843ece12699e753773f4045f89c44 = L.marker(
+                [32.7995109, -17.0352048],
+                {
+}
+            ).addTo(map_a1495389abdef002913ef16e49048155);
+        
+    
+            var div_icon_8721c18b3a3fded025647b1c94eddcd7 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"font-size: 24px; line-height: 24px;\"\u003e\ud83c\udf77\u003c/div\u003e\n            ",
+  "className": "empty",
+});
+            marker_c28843ece12699e753773f4045f89c44.setIcon(div_icon_8721c18b3a3fded025647b1c94eddcd7);
+        
+    
+        var popup_f039293c2c686370a5f9cdff2796928b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c8bf6491ab2d85de125b8457b21aa130 = $(`<div id="html_c8bf6491ab2d85de125b8457b21aa130" style="width: 100.0%; height: 100.0%;">             <div style='font-size: 14px;'>                 <b>Quinta do Barbusano</b><br>                 🍇 Portuguese Winery             </div>         </div>`)[0];
+                popup_f039293c2c686370a5f9cdff2796928b.setContent(html_c8bf6491ab2d85de125b8457b21aa130);
+            
+        
+
+        marker_c28843ece12699e753773f4045f89c44.bindPopup(popup_f039293c2c686370a5f9cdff2796928b)
+        ;
+
+        
+    
+    
+                marker_c28843ece12699e753773f4045f89c44.setIcon(div_icon_8721c18b3a3fded025647b1c94eddcd7);
+            
+    
+            var marker_fa935f275258555a4681fee5b2f7db63 = L.marker(
+                [39.5618796, -8.4322963],
+                {
+}
+            ).addTo(map_a1495389abdef002913ef16e49048155);
+        
+    
+            var div_icon_61290d940200a95ee2e102c08ccdf668 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"font-size: 24px; line-height: 24px;\"\u003e\ud83c\udf77\u003c/div\u003e\n            ",
+  "className": "empty",
+});
+            marker_fa935f275258555a4681fee5b2f7db63.setIcon(div_icon_61290d940200a95ee2e102c08ccdf668);
+        
+    
+        var popup_408e8684fbdea6ec74a06e037732e45e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b4dd5339f10bff8d42d8071925cfafd3 = $(`<div id="html_b4dd5339f10bff8d42d8071925cfafd3" style="width: 100.0%; height: 100.0%;">             <div style='font-size: 14px;'>                 <b>Curral das Freiras</b><br>                 🍇 Portuguese Winery             </div>         </div>`)[0];
+                popup_408e8684fbdea6ec74a06e037732e45e.setContent(html_b4dd5339f10bff8d42d8071925cfafd3);
+            
+        
+
+        marker_fa935f275258555a4681fee5b2f7db63.bindPopup(popup_408e8684fbdea6ec74a06e037732e45e)
+        ;
+
+        
+    
+    
+                marker_fa935f275258555a4681fee5b2f7db63.setIcon(div_icon_61290d940200a95ee2e102c08ccdf668);
+            
+    
+            var marker_bed2443c1b4721da4e6958aa4bf71d42 = L.marker(
+                [38.5671036, -8.9137523],
+                {
+}
+            ).addTo(map_a1495389abdef002913ef16e49048155);
+        
+    
+            var div_icon_f70867cfbc70b0c39092622f2f1f8198 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"font-size: 24px; line-height: 24px;\"\u003e\ud83c\udf77\u003c/div\u003e\n            ",
+  "className": "empty",
+});
+            marker_bed2443c1b4721da4e6958aa4bf71d42.setIcon(div_icon_f70867cfbc70b0c39092622f2f1f8198);
+        
+    
+        var popup_1496883f3e247be31833f75d1719d546 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_39b0f3fe60a363beeb7fb85632057389 = $(`<div id="html_39b0f3fe60a363beeb7fb85632057389" style="width: 100.0%; height: 100.0%;">             <div style='font-size: 14px;'>                 <b>Quinta do Piloto</b><br>                 🍇 Portuguese Winery             </div>         </div>`)[0];
+                popup_1496883f3e247be31833f75d1719d546.setContent(html_39b0f3fe60a363beeb7fb85632057389);
+            
+        
+
+        marker_bed2443c1b4721da4e6958aa4bf71d42.bindPopup(popup_1496883f3e247be31833f75d1719d546)
+        ;
+
+        
+    
+    
+                marker_bed2443c1b4721da4e6958aa4bf71d42.setIcon(div_icon_f70867cfbc70b0c39092622f2f1f8198);
+            
+    
+            var marker_331584ffdd82f6843e69589fb35deda7 = L.marker(
+                [41.2821832, -7.6967001],
+                {
+}
+            ).addTo(map_a1495389abdef002913ef16e49048155);
+        
+    
+            var div_icon_d0f455a6f691224c1e21f86da9716ac7 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"font-size: 24px; line-height: 24px;\"\u003e\ud83c\udf77\u003c/div\u003e\n            ",
+  "className": "empty",
+});
+            marker_331584ffdd82f6843e69589fb35deda7.setIcon(div_icon_d0f455a6f691224c1e21f86da9716ac7);
+        
+    
+        var popup_45c9ee82bb471eaad9ca1f150f2e6156 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e804b896e38772f4deef229a3fb47b2c = $(`<div id="html_e804b896e38772f4deef229a3fb47b2c" style="width: 100.0%; height: 100.0%;">             <div style='font-size: 14px;'>                 <b>Enofast Wine Lab</b><br>                 🍇 Portuguese Winery             </div>         </div>`)[0];
+                popup_45c9ee82bb471eaad9ca1f150f2e6156.setContent(html_e804b896e38772f4deef229a3fb47b2c);
+            
+        
+
+        marker_331584ffdd82f6843e69589fb35deda7.bindPopup(popup_45c9ee82bb471eaad9ca1f150f2e6156)
+        ;
+
+        
+    
+    
+                marker_331584ffdd82f6843e69589fb35deda7.setIcon(div_icon_d0f455a6f691224c1e21f86da9716ac7);
+            
+    
+            var marker_80f47e927be22f422c2b5cc89006d536 = L.marker(
+                [41.8751859, -8.3450488],
+                {
+}
+            ).addTo(map_a1495389abdef002913ef16e49048155);
+        
+    
+            var div_icon_5d2813141ea81bb9f037b333f839bfa0 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"font-size: 24px; line-height: 24px;\"\u003e\ud83c\udf77\u003c/div\u003e\n            ",
+  "className": "empty",
+});
+            marker_80f47e927be22f422c2b5cc89006d536.setIcon(div_icon_5d2813141ea81bb9f037b333f839bfa0);
+        
+    
+        var popup_db2969b450c6052a101d8d91a74377de = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_8dc346868e44d256ecc266012bdbbc5b = $(`<div id="html_8dc346868e44d256ecc266012bdbbc5b" style="width: 100.0%; height: 100.0%;">             <div style='font-size: 14px;'>                 <b>Virgu Wines - Cabana Maior</b><br>                 🍇 Portuguese Winery             </div>         </div>`)[0];
+                popup_db2969b450c6052a101d8d91a74377de.setContent(html_8dc346868e44d256ecc266012bdbbc5b);
+            
+        
+
+        marker_80f47e927be22f422c2b5cc89006d536.bindPopup(popup_db2969b450c6052a101d8d91a74377de)
+        ;
+
+        
+    
+    
+                marker_80f47e927be22f422c2b5cc89006d536.setIcon(div_icon_5d2813141ea81bb9f037b333f839bfa0);
+            
+    
+            var marker_2c4e8d848dd7ff81ad97141dd4d22734 = L.marker(
+                [32.6678653, -16.9977902],
+                {
+}
+            ).addTo(map_a1495389abdef002913ef16e49048155);
+        
+    
+            var div_icon_cda6af523e3aa51330c156f55efd0e65 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"font-size: 24px; line-height: 24px;\"\u003e\ud83c\udf77\u003c/div\u003e\n            ",
+  "className": "empty",
+});
+            marker_2c4e8d848dd7ff81ad97141dd4d22734.setIcon(div_icon_cda6af523e3aa51330c156f55efd0e65);
+        
+    
+        var popup_7a801a3c56a011378db0cf9aa5535644 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_99a5cbfc4910f8518cc2d4b02e518c38 = $(`<div id="html_99a5cbfc4910f8518cc2d4b02e518c38" style="width: 100.0%; height: 100.0%;">             <div style='font-size: 14px;'>                 <b>Vinhos Barbeito</b><br>                 🍇 Portuguese Winery             </div>         </div>`)[0];
+                popup_7a801a3c56a011378db0cf9aa5535644.setContent(html_99a5cbfc4910f8518cc2d4b02e518c38);
+            
+        
+
+        marker_2c4e8d848dd7ff81ad97141dd4d22734.bindPopup(popup_7a801a3c56a011378db0cf9aa5535644)
+        ;
+
+        
+    
+    
+                marker_2c4e8d848dd7ff81ad97141dd4d22734.setIcon(div_icon_cda6af523e3aa51330c156f55efd0e65);
+            
+    
+            var marker_12131ea1c31d690fefa0960380cf43be = L.marker(
+                [38.531699, -8.9735927],
+                {
+}
+            ).addTo(map_a1495389abdef002913ef16e49048155);
+        
+    
+            var div_icon_827dd160b86ab290b8cff12a61d703a6 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"font-size: 24px; line-height: 24px;\"\u003e\ud83c\udf77\u003c/div\u003e\n            ",
+  "className": "empty",
+});
+            marker_12131ea1c31d690fefa0960380cf43be.setIcon(div_icon_827dd160b86ab290b8cff12a61d703a6);
+        
+    
+        var popup_0c9aea480302cb8b23ad5a48163e789d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ce0a02e3fc21c3212204e5ddf60e0239 = $(`<div id="html_ce0a02e3fc21c3212204e5ddf60e0239" style="width: 100.0%; height: 100.0%;">             <div style='font-size: 14px;'>                 <b>Quinta de Alcube</b><br>                 🍇 Portuguese Winery             </div>         </div>`)[0];
+                popup_0c9aea480302cb8b23ad5a48163e789d.setContent(html_ce0a02e3fc21c3212204e5ddf60e0239);
+            
+        
+
+        marker_12131ea1c31d690fefa0960380cf43be.bindPopup(popup_0c9aea480302cb8b23ad5a48163e789d)
+        ;
+
+        
+    
+    
+                marker_12131ea1c31d690fefa0960380cf43be.setIcon(div_icon_827dd160b86ab290b8cff12a61d703a6);
+            
+    
+            var marker_ca9ef14bf5277b423b5925559caf7921 = L.marker(
+                [41.2827479, -7.7227278],
+                {
+}
+            ).addTo(map_a1495389abdef002913ef16e49048155);
+        
+    
+            var div_icon_f424204bf7c703106e933bc8b4b289ec = L.divIcon({
+  "html": "\n                \u003cdiv style=\"font-size: 24px; line-height: 24px;\"\u003e\ud83c\udf77\u003c/div\u003e\n            ",
+  "className": "empty",
+});
+            marker_ca9ef14bf5277b423b5925559caf7921.setIcon(div_icon_f424204bf7c703106e933bc8b4b289ec);
+        
+    
+        var popup_9669a121f996b6b17d4dcd37b02533d6 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b52bfc7e8ea94050e53b9364d00206dd = $(`<div id="html_b52bfc7e8ea94050e53b9364d00206dd" style="width: 100.0%; height: 100.0%;">             <div style='font-size: 14px;'>                 <b>Wine Rest</b><br>                 🍇 Portuguese Winery             </div>         </div>`)[0];
+                popup_9669a121f996b6b17d4dcd37b02533d6.setContent(html_b52bfc7e8ea94050e53b9364d00206dd);
+            
+        
+
+        marker_ca9ef14bf5277b423b5925559caf7921.bindPopup(popup_9669a121f996b6b17d4dcd37b02533d6)
+        ;
+
+        
+    
+    
+                marker_ca9ef14bf5277b423b5925559caf7921.setIcon(div_icon_f424204bf7c703106e933bc8b4b289ec);
+            
+    
+            var marker_d9ce09f6cd37465477892d1764e5eaff = L.marker(
+                [38.7543521, -9.1423847],
+                {
+}
+            ).addTo(map_a1495389abdef002913ef16e49048155);
+        
+    
+            var div_icon_82f7699040f416f2740fef5336548602 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"font-size: 24px; line-height: 24px;\"\u003e\ud83c\udf77\u003c/div\u003e\n            ",
+  "className": "empty",
+});
+            marker_d9ce09f6cd37465477892d1764e5eaff.setIcon(div_icon_82f7699040f416f2740fef5336548602);
+        
+    
+        var popup_ae98a4fd600a2ccfe48091bbbeed2b57 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3f00df2d4be3ef2bd6090759846a5888 = $(`<div id="html_3f00df2d4be3ef2bd6090759846a5888" style="width: 100.0%; height: 100.0%;">             <div style='font-size: 14px;'>                 <b>Dois Dedos de Conserva</b><br>                 🍇 Portuguese Winery             </div>         </div>`)[0];
+                popup_ae98a4fd600a2ccfe48091bbbeed2b57.setContent(html_3f00df2d4be3ef2bd6090759846a5888);
+            
+        
+
+        marker_d9ce09f6cd37465477892d1764e5eaff.bindPopup(popup_ae98a4fd600a2ccfe48091bbbeed2b57)
+        ;
+
+        
+    
+    
+                marker_d9ce09f6cd37465477892d1764e5eaff.setIcon(div_icon_82f7699040f416f2740fef5336548602);
+            
+    
+            var marker_985eb2d87ecb15d361f7c572c23eb828 = L.marker(
+                [38.7117853, -9.1430543],
+                {
+}
+            ).addTo(map_a1495389abdef002913ef16e49048155);
+        
+    
+            var div_icon_667fa96dc806601c37a8257898d28b38 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"font-size: 24px; line-height: 24px;\"\u003e\ud83c\udf77\u003c/div\u003e\n            ",
+  "className": "empty",
+});
+            marker_985eb2d87ecb15d361f7c572c23eb828.setIcon(div_icon_667fa96dc806601c37a8257898d28b38);
+        
+    
+        var popup_bd79a9ce8583d83fa952134400053924 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_86b7b00443e08d52dba70d25739b4f60 = $(`<div id="html_86b7b00443e08d52dba70d25739b4f60" style="width: 100.0%; height: 100.0%;">             <div style='font-size: 14px;'>                 <b>wine lover bairro alto</b><br>                 🍇 Portuguese Winery             </div>         </div>`)[0];
+                popup_bd79a9ce8583d83fa952134400053924.setContent(html_86b7b00443e08d52dba70d25739b4f60);
+            
+        
+
+        marker_985eb2d87ecb15d361f7c572c23eb828.bindPopup(popup_bd79a9ce8583d83fa952134400053924)
+        ;
+
+        
+    
+    
+                marker_985eb2d87ecb15d361f7c572c23eb828.setIcon(div_icon_667fa96dc806601c37a8257898d28b38);
+            
+    
+            var marker_63ed966c79f212088015d05bd3adf668 = L.marker(
+                [38.7122846, -9.1431786],
+                {
+}
+            ).addTo(map_a1495389abdef002913ef16e49048155);
+        
+    
+            var div_icon_7e8b659939327a833e273aa19fbf58c9 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"font-size: 24px; line-height: 24px;\"\u003e\ud83c\udf77\u003c/div\u003e\n            ",
+  "className": "empty",
+});
+            marker_63ed966c79f212088015d05bd3adf668.setIcon(div_icon_7e8b659939327a833e273aa19fbf58c9);
+        
+    
+        var popup_3c170c2cdf9ec5719ea92949d6311cf2 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f689ba4bb6ff1a70324672185abc7c32 = $(`<div id="html_f689ba4bb6ff1a70324672185abc7c32" style="width: 100.0%; height: 100.0%;">             <div style='font-size: 14px;'>                 <b>old porto</b><br>                 🍇 Portuguese Winery             </div>         </div>`)[0];
+                popup_3c170c2cdf9ec5719ea92949d6311cf2.setContent(html_f689ba4bb6ff1a70324672185abc7c32);
+            
+        
+
+        marker_63ed966c79f212088015d05bd3adf668.bindPopup(popup_3c170c2cdf9ec5719ea92949d6311cf2)
+        ;
+
+        
+    
+    
+                marker_63ed966c79f212088015d05bd3adf668.setIcon(div_icon_7e8b659939327a833e273aa19fbf58c9);
+            
+    
+            var marker_ab72c5dc954564524b50be3581406ab5 = L.marker(
+                [38.7125178, -9.1432412],
+                {
+}
+            ).addTo(map_a1495389abdef002913ef16e49048155);
+        
+    
+            var div_icon_20c6b0c8b2e26bff68170222be86801d = L.divIcon({
+  "html": "\n                \u003cdiv style=\"font-size: 24px; line-height: 24px;\"\u003e\ud83c\udf77\u003c/div\u003e\n            ",
+  "className": "empty",
+});
+            marker_ab72c5dc954564524b50be3581406ab5.setIcon(div_icon_20c6b0c8b2e26bff68170222be86801d);
+        
+    
+        var popup_b7f021a2f97bc8fcf79c35c0f17cd501 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f8d8085fb71ecd88cdf150fc87ad6d92 = $(`<div id="html_f8d8085fb71ecd88cdf150fc87ad6d92" style="width: 100.0%; height: 100.0%;">             <div style='font-size: 14px;'>                 <b>napoleão</b><br>                 🍇 Portuguese Winery             </div>         </div>`)[0];
+                popup_b7f021a2f97bc8fcf79c35c0f17cd501.setContent(html_f8d8085fb71ecd88cdf150fc87ad6d92);
+            
+        
+
+        marker_ab72c5dc954564524b50be3581406ab5.bindPopup(popup_b7f021a2f97bc8fcf79c35c0f17cd501)
+        ;
+
+        
+    
+    
+                marker_ab72c5dc954564524b50be3581406ab5.setIcon(div_icon_20c6b0c8b2e26bff68170222be86801d);
+            
+    
+            var marker_5170742d09ef8b0f3ea17c0c576833d2 = L.marker(
+                [41.5539432, -8.4281229],
+                {
+}
+            ).addTo(map_a1495389abdef002913ef16e49048155);
+        
+    
+            var div_icon_e68806bc7d4694173c14610ed70b4183 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"font-size: 24px; line-height: 24px;\"\u003e\ud83c\udf77\u003c/div\u003e\n            ",
+  "className": "empty",
+});
+            marker_5170742d09ef8b0f3ea17c0c576833d2.setIcon(div_icon_e68806bc7d4694173c14610ed70b4183);
+        
+    
+        var popup_2d8cc1f1217d40526851f6164dcff736 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_6c1cf797ab799a6b069ff5f41a2b8d78 = $(`<div id="html_6c1cf797ab799a6b069ff5f41a2b8d78" style="width: 100.0%; height: 100.0%;">             <div style='font-size: 14px;'>                 <b>Garrafeira</b><br>                 🍇 Portuguese Winery             </div>         </div>`)[0];
+                popup_2d8cc1f1217d40526851f6164dcff736.setContent(html_6c1cf797ab799a6b069ff5f41a2b8d78);
+            
+        
+
+        marker_5170742d09ef8b0f3ea17c0c576833d2.bindPopup(popup_2d8cc1f1217d40526851f6164dcff736)
+        ;
+
+        
+    
+    
+                marker_5170742d09ef8b0f3ea17c0c576833d2.setIcon(div_icon_e68806bc7d4694173c14610ed70b4183);
+            
+    
+            var marker_56bb2dd421ac2550969d9402ee9f8dec = L.marker(
+                [41.5540878, -8.4281949],
+                {
+}
+            ).addTo(map_a1495389abdef002913ef16e49048155);
+        
+    
+            var div_icon_5bcae4d86fc34d071f68da89a8cf9cfd = L.divIcon({
+  "html": "\n                \u003cdiv style=\"font-size: 24px; line-height: 24px;\"\u003e\ud83c\udf77\u003c/div\u003e\n            ",
+  "className": "empty",
+});
+            marker_56bb2dd421ac2550969d9402ee9f8dec.setIcon(div_icon_5bcae4d86fc34d071f68da89a8cf9cfd);
+        
+    
+        var popup_448783abf15c55cfb877567535638ac1 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e31cb8e8ab2dee9965bbbcd5c4c012e0 = $(`<div id="html_e31cb8e8ab2dee9965bbbcd5c4c012e0" style="width: 100.0%; height: 100.0%;">             <div style='font-size: 14px;'>                 <b>A deliciosa do mercado</b><br>                 🍇 Portuguese Winery             </div>         </div>`)[0];
+                popup_448783abf15c55cfb877567535638ac1.setContent(html_e31cb8e8ab2dee9965bbbcd5c4c012e0);
+            
+        
+
+        marker_56bb2dd421ac2550969d9402ee9f8dec.bindPopup(popup_448783abf15c55cfb877567535638ac1)
+        ;
+
+        
+    
+    
+                marker_56bb2dd421ac2550969d9402ee9f8dec.setIcon(div_icon_5bcae4d86fc34d071f68da89a8cf9cfd);
+            
+</script>
+</html>

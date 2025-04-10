@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans&family=Satisfy&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}"> <!-- Global Styles -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}"> <!-- About-specific Styles -->
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="nav-bar">
+      <div class="nav-logo">
+        <a href="{{ url_for('home') }}">
+          <img src="{{ url_for('static', filename='images/Logo.png') }}" alt="DataVine 12 Logo" class="logo-header" />
+        </a>
+      </div>
+      <div class="nav-links">
+        <a href="{{ url_for('home') }}">Home</a>
+        <a href="{{ url_for('about') }}">About</a>
+        <a href="{{ url_for('the_process') }}">The Process</a>
+        <a href="{{ url_for('visualizations') }}">Visualizations</a>
+        <a href="{{ url_for('try_the_model') }}">Try the Model</a>
+        <a href="{{ url_for('resources') }}">Resources</a>
+        <a href="{{ url_for('explore') }}">Explore</a>
+        <a href="{{ url_for('contact') }}">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- About Banner -->
+    <section class="label-banner">
+      <h2>About This Project</h2>
+      <p>
+        DataVine 12 is a project driven by a passion for both data science and wine! We focused on predicting wine quality using machine learning, 
+        but made sure to keep the process enjoyable and creative. After all, who doesn’t enjoy a glass of wine while learning new skills? Our goal 
+        is to help both wine enthusiasts and professionals understand what makes a high-quality wine by exploring the relationship between characteristics 
+        like acidity, alcohol content, and pH. DataVine 12 uses machine learning to predict wine quality based on various physiochemical features. 
+        This project integrates data analysis, predictive modeling, and visualization, to provide insights into what makes a high-quality wine, 
+        leveraging the power of machine learning algorithms.
+      </p>
+    </section>
+
+    <section class="about-section">
+      <div class="accordion-item">
+        <button class="accordion-btn">Our Approach</button>
+        <div class="accordion-content">
+          <p>This project followed a full machine learning pipeline, from data retrieval and preprocessing to model development and evaluation. 
+            Using Spark SQL, we gathered and prepared the wine quality dataset, applying standardization and normalization techniques. We trained 
+            a supervised learning model using Scikit-learn, achieving over 75% classification accuracy. The modeling process included iterative optimization 
+            and performance tracking, all documented within the codebase. The final solution was designed to go beyond analysis — offering a more dynamic way 
+            to apply the model’s insights.
+          </p>
+        </div>
+      </div>
+      
+      <div class="accordion-item">
+        <button class="accordion-btn">Technologies Used</button>
+        <div class="accordion-content">
+          <ul>
+            <li><strong>Python:</strong> For data analysis, modeling, and scripting</li>
+            <li><strong>Pandas:</strong> For data cleaning and manipulation</li>
+            <li><strong>Scikit-learn:</strong> For building and evaluating the machine learning model</li>
+            <li><strong>Spark SQL:</strong> For querying and aggregating the dataset</li>
+            <li><strong>Flask:</strong> For serving the model through a prediction API</li>
+            <li><strong>HTML, CSS, Bootstrap:</strong>  For front-end layout and styling</li>
+            <li><strong>JavaScript:</strong>  For form handling and dynamic UI behavior</li>
+            <li><strong>Plotly & Leaflet:</strong> For interactive data visualizations</li>
+            <li><strong>Tableau:</strong>For data exploration and visual storytelling</li>
+          </ul>
+        </div>
+      </div>
+      
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span class="footer-line-one">© 2025 DataVine 12</span>
+    <span class="footer-line-two">Blending bold flavors and bold data, responsibly.</span>
+  </footer>
+
+  <!-- Optional JavaScript (e.g., for popups or functionality) -->
+  <script>
+    const accordionButtons = document.querySelectorAll('.accordion-btn');
+  
+    accordionButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        btn.classList.toggle('active');
+  
+        const content = btn.nextElementSibling;
+        if (content.style.maxHeight) {
+          content.style.maxHeight = null;
+          content.classList.remove('open');
+        } else {
+          content.style.maxHeight = content.scrollHeight + 50 + 'px';
+          content.classList.add('open');
+        }
+      });
+    });
+  </script>
+  
+</body>
+</html>
