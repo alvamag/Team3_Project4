@@ -9,18 +9,18 @@ document.addEventListener("DOMContentLoaded", function () {
         const response = await fetch("/random-sample");
         const data = await response.json();
   
-        document.getElementById("fixed_acidity_input").value = data.fixed_acidity;
-        document.getElementById("volatile_acidity_input").value = data.volatile_acidity;
-        document.getElementById("citric_acid_input").value = data.citric_acid;
-        document.getElementById("residual_sugar_input").value = data.residual_sugar;
-        document.getElementById("chlorides_input").value = data.chlorides;
-        document.getElementById("free_sulfur_dioxide_input").value = data.free_sulfur_dioxide;
-        document.getElementById("total_sulfur_dioxide_input").value = data.total_sulfur_dioxide;
-        document.getElementById("density_input").value = data.density;
-        document.getElementById("ph_input").value = data.ph;
-        document.getElementById("sulphates_input").value = data.sulphates;
-        document.getElementById("alcohol_input").value = data.alcohol;
-        document.getElementById("wine_type_input").value = data.wine_type;
+        document.getElementById("fixed_acidity_input").value = data.fixed_acidity_input;
+        document.getElementById("volatile_acidity_input").value = data.volatile_acidity_input;
+        document.getElementById("citric_acid_input").value = data.citric_acid_input;
+        document.getElementById("residual_sugar_input").value = data.residual_sugar_input;
+        document.getElementById("chlorides_input").value = data.chlorides_input;
+        document.getElementById("free_sulfur_dioxide_input").value = data.free_sulfur_dioxide_input;
+        document.getElementById("total_sulfur_dioxide_input").value = data.total_sulfur_dioxide_input;
+        document.getElementById("density_input").value = data.density_input;
+        document.getElementById("ph_input").value = data.ph_input;
+        document.getElementById("sulphates_input").value = data.sulphates_input;
+        document.getElementById("alcohol_input").value = data.alcohol_input;
+        document.getElementById("wine_type_input").value = data.wine_type_input;
   
         console.log("✔️ Sample values populated:", data);
       } catch (err) {

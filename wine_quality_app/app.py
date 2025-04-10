@@ -115,6 +115,7 @@ def predict():
         print("🚨 Flask error in /predict:", str(e))
         return jsonify({'error': str(e)}), 500
 
+print("🚀 USING UPDATED random-sample ROUTE!")
 @app.route('/random-sample', methods=['GET'])
 def random_sample():
     try:
