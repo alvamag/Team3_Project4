@@ -82,10 +82,12 @@ Used to guide meaningful analysis and aid in model selection for future enhancem
 # **IV. Visualization (Tableau)**
 
 ### **Visual Insights Generated**
-- Histograms of wine quality distribution  
-- Boxplots: Alcohol content vs. quality  
-- Heatmaps: Feature correlations  
-- Interactive dashboard summarizing key trends and findings  
+- **Scatter plot:** Vinegar vs. Freshness  
+- **Scatter plot:** Sweet vs. Salty    
+- **Scatter plot:** Alcohol vs. Density    
+- **Bar Chart:** Quality Distribution
+- **Bar Chart:** Average Quality of Wine by Type
+- **Heat Map:** Alcohol vs. Quality by Type    
 
 ---
 
