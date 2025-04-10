@@ -111,3 +111,16 @@ Used to guide meaningful analysis and aid in model selection for future enhancem
 - Compared variable importance between red and white wines  
 
 ---
+
+# **VII. Conclusion**
+
+### **Summary**
+- Machine learning is effective for predicting wine quality based on chemical analysis  
+- Exploratory and predictive analysis provided meaningful insights  
+
+### **Future Directions**
+- Expand dataset for more balanced classes  
+- Explore regression modeling for predicting exact quality scores  
+- Develop and deploy a web/mobile app for real-time wine evaluation  
+
+---
