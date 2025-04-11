@@ -1,23 +1,25 @@
-# Python virtual environments
+# Python virtual environment
 venv/
-wine_quality_app/venv/
+env/
 
-# Python bytecode
+# Byte-compiled / cache files
 __pycache__/
 *.py[cod]
-*$py.class
 
-# Jupyter Notebook checkpoints
+# VS Code settings
+.vscode/
+
+# Environment/config files
+.env
+
+# macOS system file
+.DS_Store
+
+# Jupyter Notebook checkpoints (if using)
 .ipynb_checkpoints/
 
-# System files
-.DS_Store
-Thumbs.db
-
-# Model files (optional, if you don't want to push them)
-*.pkl
-*.h5
-
-# Logs and temp files
+# Log files
 *.log
-*.tmp
+
+# Flask instance folders (if used)
+instance/

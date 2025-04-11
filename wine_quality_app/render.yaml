@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: wine-quality-app
+    env: python
+    buildCommand: cd wine_quality_app && pip install -r requirements.txt
+    startCommand: cd wine_quality_app && gunicorn app:app
+    region: oregon
+    plan: free
+    autoDeploy: true
